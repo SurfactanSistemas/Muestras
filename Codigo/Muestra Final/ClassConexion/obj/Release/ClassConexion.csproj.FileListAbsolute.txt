@@ -1,0 +1,40 @@
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\ClassConexion\bin\Release\ClassConexion.dll
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\ClassConexion\bin\Release\ClassConexion.pdb
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\ClassConexion\obj\Release\ClassConexion.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\ClassConexion\obj\Release\ClassConexion.dll
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\ClassConexion\obj\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\ClassConexion\bin\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\ClassConexion\bin\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\ClassConexion\obj\Release\ClassConexion.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\ClassConexion\obj\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\ClassConexion\obj\Release\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\ClassConexion\bin\Release\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\ClassConexion\bin\Release\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\ClassConexion\obj\Release\ClassConexion.csprojResolveAssemblyReference.cache
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\ClassConexion\obj\Release\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\ClassConexion\obj\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\ClassConexion\bin\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\ClassConexion\bin\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\ClassConexion\obj\Release\ClassConexion.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\ClassConexion\obj\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\ClassConexion\obj\Release\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\ClassConexion\bin\Release\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\ClassConexion\bin\Release\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\ClassConexion\obj\Release\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\ClassConexion\obj\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\ClassConexion\bin\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\ClassConexion\bin\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\ClassConexion\obj\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\ClassConexion\obj\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\bin\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\bin\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\obj\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\obj\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\bin\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\bin\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\obj\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\obj\Release\ClassConexion.pdb
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Release\ClassConexion.dll
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Release\ClassConexion.pdb
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Release\ClassConexion.dll
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Release\ClassConexion.pdb

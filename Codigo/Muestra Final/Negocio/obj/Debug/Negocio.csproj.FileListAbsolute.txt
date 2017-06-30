@@ -1,0 +1,158 @@
+C:\Users\Usuario-04\Desktop\Modulo Muestras\MUESTRAS\Negocio\bin\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\Modulo Muestras\MUESTRAS\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\Modulo Muestras\MUESTRAS\Negocio\obj\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\Modulo Muestras\MUESTRAS\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Gabriel\Documents\MUESTRAS\Negocio\bin\Debug\Negocio.dll
+C:\Users\Gabriel\Documents\MUESTRAS\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Gabriel\Documents\MUESTRAS\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Documents\MUESTRAS\Negocio\obj\Debug\Negocio.dll
+C:\Users\Gabriel\Documents\MUESTRAS\Negocio\obj\Debug\Negocio.pdb
+C:\Users\fnadur\Desktop\MUESTRAS\Negocio\bin\Debug\Negocio.dll
+C:\Users\fnadur\Desktop\MUESTRAS\Negocio\bin\Debug\Negocio.pdb
+C:\Users\fnadur\Desktop\MUESTRAS\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\fnadur\Desktop\MUESTRAS\Negocio\obj\Debug\Negocio.dll
+C:\Users\fnadur\Desktop\MUESTRAS\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\Muestra Fede\MUESTRAS\Negocio\bin\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\Muestra Fede\MUESTRAS\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\Muestra Fede\MUESTRAS\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\Muestra Fede\MUESTRAS\Negocio\obj\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\Muestra Fede\MUESTRAS\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Gabriel\Desktop\MUESTRAS 10-02\Negocio\bin\Debug\Negocio.dll
+C:\Users\Gabriel\Desktop\MUESTRAS 10-02\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Gabriel\Desktop\MUESTRAS 10-02\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\MUESTRAS 10-02\Negocio\obj\Debug\Negocio.dll
+C:\Users\Gabriel\Desktop\MUESTRAS 10-02\Negocio\obj\Debug\Negocio.pdb
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS 11-02-17\Negocio\bin\Debug\Negocio.dll
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS 11-02-17\Negocio\bin\Debug\Negocio.pdb
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS 11-02-17\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS 11-02-17\Negocio\obj\Debug\Negocio.dll
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS 11-02-17\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Juan\Desktop\CODIGO\Negocio\bin\Debug\Negocio.dll
+C:\Users\Juan\Desktop\CODIGO\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Juan\Desktop\CODIGO\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\CODIGO\Negocio\obj\Debug\Negocio.dll
+C:\Users\Juan\Desktop\CODIGO\Negocio\obj\Debug\Negocio.pdb
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS FINAL\CODIGO NUEVO\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS FINAL\CODIGO NUEVO\Negocio\obj\Debug\Negocio.dll
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS FINAL\CODIGO NUEVO\Negocio\obj\Debug\Negocio.pdb
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS FINAL\CODIGO NUEVO\Negocio\bin\Debug\Negocio.dll
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS FINAL\CODIGO NUEVO\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Negocio\bin\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Negocio\obj\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Negocio\bin\Debug\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Negocio\obj\Debug\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras V2.20170305\Negocio\bin\Debug\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras V2.20170305\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras V2.20170305\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras V2.20170305\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras V2.20170305\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras V2.20170305\Negocio\obj\Debug\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras V2.20170305\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Negocio\bin\Debug\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Negocio\obj\Debug\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Negocio\bin\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Negocio\obj\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Negocio\bin\Debug\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Negocio\obj\Debug\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Negocio\bin\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Negocio\obj\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final25-03_V2 HERNAN\Muestra Final\Negocio\bin\Debug\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final25-03_V2 HERNAN\Muestra Final\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final25-03_V2 HERNAN\Muestra Final\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final25-03_V2 HERNAN\Muestra Final\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final25-03_V2 HERNAN\Muestra Final\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final25-03_V2 HERNAN\Muestra Final\Negocio\obj\Debug\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final25-03_V2 HERNAN\Muestra Final\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final_Mod - 27-03-17\Muestra Final\Negocio\bin\Debug\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final_Mod - 27-03-17\Muestra Final\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final_Mod - 27-03-17\Muestra Final\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final_Mod - 27-03-17\Muestra Final\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final_Mod - 27-03-17\Muestra Final\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final_Mod - 27-03-17\Muestra Final\Negocio\obj\Debug\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final_Mod - 27-03-17\Muestra Final\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\bin\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\obj\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\bin\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\obj\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra 03-04\Codigo\Muestra Final\Negocio\bin\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra 03-04\Codigo\Muestra Final\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra 03-04\Codigo\Muestra Final\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra 03-04\Codigo\Muestra Final\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra 03-04\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra 03-04\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra 03-04\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.pdb
+N:\Net\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\bin\Debug\Negocio.dll
+N:\Net\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\bin\Debug\Negocio.pdb
+N:\Net\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\bin\Debug\ClassConexion.dll
+N:\Net\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\bin\Debug\ClassConexion.pdb
+N:\Net\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+N:\Net\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.dll
+N:\Net\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.pdb
+C:\Surfactan\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\bin\Debug\Negocio.dll
+C:\Surfactan\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\bin\Debug\Negocio.pdb
+C:\Surfactan\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\bin\Debug\ClassConexion.dll
+C:\Surfactan\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\bin\Debug\ClassConexion.pdb
+C:\Surfactan\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Surfactan\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.dll
+C:\Surfactan\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\MUESTRAS DAVID\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\bin\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\MUESTRAS DAVID\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Usuario-04\Desktop\MUESTRAS DAVID\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\MUESTRAS DAVID\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\MUESTRAS DAVID\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\MUESTRAS DAVID\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.dll
+C:\Users\Usuario-04\Desktop\MUESTRAS DAVID\MODULO DE MUESTRAS\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.pdb
+C:\Users\soporte2\Desktop\Modulo Muestras\Codigo\Muestra Final\Negocio\bin\Debug\Negocio.dll
+C:\Users\soporte2\Desktop\Modulo Muestras\Codigo\Muestra Final\Negocio\bin\Debug\Negocio.pdb
+C:\Users\soporte2\Desktop\Modulo Muestras\Codigo\Muestra Final\Negocio\bin\Debug\ClassConexion.dll
+C:\Users\soporte2\Desktop\Modulo Muestras\Codigo\Muestra Final\Negocio\bin\Debug\ClassConexion.pdb
+C:\Users\soporte2\Desktop\Modulo Muestras\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\soporte2\Desktop\Modulo Muestras\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.dll
+C:\Users\soporte2\Desktop\Modulo Muestras\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.pdb
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Negocio\bin\Debug\Negocio.dll
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Negocio\bin\Debug\Negocio.pdb
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Negocio\bin\Debug\ClassConexion.dll
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Negocio\bin\Debug\ClassConexion.pdb
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.dll
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Negocio\obj\Debug\Negocio.pdb

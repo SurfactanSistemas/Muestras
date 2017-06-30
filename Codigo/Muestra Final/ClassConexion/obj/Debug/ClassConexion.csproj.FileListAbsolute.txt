@@ -1,0 +1,114 @@
+C:\Users\Usuario-04\Desktop\Modulo Muestras\MUESTRAS\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\Modulo Muestras\MUESTRAS\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\Modulo Muestras\MUESTRAS\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\Modulo Muestras\MUESTRAS\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Gabriel\Documents\MUESTRAS\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Gabriel\Documents\MUESTRAS\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Gabriel\Documents\MUESTRAS\ClassConexion\obj\Debug\ClassConexion.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Documents\MUESTRAS\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Gabriel\Documents\MUESTRAS\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\fnadur\Desktop\MUESTRAS\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\fnadur\Desktop\MUESTRAS\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\fnadur\Desktop\MUESTRAS\ClassConexion\obj\Debug\ClassConexion.csprojResolveAssemblyReference.cache
+C:\Users\fnadur\Desktop\MUESTRAS\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\fnadur\Desktop\MUESTRAS\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\Muestra Fede\MUESTRAS\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\Muestra Fede\MUESTRAS\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\Muestra Fede\MUESTRAS\ClassConexion\obj\Debug\ClassConexion.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\Muestra Fede\MUESTRAS\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\Muestra Fede\MUESTRAS\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Gabriel\Desktop\MUESTRAS 10-02\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Gabriel\Desktop\MUESTRAS 10-02\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Gabriel\Desktop\MUESTRAS 10-02\ClassConexion\obj\Debug\ClassConexion.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\MUESTRAS 10-02\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Gabriel\Desktop\MUESTRAS 10-02\ClassConexion\obj\Debug\ClassConexion.pdb
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS 11-02-17\ClassConexion\bin\Debug\ClassConexion.dll
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS 11-02-17\ClassConexion\bin\Debug\ClassConexion.pdb
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS 11-02-17\ClassConexion\obj\Debug\ClassConexion.csprojResolveAssemblyReference.cache
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS 11-02-17\ClassConexion\obj\Debug\ClassConexion.dll
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS 11-02-17\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MODULO MUESTRAS\CODIGO\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MODULO MUESTRAS\CODIGO\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MODULO MUESTRAS\CODIGO\ClassConexion\obj\Debug\ClassConexion.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MODULO MUESTRAS\CODIGO\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MODULO MUESTRAS\CODIGO\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Juan\Desktop\CODIGO\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Juan\Desktop\CODIGO\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Juan\Desktop\CODIGO\ClassConexion\obj\Debug\ClassConexion.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\CODIGO\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Juan\Desktop\CODIGO\ClassConexion\obj\Debug\ClassConexion.pdb
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS FINAL\CODIGO NUEVO\ClassConexion\bin\Debug\ClassConexion.dll
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS FINAL\CODIGO NUEVO\ClassConexion\bin\Debug\ClassConexion.pdb
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS FINAL\CODIGO NUEVO\ClassConexion\obj\Debug\ClassConexion.csprojResolveAssemblyReference.cache
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS FINAL\CODIGO NUEVO\ClassConexion\obj\Debug\ClassConexion.dll
+\\PCHERNAN\Users\Public\Archivos\HERNAN\MUESTRAS FINAL\CODIGO NUEVO\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\ClassConexion\obj\Debug\ClassConexion.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\ClassConexion\obj\Debug\ClassConexion.csprojResolveAssemblyReference.cache
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras V2.20170305\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras V2.20170305\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras V2.20170305\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras V2.20170305\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final25-03_V2 HERNAN\Muestra Final\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final25-03_V2 HERNAN\Muestra Final\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final25-03_V2 HERNAN\Muestra Final\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final25-03_V2 HERNAN\Muestra Final\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final_Mod - 27-03-17\Muestra Final\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final_Mod - 27-03-17\Muestra Final\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final_Mod - 27-03-17\Muestra Final\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra Final_Mod - 27-03-17\Muestra Final\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra 03-04\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra 03-04\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra 03-04\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra 03-04\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.pdb
+N:\Net\MODULO DE MUESTRAS\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.dll
+N:\Net\MODULO DE MUESTRAS\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.pdb
+N:\Net\MODULO DE MUESTRAS\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.dll
+N:\Net\MODULO DE MUESTRAS\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Surfactan\MODULO DE MUESTRAS\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Surfactan\MODULO DE MUESTRAS\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Surfactan\MODULO DE MUESTRAS\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Surfactan\MODULO DE MUESTRAS\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\MUESTRAS DAVID\MODULO DE MUESTRAS\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\MUESTRAS DAVID\MODULO DE MUESTRAS\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\MUESTRAS DAVID\MODULO DE MUESTRAS\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\MUESTRAS DAVID\MODULO DE MUESTRAS\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Users\soporte2\Desktop\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Users\soporte2\Desktop\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Users\soporte2\Desktop\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Users\soporte2\Desktop\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.pdb

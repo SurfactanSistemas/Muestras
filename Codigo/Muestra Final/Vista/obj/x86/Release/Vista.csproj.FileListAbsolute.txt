@@ -1,0 +1,235 @@
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\bin\Release\Vista.exe.config
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\bin\Release\Vista.exe
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\bin\Release\Vista.pdb
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\bin\Release\AdvancedDataGridView.dll
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\bin\Release\ClassConexion.dll
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\bin\Release\Negocio.dll
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\bin\Release\ClassConexion.pdb
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\bin\Release\Negocio.pdb
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\bin\Release\AdvancedDataGridView.xml
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\bin\Release\fr\AdvancedDataGridView.resources.dll
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\bin\Release\ru\AdvancedDataGridView.resources.dll
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\obj\x86\Release\Vista.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\obj\x86\Release\Vista.Muestra.resources
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\obj\x86\Release\Vista.Properties.Resources.resources
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\obj\x86\Release\Vista.csproj.GenerateResource.Cache
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\obj\x86\Release\Vista.exe
+C:\Users\Juan\Desktop\MODULO DE MUSTRAS\MUESTRAS 11-02-17\Vista\obj\x86\Release\Vista.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\bin\Release\Vista.exe.config
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\obj\x86\Release\Vista.exe
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\obj\x86\Release\Vista.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\bin\Release\Vista.exe
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\bin\Release\Vista.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\bin\Release\AdvancedDataGridView.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\bin\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\bin\Release\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\bin\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\bin\Release\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\bin\Release\AdvancedDataGridView.xml
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\bin\Release\fr\AdvancedDataGridView.resources.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\bin\Release\ru\AdvancedDataGridView.resources.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\obj\x86\Release\Vista.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\obj\x86\Release\Vista.ActLab.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\obj\x86\Release\Vista.Etiquetas.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\obj\x86\Release\Vista.Exportar.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\obj\x86\Release\Vista.ImpreEtiquetChic.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\obj\x86\Release\Vista.Impresion.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\obj\x86\Release\Vista.Muestra.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\obj\x86\Release\Vista.Properties.Resources.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\obj\x86\Release\Vista.Remito.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\MOD. MUESTRAS 26-02\CODIGO NUEVO\Vista\obj\x86\Release\Vista.csproj.GenerateResource.Cache
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\bin\Release\Vista.exe.config
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\bin\Release\Vista.exe
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\bin\Release\Vista.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\bin\Release\AdvancedDataGridView.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\bin\Release\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\bin\Release\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\bin\Release\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\bin\Release\Negocio.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\bin\Release\AdvancedDataGridView.xml
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\bin\Release\fr\AdvancedDataGridView.resources.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\bin\Release\ru\AdvancedDataGridView.resources.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.csprojResolveAssemblyReference.cache
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.ActLab.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.Etiquetas.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.Exportar.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.ImpreEtiquetChic.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.Impresion.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.Muestra.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.Properties.Resources.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.Remito.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.csproj.GenerateResource.Cache
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.exe
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\bin\Release\Vista.exe.manifest
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\bin\Release\Vista.application
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.exe.manifest
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestras\Vista\obj\x86\Release\Vista.application
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\bin\Release\Vista.exe.config
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.exe
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\bin\Release\Vista.exe.manifest
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\bin\Release\Vista.application
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\bin\Release\Vista.exe
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\bin\Release\Vista.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\bin\Release\AdvancedDataGridView.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\bin\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\bin\Release\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\bin\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\bin\Release\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\bin\Release\AdvancedDataGridView.xml
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\bin\Release\fr\AdvancedDataGridView.resources.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\bin\Release\ru\AdvancedDataGridView.resources.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.ActLab.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.Etiquetas.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.Exportar.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.ImpreRemito.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.ImpreEtiquetChic.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.Impresion.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.Muestra.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.Properties.Resources.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.Remito.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.csproj.GenerateResource.Cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.exe.manifest
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\Muestras\Vista\obj\x86\Release\Vista.application
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\bin\Release\Vista.exe.config
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.exe
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\bin\Release\Vista.exe.manifest
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\bin\Release\Vista.application
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\bin\Release\Vista.exe
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\bin\Release\Vista.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\bin\Release\AdvancedDataGridView.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\bin\Release\ClassConexion.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\bin\Release\Negocio.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\bin\Release\ClassConexion.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\bin\Release\Negocio.pdb
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\bin\Release\AdvancedDataGridView.xml
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\bin\Release\fr\AdvancedDataGridView.resources.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\bin\Release\ru\AdvancedDataGridView.resources.dll
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.csprojResolveAssemblyReference.cache
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.ActLab.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.Etiquetas.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.Exportar.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.ImpreRemito.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.ImpreEtiquetChic.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.Impresion.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.Muestra.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.Properties.Resources.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.Remito.resources
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.csproj.GenerateResource.Cache
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.exe.manifest
+C:\Users\Fede\Desktop\MUESTRAS\Versiones\Muestra final\Vista\obj\x86\Release\Vista.application
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\bin\Release\Vista.exe.config
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.exe
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\bin\Release\Vista.exe.manifest
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\bin\Release\Vista.application
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\bin\Release\Vista.exe
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\bin\Release\Vista.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\bin\Release\AdvancedDataGridView.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\bin\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\bin\Release\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\bin\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\bin\Release\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\bin\Release\AdvancedDataGridView.xml
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\bin\Release\fr\AdvancedDataGridView.resources.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\bin\Release\ru\AdvancedDataGridView.resources.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.ActLab.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.Etiquetas.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.Exportar.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.ImpreRemito.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.ImpreEtiquetChic.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.Impresion.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.Muestra.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.Properties.Resources.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.Remito.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.csproj.GenerateResource.Cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.exe.manifest
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Codigo Fuente\Muestra Final\Vista\obj\x86\Release\Vista.application
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Vista.exe.config
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.exe
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Vista.exe.manifest
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Vista.application
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Vista.exe
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Vista.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\AdvancedDataGridView.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\AdvancedDataGridView.xml
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\fr\AdvancedDataGridView.resources.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\ru\AdvancedDataGridView.resources.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.ActLab.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.Etiquetas.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.Exportar.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.ImpreRemito.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.ImpreEtiquetChic.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.Impresion.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.Muestra.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.Properties.Resources.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.Remito.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.csproj.GenerateResource.Cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.exe.manifest
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.application
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Vista.exe.config
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.exe
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Vista.exe.manifest
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Vista.application
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Vista.exe
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Vista.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\AdvancedDataGridView.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\ClassConexion.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Negocio.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\ClassConexion.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\Negocio.pdb
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\AdvancedDataGridView.xml
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\fr\AdvancedDataGridView.resources.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\bin\Release\ru\AdvancedDataGridView.resources.dll
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.csprojResolveAssemblyReference.cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.ActLab.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.Etiquetas.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.Exportar.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.ImpreRemito.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.ImpreEtiquetChic.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.Impresion.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.Muestra.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.Properties.Resources.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.Remito.resources
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.csproj.GenerateResource.Cache
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.exe.manifest
+C:\Users\Usuario-04\Desktop\SURFACTAN\MOD. MUESTRA\FINAL\Mod Muestra Mod 30-03_V2\Muestra Final_Mod - 30-03-17\Muestra Final\Vista\obj\x86\Release\Vista.application
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\bin\Release\Vista.exe.config
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.exe
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.pdb
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\bin\Release\Vista.exe.manifest
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\bin\Release\Vista.application
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\bin\Release\Vista.exe
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\bin\Release\Vista.pdb
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\bin\Release\AdvancedDataGridView.dll
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\bin\Release\ClassConexion.dll
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\bin\Release\Negocio.dll
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\bin\Release\ClassConexion.pdb
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\bin\Release\Negocio.pdb
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\bin\Release\AdvancedDataGridView.xml
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\bin\Release\fr\AdvancedDataGridView.resources.dll
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\bin\Release\ru\AdvancedDataGridView.resources.dll
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.csprojResolveAssemblyReference.cache
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.ActLab.resources
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.Etiquetas.resources
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.Exportar.resources
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.ImpreRemito.resources
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.ImpreEtiquetChic.resources
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.Impresion.resources
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.Muestra.resources
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.Properties.Resources.resources
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.Remito.resources
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.csproj.GenerateResource.Cache
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.exe.manifest
+C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Vista\obj\x86\Release\Vista.application
