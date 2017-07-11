@@ -74,6 +74,7 @@ namespace Vista
                             SGA[6].ToString(), SGA[7].ToString(), SGA[8].ToString(),
                             SGA[9].ToString(), SGA[10].ToString(), SGA[11].ToString()
                         );
+
                     }else {
 
                         Dss[HojaActual].Tables[NumEtiquetaActual].Rows.Add(
