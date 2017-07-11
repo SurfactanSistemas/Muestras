@@ -19,7 +19,7 @@ namespace Vista
         int[] CantidadesDeEtiquetas;
         string tipo;
         int posicion;
-        const Boolean _EnProduccion = true; // Dejar en TRUE cuando se está en producción
+        const Boolean _EnProduccion = false; // Dejar en TRUE cuando se está en producción
                                             // Cambiar a FALSE cuando se trabaje en desarrollo.
 
         public ImpreEtiquetChic(DataTable ds, int[] CantidadesDeEtiquetas, string Tipo, int Posicion = 0)
@@ -165,7 +165,7 @@ namespace Vista
                         {
                             if (Int32.Parse(dr["Pictograma" + pictograma].ToString()) != 0)
                             {
-                                datos[renglon] = _ObtenerRutaImagenSGA(dr["Pictograma" + pictograma].ToString());
+                                datos[renglon] = _ObtenerRutaImagenSGA(pictograma.ToString());
                                 renglon++;
                             }
 
