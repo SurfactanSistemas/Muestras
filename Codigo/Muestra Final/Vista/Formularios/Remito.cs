@@ -82,21 +82,11 @@ namespace Vista
                 TBNumRemito.Text = datos_separados[0];
                 reimprimir = true;
             }
-            TBFecha.Text = DateTime.Now.ToShortDateString();
+            TBFecha.Text = DateTime.Now.ToString("dd/MM/yyyy"); //DateTime.Now.ToShortDateString();
 
             
         }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
+        
         private void BTCancelar_Click(object sender, EventArgs e)
         {
             Close();
@@ -104,6 +94,8 @@ namespace Vista
 
         private void BTAceptar_Click(object sender, EventArgs e)
         {
+            string _Clave, _Codigo, _Renglon, _Fecha, _CLiente, _Articulo, _Terminado, _Cantidad, _Fechaord, _Movi, _Tipo, _Tipomov, _Observaciones, _WDate, _Marca, _Lote;
+
             try
             {
                 if (TBNumRemito.Text == "") throw new Exception("Se debe ingresar el numero de remito");
@@ -118,8 +110,13 @@ namespace Vista
                     for (int i = 0; i < DGV_Remito.Rows.Count; i++)
                     {
                         string codigo = DGV_Remito.Rows[i].Cells[5].Value.ToString();
-                        int Cantidad = int.Parse(DGV_Remito.Rows[i].Cells[1].Value.ToString());
+                        string aux = DGV_Remito.Rows[i].Cells[1].Value.ToString();
+                        
+                        aux = aux.Trim();
 
+                        aux = aux.StartsWith(".") ? "0" + aux : aux;// Hay casos en lo que se cargo como por ejemplo ".1" en vez de "0.1"
+
+                        double Cantidad = Convert.ToDouble(aux.Replace(".", ","));
 
                         if (codigo.StartsWith("PT") || codigo.StartsWith("DY") || codigo.StartsWith("YQ") || codigo.StartsWith("YF"))
                         {
@@ -130,48 +127,56 @@ namespace Vista
 
                         Cs.BuscarTipoPedido(DGV_Remito.Rows[i]);
 
+                        // buscar ultimo numero de movvlab
+                        MovLabNumero = Cs.TraerMovlabMax();
+
+                        //la siguiente linea no hace falta porque ya suma uno en la consulta SQL
+                        //int NumMov = int.Parse(MovLabNumero) + 1;
+                        //string MovLab = NumMov.ToString();
+
+                        //Reviso que cantidad de caracteres tiene el codigo devuelto
+                        int CantCar = MovLabNumero.Length;
+
+                        //Con la variable i del modulo saco el orden del movimiento, como empieza por 0 
+                        //le sumo 1
+                        string orden = (i + 1).ToString();
+
+                        //Consulto si el orden es de un solo digito, si es asi le pongo un 0 adelante
+                        if (orden.Length == 1) orden = "0" + orden;
+
+                        //Sumo el string del movimiento mas el orden
+                        string Clave = MovLabNumero + orden;
+
+                        //realizo el for para saber cuantos ceros van a anteceder a la clave obtenida
+                        for (int u = 0; u < (8 - Clave.Length); u++)
+                        {
+                            Clave = "0" + Clave;
+                        }
+
+                        _Clave = Clave;
+                        _Codigo = MovLabNumero;
+                        _Fecha = TBFecha.Text.Trim();
+                        
+                        _Cantidad = Cantidad.ToString(); //DGV_Remito.Rows[i].Cells[3].Value.ToString();
+                        _Fechaord = String.Join("", TBFecha.Text.Split("/".ToCharArray()).Reverse());
+                        _WDate = DateTime.Now.ToString("MM-dd-yyyy");
+                        _Lote = DGV_Remito.Rows[i].Cells[3].Value.ToString();
+                        
+
                         //SE MODIFICA A CONTINUACION PORQUE AL SER ML NO SE ACTUALIZA NADA
                         if (codigo.StartsWith("DY")) //|| codigo.StartsWith("ML"))
                         {
                             Cs.ActualizarArticulo(DGV_Remito.Rows[i]);
 
-                            // buscar ultimo numero de movvlab
-                            MovLabNumero = Cs.TraerMovlabMax();
-
-                            //la siguiente linea no hace falta porque ya suma uno en la consulta SQL
-                            //int NumMov = int.Parse(MovLabNumero) + 1;
-                            //string MovLab = NumMov.ToString();
-
-                            //Reviso que cantidad de caracteres tiene el codigo devuelto
-                            int CantCar = MovLabNumero.Length;
-
-                            //Con la variable i del modulo saco el orden del movimiento, como empieza por 0 
-                            //le sumo 1
-                            string orden = (i +1).ToString();
-
-                            //Consulto si el orden es de un solo digito, si es asi le pongo un 0 adelante
-                            if(orden.Length == 1) orden = "0" + orden;
-
-                            //Sumo el string del movimiento mas el orden
-                            string Clave = MovLabNumero + orden;
-
-                            //realizo el for para saber cuantos ceros van a anteceder a la clave obtenida
-                            for (int u = 0; u < (8 - Clave.Length); u++)
-                            {
-                                Clave = "0" + Clave;
-                            }
-
+                            _Tipo = "M";
+                            _Terminado = "  -     -   ";
+                            _Articulo = codigo;
+                            
                             //No se en que parte se tiene la fecha
                             //Fila["OrdenFecha"] = Fila[2].ToString().Substring(6,4) + Fila[2].ToString().Substring(2, 4) + Fila[2].ToString().Substring(0, 2);
 
                             // Grabar registro
-                            //Cs.AltaMovlab(DGV_Remito.Rows[i], MovLabNumero ,i);
-
-
-
-
-
-
+                            Cs.AltaMovlab(_Clave, _Codigo, _Articulo, _Terminado, _Tipo ,orden, _Fecha, _Fechaord, _Lote, TBCliente.Text, Cantidad);
 
                             if (Cs.BuscarEnLaudo(DGV_Remito.Rows[i])) Cs.RestarSaldoALaudo(DGV_Remito.Rows[i]);
                             else if (Cs.BuscarEnGuia_Art(DGV_Remito.Rows[i])) Cs.RestarSaldoAGuia_Art(DGV_Remito.Rows[i]);
@@ -183,6 +188,13 @@ namespace Vista
                         {
 
                             Cs.ActualizarTerminado(DGV_Remito.Rows[i]);
+
+                            _Tipo = "T";
+                            _Terminado = codigo;
+                            _Articulo = "  -     -   ";
+
+                            //// Grabar registro
+                            Cs.AltaMovlab(_Clave, _Codigo, _Articulo, _Terminado, _Tipo, orden, _Fecha, _Fechaord, _Lote, TBCliente.Text, Cantidad);
                     
                             if (Cs.BuscarEnHoja(DGV_Remito.Rows[i])) Cs.RestarSaldoAHoja(DGV_Remito.Rows[i]);
                             else if (Cs.BuscarEnGuia_Ter(DGV_Remito.Rows[i])) Cs.RestarSaldoAGuia_Ter(DGV_Remito.Rows[i]);
@@ -200,48 +212,6 @@ namespace Vista
             {
                 MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            //int varVariable;
-            //string varCadena;
-            //int varLargo;
-
-
-
-            // buscar ultimo numero de movvlab
-            MovLabNumero = Cs.TraerMovlabMax();
-            //// Grabar registro
-
-            //varVariable = 1;
-            //varCadena = "";
-            //varLargo = 10;
-
-
-            ////While (varVariable <= Len(MovLabNumero)) //And Variable > 0
-            //While (varVariable <= varlargo)
-            //{
-            ////    If Mid$(campoii, Variable, 1) <> Space(1) Then
-            //        Cadena = Cadena + "2";
-            ////    End If
-            ////    Variable = Variable + 1
-            //    }
-            //return 0;
-
-            ////txtCampo = Right$("000000000000000000000000000000000000000000000000000000000" + Cadena$, largoii)
-
-
-            ////txtTrabajo = ceros(MovLabNumero, 6);
-
-            
-          //string dir = "C:\\"; 
-          //string[] archivos = Directory.GetFiles("C:\\"); 
-
-          //if (archivos.Length == 0) 
-          //     Console.WriteLine ("No se encontro archivos en" + dir); 
-
         }
     }
 }

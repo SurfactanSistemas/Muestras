@@ -205,7 +205,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Pqhf+gMbkJqXLWYjZNu8zisp8wQ=</dsig:DigestValue>
+        <dsig:DigestValue>6kwVW2c7gn5CPEqg3xl2NySArqA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -217,7 +217,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>wJJe2FsYdocBMoElRLvKTsqkIP0=</dsig:DigestValue>
+        <dsig:DigestValue>8M/TRrFtqbU9m6S7wyZnU+G6svA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -229,7 +229,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>zr8Y/eqWWds3tvpMiQHqgcMBZTQ=</dsig:DigestValue>
+        <dsig:DigestValue>Tr5yKw6nBH8ky3hbGyqICoDpCcU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -269,13 +269,13 @@
       <dsig:DigestValue>QboyKWRXcgV2MA9jrUAu/fAFfe4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Vista.exe.config" size="1743">
+  <file name="Vista.exe.config" size="2171">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>bT3/PBLhUtRcL5/w8NoIf5J6yxE=</dsig:DigestValue>
+      <dsig:DigestValue>avDxgkVEKf/VtXI+BQg/L2Qhu+E=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

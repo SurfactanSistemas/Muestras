@@ -241,10 +241,11 @@ namespace ClassConexion
         }
 
 
-        public void AltaMovlab(System.Windows.Forms.DataGridViewRow DGVRow, string txtClave, string txtCodigo, string txtRenglon, string txtFecha, string txtLote)
+        public void AltaMovlab(string txtClave, string txtCodigo, string txtArticulo, string txtTerminado, string txtTipo, string txtRenglon, string txtFecha, string txtFechaOrd, string txtLote, string txtCliente, double txtCantidad)
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.Text;
+
 
             AbrirConexion(CS);
             cmd.Connection = conexion;
@@ -266,21 +267,21 @@ namespace ClassConexion
                             + "Marca, "
                             + "Lote "
                             + ") VALUES ("
-                            + "'" + txtCodigo + "',"
-                            + "'" + txtCodigo + "',"
-                            + "'" + txtRenglon + "',"
+                            + "'" + txtClave + "',"
+                            + "'" + Convert.ToInt32(txtCodigo) + "',"
+                            + "'" + Convert.ToInt32(txtRenglon) + "',"
                             + "'" + txtFecha + "',"
-                            + "'" + "M" + "',"
-                            + "'" + DGVRow.Cells[6].Value.ToString() + "',"
-                            + "'" + "  -     -   " + "',"
-                            + "'" + DGVRow.Cells[1].Value.ToString() + "',"
-                            + "'" + "000" + "',"
+                            + "'" + txtTipo.Trim() + "',"
+                            + "'" + txtArticulo.Trim() + "',"
+                            + "'" + txtTerminado.Trim() + "',"
+                            + "'" + txtCantidad.ToString().Replace(",", ".") + "',"
+                            + "'" + txtFechaOrd + "',"
                             + "'" + "S" + "',"
                             + "'" + "1" + "',"
-                            + "'" + "Muestras a Clientes" + "',"
-                            + "'" + "" + "',"
-                            + "'" + "" + "',"
-                            + "'" + txtLote + "'"
+                            + "'" + "Muestras a " + txtCliente.Trim() + "',"
+                            + "'" + DateTime.Now.ToString("MM-dd-yyyy") + "',"
+                            + "'',"
+                            + "'" + Convert.ToInt32(txtLote.Trim()) + "'"
                             + ")";
 
             cmd.ExecuteNonQuery();
@@ -363,7 +364,7 @@ namespace ClassConexion
         {
             string cadena = "update Guia set Saldo = (Saldo - " + DGVRow.Cells[1].Value.ToString() + ")"
             + "  where Lote = " + DGVRow.Cells[3].Value.ToString()
-                + " and Articulo = '" + DGVRow.Cells[6].Value.ToString() + "' where Saldo <> 0";
+                + " and Articulo = '" + DGVRow.Cells[6].Value.ToString() + "' and Saldo <> 0";
 
             HacerUpdate(cadena);
         }
@@ -372,7 +373,7 @@ namespace ClassConexion
         {
             string cadena = "update Guia set Saldo = (Saldo - " + DGVRow.Cells[1].Value.ToString() + ")"
             + "  where Lote = " + DGVRow.Cells[3].Value.ToString()
-                + " and Terminado = '" + DGVRow.Cells[6].Value.ToString() + "' where Saldo <> 0";
+                + " and Terminado = '" + DGVRow.Cells[6].Value.ToString() + "' and Saldo <> 0";
 
             HacerUpdate(cadena);
         }

@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.DGV_Remito = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Codigo_Original = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -89,13 +88,12 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(1, 41);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(467, 305);
+            this.panel2.Size = new System.Drawing.Size(467, 324);
             this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
-            this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.DGV_Remito);
             this.panel3.Controls.Add(this.BTCancelar);
             this.panel3.Controls.Add(this.BTAceptar);
@@ -107,27 +105,10 @@
             this.panel3.Controls.Add(this.TBNumRemito);
             this.panel3.Controls.Add(this.LBNumRemito);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(6, 5);
+            this.panel3.Location = new System.Drawing.Point(6, 7);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(455, 293);
+            this.panel3.Size = new System.Drawing.Size(455, 308);
             this.panel3.TabIndex = 0;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::Vista.Properties.Resources.Aceptar_N1;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(131, 243);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(36, 37);
-            this.button1.TabIndex = 11;
-            this.toolTip_Aceptar.SetToolTip(this.button1, "Aceptar");
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // DGV_Remito
             // 
@@ -233,9 +214,9 @@
             this.BTCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BTCancelar.FlatAppearance.BorderSize = 0;
             this.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTCancelar.Location = new System.Drawing.Point(351, 243);
+            this.BTCancelar.Location = new System.Drawing.Point(275, 243);
             this.BTCancelar.Name = "BTCancelar";
-            this.BTCancelar.Size = new System.Drawing.Size(34, 37);
+            this.BTCancelar.Size = new System.Drawing.Size(74, 50);
             this.BTCancelar.TabIndex = 9;
             this.toolTipCancelar.SetToolTip(this.BTCancelar, "Cancelar");
             this.BTCancelar.UseVisualStyleBackColor = true;
@@ -247,10 +228,10 @@
             this.BTAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BTAceptar.FlatAppearance.BorderSize = 0;
             this.BTAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTAceptar.Location = new System.Drawing.Point(393, 243);
+            this.BTAceptar.Location = new System.Drawing.Point(363, 243);
             this.BTAceptar.Margin = new System.Windows.Forms.Padding(0);
             this.BTAceptar.Name = "BTAceptar";
-            this.BTAceptar.Size = new System.Drawing.Size(36, 37);
+            this.BTAceptar.Size = new System.Drawing.Size(55, 50);
             this.BTAceptar.TabIndex = 8;
             this.toolTip_Aceptar.SetToolTip(this.BTAceptar, "Aceptar");
             this.BTAceptar.UseVisualStyleBackColor = true;
@@ -309,7 +290,6 @@
             this.TBNumRemito.Name = "TBNumRemito";
             this.TBNumRemito.Size = new System.Drawing.Size(98, 27);
             this.TBNumRemito.TabIndex = 2;
-            this.TBNumRemito.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // LBNumRemito
             // 
@@ -333,7 +313,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 344);
+            this.ClientSize = new System.Drawing.Size(468, 366);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
@@ -378,6 +358,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Pedido;
         private System.Windows.Forms.DataGridViewTextBoxColumn Peligroso;
         private System.Windows.Forms.DataGridViewTextBoxColumn PeligrosoII;
-        private System.Windows.Forms.Button button1;
     }
 }

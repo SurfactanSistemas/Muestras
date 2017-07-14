@@ -471,24 +471,24 @@ namespace Vista
                         }
                 }
 
-                if (numero_remito != "")
-                {
-                    dt = CS.BuscarListaRemito(numero_remito);
+                //if (numero_remito != "")
+                //{
+                //    dt = CS.BuscarListaRemito(numero_remito);
 
-                    DataRow datacliente1 = CS.BuscarCliente(cliente);
+                //    DataRow datacliente1 = CS.BuscarCliente(cliente);
 
-                    string CodClient1 = datacliente1[0].ToString();
-                    string DirClient1 = datacliente1[1].ToString();
-                    string LocalidadClient1 = datacliente1[2].ToString();
-                    string Cuit1 = datacliente1[3].ToString();
-                    string DirEntrega1 = datacliente1[4].ToString();
-                    ImpreRemito impre_1 = new ImpreRemito(dt, DirEntrega1, CodClient1, DirClient1, LocalidadClient1, Cuit1, cliente);
-                    impre_1.ShowDialog();
-                    goto finalizado;
-                    //goto Error;
-                    
-                                    
-                }
+                //    string CodClient1 = datacliente1[0].ToString();
+                //    string DirClient1 = datacliente1[1].ToString();
+                //    string LocalidadClient1 = datacliente1[2].ToString();
+                //    string Cuit1 = datacliente1[3].ToString();
+                //    string DirEntrega1 = datacliente1[4].ToString();
+                //    ImpreRemito impre_1 = new ImpreRemito(dt, DirEntrega1, CodClient1, DirClient1, LocalidadClient1, Cuit1, cliente);
+                //    impre_1.ShowDialog();
+                //    goto finalizado;
+                //    //goto Error;
+
+
+                //}
 
                 //Se valido todo ahora se va a modificar la/s base/s                
                 int[] Lotes = new int[DGV_Muestra.SelectedRows.Count];
@@ -512,13 +512,13 @@ namespace Vista
 
                     //VERIFICO QUE NO SEA ML PARA QUE SE BUSQUE EL LOTE
 
-                    if (!DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().StartsWith("ML"))
-                    {
-                        int Lote1 = int.Parse(CS.BuscarLote1(cod, pedido));
-                        if (Lote1 == 0) throw new Exception("La muestra " + DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString() + " no posee lote");
-                        //errorLote.Add(DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString());
-                        Lotes[i] = Lote1;
-                    }
+                    //if (!DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().StartsWith("ML"))
+                    //{
+                    //    int Lote1 = int.Parse(CS.BuscarLote1(cod, pedido));
+                    //    if (Lote1 == 0) throw new Exception("La muestra " + DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString() + " no posee lote");
+                    //    //errorLote.Add(DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString());
+                    //    Lotes[i] = Lote1;
+                    //}
 
                     DataRow datarow = CS.ListarPeligroso(Id);
 
