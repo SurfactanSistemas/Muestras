@@ -101,6 +101,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EtiquetaGrandeDetalles.cs">
+      <DependentUpon>EtiquetaGrandeDetalles.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EtiquetaGrandeDetalles.Designer.cs">
+      <DependentUpon>EtiquetaGrandeDetalles.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="EtiquetaGrandSGA.cs">
+      <DependentUpon>EtiquetaGrandSGA.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="DSRemito1.cs">
       <DependentUpon>DSRemito1.xsd</DependentUpon>
       <SubType>Component</SubType>
@@ -220,6 +235,10 @@
       <DependentUpon>ReportImpre.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="EtiquetaGrandSGA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EtiquetaGrandSGA.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="EtiquetaGrand.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>EtiquetaGrand.cs</LastGenOutput>
@@ -284,6 +303,17 @@
     </EmbeddedResource>
     <None Include="App.config">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="EtiquetaGrandeDetalles.xsc">
+      <DependentUpon>EtiquetaGrandeDetalles.xsd</DependentUpon>
+    </None>
+    <None Include="EtiquetaGrandeDetalles.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtiquetaGrandeDetalles.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EtiquetaGrandeDetalles.xss">
+      <DependentUpon>EtiquetaGrandeDetalles.xsd</DependentUpon>
     </None>
     <None Include="DSEtiq1.xsc">
       <DependentUpon>DSEtiq1.xsd</DependentUpon>

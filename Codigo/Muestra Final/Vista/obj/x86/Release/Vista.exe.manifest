@@ -198,14 +198,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassConexion.dll" size="16384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassConexion.dll" size="16896">
       <assemblyIdentity name="ClassConexion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>tAXuEfYWtwxZ4XuL/c/OKp3UlT8=</dsig:DigestValue>
+        <dsig:DigestValue>BulfIkXIOYwZcI+vk5dy5heOq6A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -217,7 +217,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>E7ueY0WATIrdq5uJmMiH41TIUlY=</dsig:DigestValue>
+        <dsig:DigestValue>4AoxIABWq5Nz6fzQD/h2NFKES60=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -229,7 +229,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Oy9pbLpCs2Cjs2UWQ0rwD4Qbq60=</dsig:DigestValue>
+        <dsig:DigestValue>oE2yQztN3TjLZrWlVszf4FLgAT8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -269,13 +269,13 @@
       <dsig:DigestValue>QboyKWRXcgV2MA9jrUAu/fAFfe4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Vista.exe.config" size="2156">
+  <file name="Vista.exe.config" size="2074">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>nLoKdFKxO+m9UZvS72Yr16i973A=</dsig:DigestValue>
+      <dsig:DigestValue>6+58R9p2ro8vgpSIZEPCQTKOkvg=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

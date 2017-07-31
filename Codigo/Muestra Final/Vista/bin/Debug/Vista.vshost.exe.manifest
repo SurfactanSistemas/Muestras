@@ -205,7 +205,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6kwVW2c7gn5CPEqg3xl2NySArqA=</dsig:DigestValue>
+        <dsig:DigestValue>f05QHDIzpQqtBwZMqllNRjw3pJs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -217,19 +217,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>8M/TRrFtqbU9m6S7wyZnU+G6svA=</dsig:DigestValue>
+        <dsig:DigestValue>QxRwFT2xOqjVT+O6QWOV7cpMvxQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vista.exe" size="1913856">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vista.exe" size="2433536">
       <assemblyIdentity name="Vista" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Tr5yKw6nBH8ky3hbGyqICoDpCcU=</dsig:DigestValue>
+        <dsig:DigestValue>mbrc+6EH9vN8nKxMcOkNOCOM5DA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -269,13 +269,13 @@
       <dsig:DigestValue>QboyKWRXcgV2MA9jrUAu/fAFfe4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Vista.exe.config" size="2171">
+  <file name="Vista.exe.config" size="1646">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>avDxgkVEKf/VtXI+BQg/L2Qhu+E=</dsig:DigestValue>
+      <dsig:DigestValue>zFKnwqtChdHSRfMEgZm8k/lPs+k=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

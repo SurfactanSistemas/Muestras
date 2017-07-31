@@ -2,6 +2,10 @@
     
     
     public partial class DSEtiq1 {
+        partial class Etiquet5DataTable
+        {
+        }
+    
         partial class Etiquet14DataTable
         {
         }

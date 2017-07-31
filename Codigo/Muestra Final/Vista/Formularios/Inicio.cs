@@ -344,16 +344,26 @@ namespace Vista
 
         private void BtEtiquetas_Click(object sender, EventArgs e)
         {
+
             try
             {
-                //Valido que se hayan seleccionado registros
+                // En caso de que no se hayan seleccionado las filas completas y solo una celda o fila de manera parcial.
+                if (DGV_Muestra.SelectedCells.Count > 0)
+                {
+                    foreach (DataGridViewCell celda in DGV_Muestra.SelectedCells)
+                    {
+                        DGV_Muestra.Rows[celda.RowIndex].Selected = true;
+                    }
+                }
+
+               //Valido que se hayan seleccionado registros
                 if (DGV_Muestra.SelectedRows.Count == 0) throw new Exception("No hay filas seleccionadas");
 
                 //creo el datatable
                 DataTable dt = new DataTable();
 
                 AgregarColumnas(dt);
-
+                               
                 for (int i = 0; i < DGV_Muestra.SelectedRows.Count; i++)
                 {
                     DataRow newRow = dt.NewRow();
@@ -431,6 +441,15 @@ namespace Vista
 
             try
             {
+                // En caso de que no se hayan seleccionado las filas completas y solo una celda o fila de manera parcial.
+                if (DGV_Muestra.SelectedCells.Count > 0)
+                {
+                    foreach (DataGridViewCell celda in DGV_Muestra.SelectedCells)
+                    {
+                        DGV_Muestra.Rows[celda.RowIndex].Selected = true;
+                    }
+                }
+
                 DataTable dt = new DataTable();
                 List<string> sinEnsayo = new List<string>();
                 List<string> errorLote = new List<string>();

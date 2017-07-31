@@ -59,30 +59,35 @@ namespace Vista
                     DataRow dr = dt.Rows[row];
 
 
-                    if (tipo == "Frasco")
-                    {
+                    //if (tipo == "Frasco")
+                    //{
 
                         // Extraemos los datos SGA del Producto en caso de que tenga alguno cargado.
                         string[] SGA = _ObtenerDatosSGA(dr[2].ToString());
 
                         Dss[HojaActual].Tables[NumEtiquetaActual].Rows.Add(
-                            dr[4].ToString(), dr[1].ToString(), dr[9].ToString(),
-                            dr[6].ToString(), dr[7].ToString(), dr[0].ToString(),
-                            dr[10].ToString(), dr[8].ToString(), dr[5].ToString(),
-                            SGA[0].ToString(), SGA[1].ToString(), SGA[2].ToString(),
-                            SGA[3].ToString(), SGA[4].ToString(), SGA[5].ToString(),
-                            SGA[6].ToString(), SGA[7].ToString(), SGA[8].ToString(),
-                            SGA[9].ToString(), SGA[10].ToString(), SGA[11].ToString()
+                            dr[4], dr[1], dr[9],
+                            dr[6], dr[7], dr[0],
+                            dr[10], dr[8], dr[5],
+                            SGA[0], SGA[1], SGA[2],
+                            SGA[3], SGA[4], SGA[5],
+                            SGA[6], SGA[7], SGA[8],
+                            SGA[9], SGA[10], SGA[11], SGA[14],
+                            SGA[15], SGA[16], SGA[17],
+                            SGA[18], SGA[19], SGA[20],
+                            SGA[21], SGA[22], SGA[23],
+                            SGA[24], SGA[25], SGA[26],
+                            SGA[27], SGA[28], SGA[29], SGA[30], SGA[12]
                         );
 
-                    }else {
+                    //}else {
 
-                        Dss[HojaActual].Tables[NumEtiquetaActual].Rows.Add(
-                            dr[4].ToString(), dr[1].ToString(), dr[9].ToString(),
-                            dr[6].ToString(), dr[7].ToString(), dr[0].ToString(),
-                            dr[10].ToString(), dr[8].ToString(), dr[5].ToString()
-                        );
-                    }
+                    //    Dss[HojaActual].Tables[NumEtiquetaActual].Rows.Add(
+                    //        dr[4].ToString(), dr[1].ToString(), dr[9].ToString(),
+                    //        dr[6].ToString(), dr[7].ToString(), dr[0].ToString(),
+                    //        dr[10].ToString(), dr[8].ToString(), dr[5].ToString()
+                    //    );
+                    //}
 
                     NumEtiquetaActual++;
 
@@ -109,11 +114,17 @@ namespace Vista
 
                 ECImp.SetDataSource(_ds);
 
-                //CRVEtiquetas.ReportSource = ECImp;
+                if (_EnProduccion)
+                {
+                    ECImp.PrintToPrinter(1, true, 0, 0);
 
-                ECImp.PrintToPrinter(1, true, 0, 0);
+                    Close();
+                }
+                else
+                {
+                    CRVEtiquetas.ReportSource = ECImp;
+                }
 
-                Close();
             }
         }
 
@@ -129,7 +140,7 @@ namespace Vista
 
         private string[] _ObtenerDatosSGA(string _Codigo)
         {
-            string[] datos = new string[12];
+            string[] datos = new string[31];
 
             try
             {
@@ -150,18 +161,42 @@ namespace Vista
                         int renglon = 8;
                         int pictograma = 1;
 
-                        datos[0] = dr["Frase1"].ToString();
-                        datos[1] = dr["Frase2"].ToString();
-                        datos[2] = dr["Frase3"].ToString();
-                        datos[3] = dr["Frase4"].ToString();
-                        datos[4] = dr["Frase5"].ToString();
-                        datos[5] = dr["Frase6"].ToString();
-                        datos[6] = dr["Frase7"].ToString();
+                        switch (this.tipo)
+                        {
+                            case "Frasco":
+                                datos[0] = dr["Frase1"].ToString();
+                                datos[1] = dr["Frase2"].ToString();
+                                datos[2] = dr["Frase3"].ToString();
+                                datos[3] = dr["Frase4"].ToString();
+                                datos[4] = dr["Frase5"].ToString();
+                                datos[5] = dr["Frase6"].ToString();
+                                datos[6] = dr["Frase7"].ToString();
+                                break;
+                            default:
+                                // Arranca del 14 porque se agregaron cantidades de frases despues.
+                                datos[14] = "datos en datos[14]"; // dr["Frase9"].ToString();
+                                datos[15] = "datos en datos[15]"; // dr["Frase10"].ToString();
+                                datos[16] = "datos en datos[16]"; // dr["Frase11"].ToString();
+                                datos[17] = "datos en datos[17]"; // dr["Frase12"].ToString();
+                                datos[18] = "datos en datos[18]"; // dr["Frase13"].ToString();
+                                datos[19] = "datos en datos[19]"; // dr["Frase14"].ToString();
+                                datos[20] = "datos en datos[20]"; // dr["Frase15"].ToString();
+                                datos[21] = "datos en datos[21]"; // dr["Frase16"].ToString();
+                                datos[22] = "datos en datos[22]"; // dr["Frase17"].ToString();
+                                datos[23] = "datos en datos[23]"; // dr["Frase18"].ToString();
+                                datos[24] = "datos en datos[24]"; // dr["Frase19"].ToString();
+                                datos[25] = "datos en datos[25]"; // dr["Frase20"].ToString();
+                                datos[26] = "datos en datos[26]"; // dr["Frase21"].ToString();
+                                datos[27] = "datos en datos[27]"; // dr["Frase22"].ToString();
+                                datos[28] = "datos en datos[28]"; // dr["Frase23"].ToString();
+                                datos[29] = "datos en datos[29]"; // dr["Frase24"].ToString();
+                                datos[30] = "datos en datos[30]"; // dr["Frase25"].ToString();
+                                break;
+                        }
+                        
+                        datos[7] = dr["Frase8"].ToString(); // Guardamos la "palabra"
 
-                        datos[7] = dr["Frase8"].ToString();
-
-
-                        while (pictograma <= 9 && renglon <= 12)
+                        while (pictograma <= 9 && renglon <= 13)
                         {
                             if (Int32.Parse(dr["Pictograma" + pictograma].ToString()) != 0)
                             {
@@ -172,7 +207,7 @@ namespace Vista
                             pictograma++;
                         }
 
-                        while (renglon < 12)
+                        while (renglon < 13)
                         {
                             datos[renglon] = _ObtenerRutaImagenSGA("0"); // Llenamos los campos de pictogramas faltantes con el rombo tachado.
                             renglon++;
@@ -203,12 +238,34 @@ namespace Vista
 
         private string _ObtenerRutaImagenSGA(string numero) 
         {
-            if (numero == "0")
+            switch (this.tipo)
             {
-                return _EnProduccion ? Path.GetFullPath(@".\SGA\SGA0.JPG") : Path.GetFullPath(@"..\..\Resources\SGA0.JPG");
+                case "Frasco":
+
+                    if (numero == "0")
+                        {
+                            return _EnProduccion ? Path.GetFullPath(@".\SGA\SGA0.JPG") : Path.GetFullPath(@"..\..\Resources\SGA0.JPG");
+                        }
+                        // Envio la ruta dependiendo si se encuentra en produccion o no, debido a que mientras se desarrolla la raiz del ejecutable se resetea cada vez que se ejecuta.
+                        return _EnProduccion ? Path.GetFullPath(@".\SGA\SGA" + numero + ".png") : Path.GetFullPath(@"..\..\Resources\SGA" + numero + ".png");
+                    break;
+
+                case "Grande":
+
+                    if (numero == "0")
+                    {
+                        return _EnProduccion ? Path.GetFullPath(@".\SGA\SB_SGA0.JPG") : Path.GetFullPath(@"..\..\Resources\SB_SGA0.JPG");
+                    }
+                    // Envio la ruta dependiendo si se encuentra en produccion o no, debido a que mientras se desarrolla la raiz del ejecutable se resetea cada vez que se ejecuta.
+                    return _EnProduccion ? Path.GetFullPath(@".\SGA\SB_SGA" + numero + ".png") : Path.GetFullPath(@"..\..\Resources\SB_SGA" + numero + ".png");
+
+                    break;
+
+                default:
+                    return "";
+                    break;
             }
-            // Envio la ruta dependiendo si se encuentra en produccion o no, debido a que mientras se desarrolla la raiz del ejecutable se resetea cada vez que se ejecuta.
-            return _EnProduccion ? Path.GetFullPath(@".\SGA\SGA" + numero + ".png") : Path.GetFullPath(@"..\..\Resources\SGA" + numero + ".png");
+
         }
         
         private bool EsFinalDeHoja(int NumeroDeEtiquetaActual)
@@ -283,7 +340,7 @@ namespace Vista
 
                 case "Grande": // Etiqueta Autoadhesiva (14 x 12.5)
 
-                    return new EtiquetaGrand();
+                    return new EtiquetaGrandSGA();
 
                 case "Mediana": // Etiqueta Mediana
 
