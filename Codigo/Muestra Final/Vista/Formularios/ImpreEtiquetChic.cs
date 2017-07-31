@@ -174,23 +174,23 @@ namespace Vista
                                 break;
                             default:
                                 // Arranca del 14 porque se agregaron cantidades de frases despues.
-                                datos[14] = "datos en datos[14]"; // dr["Frase9"].ToString();
-                                datos[15] = "datos en datos[15]"; // dr["Frase10"].ToString();
-                                datos[16] = "datos en datos[16]"; // dr["Frase11"].ToString();
-                                datos[17] = "datos en datos[17]"; // dr["Frase12"].ToString();
-                                datos[18] = "datos en datos[18]"; // dr["Frase13"].ToString();
-                                datos[19] = "datos en datos[19]"; // dr["Frase14"].ToString();
-                                datos[20] = "datos en datos[20]"; // dr["Frase15"].ToString();
-                                datos[21] = "datos en datos[21]"; // dr["Frase16"].ToString();
-                                datos[22] = "datos en datos[22]"; // dr["Frase17"].ToString();
-                                datos[23] = "datos en datos[23]"; // dr["Frase18"].ToString();
-                                datos[24] = "datos en datos[24]"; // dr["Frase19"].ToString();
-                                datos[25] = "datos en datos[25]"; // dr["Frase20"].ToString();
-                                datos[26] = "datos en datos[26]"; // dr["Frase21"].ToString();
-                                datos[27] = "datos en datos[27]"; // dr["Frase22"].ToString();
-                                datos[28] = "datos en datos[28]"; // dr["Frase23"].ToString();
-                                datos[29] = "datos en datos[29]"; // dr["Frase24"].ToString();
-                                datos[30] = "datos en datos[30]"; // dr["Frase25"].ToString();
+                                datos[14] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase9"].ToString();
+                                datos[15] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase10"].ToString();
+                                datos[16] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase11"].ToString();
+                                datos[17] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase12"].ToString();
+                                datos[18] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase13"].ToString();
+                                datos[19] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase14"].ToString();
+                                datos[20] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase15"].ToString();
+                                datos[21] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase16"].ToString();
+                                datos[22] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase17"].ToString();
+                                datos[23] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase18"].ToString();
+                                datos[24] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase19"].ToString();
+                                datos[25] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase20"].ToString();
+                                datos[26] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase21"].ToString();
+                                datos[27] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase22"].ToString();
+                                datos[28] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase23"].ToString();
+                                datos[29] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase24"].ToString();
+                                datos[30] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae purus nec tellus viverra fusce."; // dr["Frase25"].ToString();
                                 break;
                         }
                         
