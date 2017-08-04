@@ -116,12 +116,29 @@ namespace Vista
 
         private string _DeterminarTabla(string codigo)
         {
-            return (codigo.Substring(0, 2) == "PT") ? "DatosEtiqueta" : "DatosEtiquetaMP";        
+            switch (codigo.Substring(0, 2))
+            {
+                case "PT": case "YQ": case "YF": case "YP":
+                    // Porque los datos para la etiquetas de frasco se encuentran en otra tabla.
+                    return (this.tipo == "Frasco") ? "DatosEtiqueta" : "DatosEtiquetaImpre";
+                    break;
+                default:
+                    return "DatosEtiquetaMP";
+                    break;
+            }
         }
 
         private string _DeterminarColumna(string codigo)
         {
-            return (codigo.Substring(0, 2) == "PT") ? "Terminado" : "Articulo";
+            switch (codigo.Substring(0, 2))
+            {
+                case "PT": case "YQ": case "YF": case "YP":
+                    return "Terminado";
+                    break;
+                default:
+                    return "Articulo";
+                    break;
+            }
         }
 
         private string[] _ObtenerDatosSGA(string _Codigo)
@@ -137,7 +154,7 @@ namespace Vista
                     string Tabla = _DeterminarTabla(_Codigo);
                     string Columna = _DeterminarColumna(_Codigo);
 
-                    SqlCommand cmd = new SqlCommand("Select * From " + Tabla + " WHERE Renglon = '1' AND " + Columna + " = '" + _Codigo + "'", cn);
+                    SqlCommand cmd = new SqlCommand("Select * From " + Tabla + " WHERE " + Columna + " = '" + _Codigo.Trim() + "'", cn);
                     SqlDataReader dr = cmd.ExecuteReader();
 
                     if (dr.HasRows)
@@ -147,9 +164,11 @@ namespace Vista
                         int renglon = 8;
                         int pictograma = 1;
 
-                        switch (this.tipo)
+                        int _tipo = (this.tipo == "Frasco" || Tabla == "DatosEtiquetaMP") ? 0 : 1;
+
+                        switch (_tipo)
                         {
-                            case "Frasco":
+                            case 0:
                                 datos[0] = dr["Frase1"].ToString();
                                 datos[1] = dr["Frase2"].ToString();
                                 datos[2] = dr["Frase3"].ToString();
@@ -177,8 +196,8 @@ namespace Vista
                                 datos[28] = dr["Frase23"].ToString(); // Aca va la frase de peligro cuando no es etiqueta Frasco.
                                 break;
                         }
-                        
-                        datos[7] = (this.tipo == "Frasco") ? dr["Frase8"].ToString() : datos[28]; // Guardamos la "palabra"
+
+                        datos[7] = (_tipo == 0) ? dr["Frase8"].ToString() : datos[28]; // Guardamos la "palabra"
 
                         while (pictograma <= 9 && renglon <= 13)
                         {

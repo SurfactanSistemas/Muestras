@@ -166,7 +166,7 @@
             this.CBTamañoEtiquetas.FormattingEnabled = true;
             this.CBTamañoEtiquetas.Items.AddRange(new object[] {
             "Etiqueta Chica (8.5 x 4)",
-            "Etiqueta Autoadhesiva (14 x 12.5)",
+            "Etiqueta Autoadhesiva ( ZT-001-100)",
             "Etiqueta Mediana ",
             "Etiqueta P/Frascos "});
             this.CBTamañoEtiquetas.Location = new System.Drawing.Point(89, 28);
