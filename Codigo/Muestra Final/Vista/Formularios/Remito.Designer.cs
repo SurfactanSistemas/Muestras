@@ -34,15 +34,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.DGV_Remito = new System.Windows.Forms.DataGridView();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo_Original = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Muestra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Partida = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Peligroso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PeligrosoII = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BTCancelar = new System.Windows.Forms.Button();
             this.BTAceptar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -55,6 +46,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.toolTip_Aceptar = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipCancelar = new System.Windows.Forms.ToolTip(this.components);
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Codigo_Original = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Muestra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Partida = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Peligroso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PeligrosoII = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -65,10 +66,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(139)))), ((int)(((byte)(82)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Location = new System.Drawing.Point(0, 54);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(468, 42);
+            this.panel1.Size = new System.Drawing.Size(695, 335);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -76,7 +77,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(8, 12);
+            this.label1.Location = new System.Drawing.Point(22, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 19);
             this.label1.TabIndex = 0;
@@ -85,10 +86,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(74)))), ((int)(((byte)(95)))));
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(1, 41);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(1, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(467, 324);
+            this.panel2.Size = new System.Drawing.Size(694, 55);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -105,9 +107,9 @@
             this.panel3.Controls.Add(this.TBNumRemito);
             this.panel3.Controls.Add(this.LBNumRemito);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(6, 7);
+            this.panel3.Location = new System.Drawing.Point(56, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(455, 308);
+            this.panel3.Size = new System.Drawing.Size(567, 320);
             this.panel3.TabIndex = 0;
             // 
             // DGV_Remito
@@ -128,8 +130,109 @@
             this.DGV_Remito.Location = new System.Drawing.Point(21, 91);
             this.DGV_Remito.Name = "DGV_Remito";
             this.DGV_Remito.ReadOnly = true;
-            this.DGV_Remito.Size = new System.Drawing.Size(408, 138);
+            this.DGV_Remito.Size = new System.Drawing.Size(524, 161);
             this.DGV_Remito.TabIndex = 10;
+            // 
+            // BTCancelar
+            // 
+            this.BTCancelar.BackgroundImage = global::Vista.Properties.Resources.Cancelar_N1;
+            this.BTCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTCancelar.FlatAppearance.BorderSize = 0;
+            this.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTCancelar.Location = new System.Drawing.Point(212, 260);
+            this.BTCancelar.Name = "BTCancelar";
+            this.BTCancelar.Size = new System.Drawing.Size(74, 50);
+            this.BTCancelar.TabIndex = 9;
+            this.toolTipCancelar.SetToolTip(this.BTCancelar, "Cancelar");
+            this.BTCancelar.UseVisualStyleBackColor = true;
+            this.BTCancelar.Click += new System.EventHandler(this.BTCancelar_Click);
+            // 
+            // BTAceptar
+            // 
+            this.BTAceptar.BackgroundImage = global::Vista.Properties.Resources.Aceptar_N1;
+            this.BTAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTAceptar.FlatAppearance.BorderSize = 0;
+            this.BTAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTAceptar.Location = new System.Drawing.Point(300, 260);
+            this.BTAceptar.Margin = new System.Windows.Forms.Padding(0);
+            this.BTAceptar.Name = "BTAceptar";
+            this.BTAceptar.Size = new System.Drawing.Size(55, 50);
+            this.BTAceptar.TabIndex = 8;
+            this.toolTip_Aceptar.SetToolTip(this.BTAceptar, "Aceptar");
+            this.BTAceptar.UseVisualStyleBackColor = true;
+            this.BTAceptar.Click += new System.EventHandler(this.BTAceptar_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(21, 91);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(411, 138);
+            this.dataGridView1.TabIndex = 7;
+            // 
+            // TBCliente
+            // 
+            this.TBCliente.Enabled = false;
+            this.TBCliente.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBCliente.Location = new System.Drawing.Point(187, 50);
+            this.TBCliente.Name = "TBCliente";
+            this.TBCliente.Size = new System.Drawing.Size(304, 27);
+            this.TBCliente.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(121, 52);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 19);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Cliente:";
+            // 
+            // TBFecha
+            // 
+            this.TBFecha.Enabled = false;
+            this.TBFecha.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBFecha.Location = new System.Drawing.Point(391, 12);
+            this.TBFecha.Name = "TBFecha";
+            this.TBFecha.Size = new System.Drawing.Size(100, 27);
+            this.TBFecha.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(330, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 19);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Fecha:";
+            // 
+            // TBNumRemito
+            // 
+            this.TBNumRemito.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBNumRemito.Location = new System.Drawing.Point(187, 12);
+            this.TBNumRemito.Name = "TBNumRemito";
+            this.TBNumRemito.Size = new System.Drawing.Size(98, 27);
+            this.TBNumRemito.TabIndex = 2;
+            // 
+            // LBNumRemito
+            // 
+            this.LBNumRemito.AutoSize = true;
+            this.LBNumRemito.Location = new System.Drawing.Point(187, 18);
+            this.LBNumRemito.Name = "LBNumRemito";
+            this.LBNumRemito.Size = new System.Drawing.Size(0, 13);
+            this.LBNumRemito.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(76, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 19);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Nº de Remito:";
             // 
             // Codigo
             // 
@@ -149,16 +252,17 @@
             // 
             // Descripcion
             // 
-            this.Descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.Descripcion.DataPropertyName = "Descripcion";
             this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.MinimumWidth = 200;
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.ReadOnly = true;
-            this.Descripcion.Width = 88;
+            this.Descripcion.Width = 200;
             // 
             // Cantidad
             // 
-            this.Cantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Cantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.Cantidad.DataPropertyName = "Cantidad";
             this.Cantidad.HeaderText = "Cantidad";
             this.Cantidad.Name = "Cantidad";
@@ -167,7 +271,7 @@
             // 
             // Muestra
             // 
-            this.Muestra.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Muestra.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.Muestra.DataPropertyName = "Muestra";
             this.Muestra.HeaderText = "Muestra";
             this.Muestra.Name = "Muestra";
@@ -176,7 +280,7 @@
             // 
             // Partida
             // 
-            this.Partida.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Partida.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.Partida.DataPropertyName = "Partida";
             this.Partida.HeaderText = "Partida";
             this.Partida.Name = "Partida";
@@ -185,7 +289,7 @@
             // 
             // Pedido
             // 
-            this.Pedido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Pedido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.Pedido.DataPropertyName = "Pedido";
             this.Pedido.HeaderText = "Pedido";
             this.Pedido.Name = "Pedido";
@@ -208,120 +312,30 @@
             this.PeligrosoII.ReadOnly = true;
             this.PeligrosoII.Visible = false;
             // 
-            // BTCancelar
+            // label5
             // 
-            this.BTCancelar.BackgroundImage = global::Vista.Properties.Resources.Cancelar_N1;
-            this.BTCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTCancelar.FlatAppearance.BorderSize = 0;
-            this.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTCancelar.Location = new System.Drawing.Point(275, 243);
-            this.BTCancelar.Name = "BTCancelar";
-            this.BTCancelar.Size = new System.Drawing.Size(74, 50);
-            this.BTCancelar.TabIndex = 9;
-            this.toolTipCancelar.SetToolTip(this.BTCancelar, "Cancelar");
-            this.BTCancelar.UseVisualStyleBackColor = true;
-            this.BTCancelar.Click += new System.EventHandler(this.BTCancelar_Click);
-            // 
-            // BTAceptar
-            // 
-            this.BTAceptar.BackgroundImage = global::Vista.Properties.Resources.Aceptar_N1;
-            this.BTAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTAceptar.FlatAppearance.BorderSize = 0;
-            this.BTAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTAceptar.Location = new System.Drawing.Point(363, 243);
-            this.BTAceptar.Margin = new System.Windows.Forms.Padding(0);
-            this.BTAceptar.Name = "BTAceptar";
-            this.BTAceptar.Size = new System.Drawing.Size(55, 50);
-            this.BTAceptar.TabIndex = 8;
-            this.toolTip_Aceptar.SetToolTip(this.BTAceptar, "Aceptar");
-            this.BTAceptar.UseVisualStyleBackColor = true;
-            this.BTAceptar.Click += new System.EventHandler(this.BTAceptar_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 91);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(411, 138);
-            this.dataGridView1.TabIndex = 7;
-            // 
-            // TBCliente
-            // 
-            this.TBCliente.Enabled = false;
-            this.TBCliente.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBCliente.Location = new System.Drawing.Point(128, 50);
-            this.TBCliente.Name = "TBCliente";
-            this.TBCliente.Size = new System.Drawing.Size(304, 27);
-            this.TBCliente.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(62, 52);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 19);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Cliente:";
-            // 
-            // TBFecha
-            // 
-            this.TBFecha.Enabled = false;
-            this.TBFecha.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBFecha.Location = new System.Drawing.Point(332, 12);
-            this.TBFecha.Name = "TBFecha";
-            this.TBFecha.Size = new System.Drawing.Size(100, 27);
-            this.TBFecha.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(271, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 19);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Fecha:";
-            // 
-            // TBNumRemito
-            // 
-            this.TBNumRemito.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBNumRemito.Location = new System.Drawing.Point(128, 12);
-            this.TBNumRemito.Name = "TBNumRemito";
-            this.TBNumRemito.Size = new System.Drawing.Size(98, 27);
-            this.TBNumRemito.TabIndex = 2;
-            // 
-            // LBNumRemito
-            // 
-            this.LBNumRemito.AutoSize = true;
-            this.LBNumRemito.Location = new System.Drawing.Point(128, 18);
-            this.LBNumRemito.Name = "LBNumRemito";
-            this.LBNumRemito.Size = new System.Drawing.Size(0, 13);
-            this.LBNumRemito.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 19);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Nº de Remito:";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(553, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(118, 19);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "SURFACTAN S.A.";
             // 
             // Remito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 366);
+            this.ClientSize = new System.Drawing.Size(695, 387);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Remito";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Remito)).EndInit();
@@ -358,5 +372,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Pedido;
         private System.Windows.Forms.DataGridViewTextBoxColumn Peligroso;
         private System.Windows.Forms.DataGridViewTextBoxColumn PeligrosoII;
+        private System.Windows.Forms.Label label5;
     }
 }

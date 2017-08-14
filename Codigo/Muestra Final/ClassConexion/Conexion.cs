@@ -215,9 +215,9 @@ namespace ClassConexion
             cmd.Connection = conexion;
 
             //Actualizo pedido
-            cmd.CommandText = "update Pedido set Facturado = (Facturado + " + DGV.Cells[1].Value.ToString() + "),"
-                    + " MarcaFactura = 0 where Pedido = '" + DGV.Cells[4].Value.ToString()
-                    + "' and Terminado = '" + DGV.Cells[5].Value.ToString() + "'";
+            cmd.CommandText = "update Pedido set Facturado = (Facturado + " + DGV.Cells[1].Value.ToString().Trim() + "),"
+                    + " MarcaFactura = 0 where Pedido = '" + DGV.Cells[4].Value.ToString().Trim()
+                    + "' and Terminado = '" + DGV.Cells[5].Value.ToString().Trim() + "'";
 
             cmd.ExecuteNonQuery();
 
@@ -278,7 +278,7 @@ namespace ClassConexion
                             + "'" + txtFechaOrd + "',"
                             + "'" + "S" + "',"
                             + "'" + "1" + "',"
-                            + "'" + "Muestras a " + txtCliente.Trim() + "',"
+                            + "'" + ("Muestras a " + txtCliente.PadRight(50)).Substring(0,50) + "',"
                             + "'" + DateTime.Now.ToString("MM-dd-yyyy") + "',"
                             + "'',"
                             + "'" + Convert.ToInt32(txtLote.Trim()) + "'"
@@ -386,8 +386,8 @@ namespace ClassConexion
             AbrirConexion(CS);
             cmd.Connection = conexion;
 
-            cmd.CommandText = "update Terminado set Salidas = (Salidas + " + DGVRow.Cells[1].Value.ToString() + "),"
-            + "Pedido = (Pedido - " + DGVRow.Cells[1].Value.ToString() + ") where Codigo = '" + DGVRow.Cells[6].Value.ToString() + "'";
+            cmd.CommandText = "update Terminado set Salidas = (Salidas + " + DGVRow.Cells[1].Value.ToString().Trim() + "),"
+            + "Pedido = (Pedido - " + DGVRow.Cells[1].Value.ToString().Trim() + ") where Codigo = '" + DGVRow.Cells[6].Value.ToString().Trim() + "'";
 
             cmd.ExecuteNonQuery();
 
@@ -405,7 +405,7 @@ namespace ClassConexion
             cmd.Connection = conexion;
 
             cmd.CommandText = "select COUNT(*) from Guia  where Lote =" + DGVRow.Cells[3].Value.ToString()
-                + " and  Terminado = '" + DGVRow.Cells[6].Value.ToString() + "'";
+                + " and  Terminado = '" + DGVRow.Cells[6].Value.ToString().Trim() + "'";
 
             if (int.Parse(cmd.ExecuteScalar().ToString()) == 0)
             {
@@ -427,7 +427,7 @@ namespace ClassConexion
             cmd.Connection = conexion;
 
             cmd.CommandText = "select COUNT(*) from Hoja  where Hoja = " + DGVRow.Cells[3].Value.ToString()
-                + " and Producto = '" + DGVRow.Cells[6].Value.ToString() + "'";
+                + " and Producto = '" + DGVRow.Cells[6].Value.ToString().Trim() + "'";
 
             if (int.Parse(cmd.ExecuteScalar().ToString()) == 0) resultado = false;
             else { resultado = true; }
@@ -455,8 +455,8 @@ namespace ClassConexion
             cmd.Connection = conexion;
 
             //Busco el tipopedido (esto es lo primero que tengo que hacer, antes de actualizar en otro lado) modifico la connectionstring
-            cmd.CommandText = "select TipoPedido from Pedido where  Pedido = '" + DGVRow.Cells[4].Value.ToString()
-                + "' and Terminado = '" + DGVRow.Cells[5].Value.ToString() + "'";
+            cmd.CommandText = "select TipoPedido from Pedido where  Pedido = '" + DGVRow.Cells[4].Value.ToString().Trim()
+                + "' and Terminado = '" + DGVRow.Cells[5].Value.ToString().Trim() + "'";
 
             string value = System.Convert.ToString(cmd.ExecuteScalar());
 
@@ -476,7 +476,7 @@ namespace ClassConexion
             cmd.Connection = conexion;
 
             //Actualizo Muestras (no existe la columna PARTIDA)
-            cmd.CommandText = "update Muestra set Remito = " + NroRemito.ToString() + ", Lote2 = " + DGV.Cells[3].Value.ToString() + " where Codigo = '" + DGV.Cells[2].Value.ToString() + "'";
+            cmd.CommandText = "update Muestra set Remito = " + NroRemito.ToString().Trim() + ", Lote2 = " + DGV.Cells[3].Value.ToString().Trim() + " where Codigo = '" + DGV.Cells[2].Value.ToString().Trim() + "'";
 
             cmd.ExecuteNonQuery();
 

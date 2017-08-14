@@ -528,23 +528,19 @@ namespace Vista
                     Codigos[i] = cod;
                     int Id = int.Parse(DGV_Muestra.SelectedRows[i].Cells[0].Value.ToString());
                     string pedido = DGV_Muestra.SelectedRows[i].Cells[1].Value.ToString();
-
-                    //VERIFICO QUE NO SEA ML PARA QUE SE BUSQUE EL LOTE
-
-                    //if (!DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().StartsWith("ML"))
-                    //{
-                    //    int Lote1 = int.Parse(CS.BuscarLote1(cod, pedido));
-                    //    if (Lote1 == 0) throw new Exception("La muestra " + DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString() + " no posee lote");
-                    //    //errorLote.Add(DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString());
-                    //    Lotes[i] = Lote1;
-                    //}
+                    
+                    // Se busca lote para el Codigo solicitado en caso de que no sea un ML.
+                    if (!DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().StartsWith("ML"))
+                    {
+                        int Lote1 = int.Parse(CS.BuscarLote1(cod, pedido));
+                        if (Lote1 == 0) throw new Exception("La Muestra para " + DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().Trim() + " no posee lote");
+                        Lotes[i] = Lote1;
+                    }
 
                     DataRow datarow = CS.ListarPeligroso(Id);
 
                     Peligroso[i, 0] = datarow[0].ToString();
                     Peligroso[i, 1] = datarow[1].ToString();
-                    
-
                     
                 }
                 

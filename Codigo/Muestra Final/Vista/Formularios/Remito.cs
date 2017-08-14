@@ -139,7 +139,7 @@ namespace Vista
 
                         //Con la variable i del modulo saco el orden del movimiento, como empieza por 0 
                         //le sumo 1
-                        string orden = (i + 1).ToString();
+                        string orden = "1"; // (i + 1).ToString();
 
                         //Consulto si el orden es de un solo digito, si es asi le pongo un 0 adelante
                         if (orden.Length == 1) orden = "0" + orden;
@@ -148,7 +148,7 @@ namespace Vista
                         string Clave = MovLabNumero + orden;
 
                         //realizo el for para saber cuantos ceros van a anteceder a la clave obtenida
-                        for (int u = 0; u < (8 - Clave.Length); u++)
+                        for (int u = 0; u <= (8 - Clave.Length); u++)
                         {
                             Clave = "0" + Clave;
                         }
@@ -194,7 +194,7 @@ namespace Vista
                             _Articulo = "  -     -   ";
 
                             //// Grabar registro
-                            Cs.AltaMovlab(_Clave, _Codigo, _Articulo, _Terminado, _Tipo, orden, _Fecha, _Fechaord, _Lote, TBCliente.Text, Cantidad);
+                            Cs.AltaMovlab(_Clave, _Codigo, _Articulo, _Terminado, _Tipo, orden , _Fecha, _Fechaord, _Lote, TBCliente.Text, Cantidad);
                     
                             if (Cs.BuscarEnHoja(DGV_Remito.Rows[i])) Cs.RestarSaldoAHoja(DGV_Remito.Rows[i]);
                             else if (Cs.BuscarEnGuia_Ter(DGV_Remito.Rows[i])) Cs.RestarSaldoAGuia_Ter(DGV_Remito.Rows[i]);
