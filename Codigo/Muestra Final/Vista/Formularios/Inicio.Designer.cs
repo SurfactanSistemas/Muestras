@@ -33,8 +33,8 @@ namespace Vista
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.P_Buscar = new System.Windows.Forms.Panel();
             this.P_Filtrado = new System.Windows.Forms.Panel();
             this.LBFiltro = new System.Windows.Forms.Label();
@@ -134,7 +134,7 @@ namespace Vista
             this.P_Buscar.Location = new System.Drawing.Point(0, 43);
             this.P_Buscar.Margin = new System.Windows.Forms.Padding(0);
             this.P_Buscar.Name = "P_Buscar";
-            this.P_Buscar.Size = new System.Drawing.Size(852, 60);
+            this.P_Buscar.Size = new System.Drawing.Size(787, 60);
             this.P_Buscar.TabIndex = 0;
             // 
             // P_Filtrado
@@ -150,14 +150,14 @@ namespace Vista
             // 
             // LBFiltro
             // 
-            this.LBFiltro.AutoSize = true;
             this.LBFiltro.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBFiltro.ForeColor = System.Drawing.Color.White;
             this.LBFiltro.Location = new System.Drawing.Point(3, 18);
             this.LBFiltro.Name = "LBFiltro";
-            this.LBFiltro.Size = new System.Drawing.Size(46, 18);
+            this.LBFiltro.Size = new System.Drawing.Size(105, 18);
             this.LBFiltro.TabIndex = 7;
             this.LBFiltro.Text = "label5";
+            this.LBFiltro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // BT_Filtrar
             // 
@@ -253,7 +253,7 @@ namespace Vista
             this.P_Botones.Dock = System.Windows.Forms.DockStyle.Fill;
             this.P_Botones.Location = new System.Drawing.Point(3, 106);
             this.P_Botones.Name = "P_Botones";
-            this.P_Botones.Size = new System.Drawing.Size(846, 442);
+            this.P_Botones.Size = new System.Drawing.Size(781, 442);
             this.P_Botones.TabIndex = 1;
             // 
             // BtEliminar
@@ -304,17 +304,17 @@ namespace Vista
             this.DGV_Muestra.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Muestra.Location = new System.Drawing.Point(103, 3);
             this.DGV_Muestra.Name = "DGV_Muestra";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_Muestra.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.DGV_Muestra.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Muestra.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DGV_Muestra.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.DGV_Muestra.Size = new System.Drawing.Size(781, 436);
             this.DGV_Muestra.TabIndex = 8;
             this.DGV_Muestra.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DGV_Muestra_ColumnHeaderMouseClick);
@@ -651,15 +651,17 @@ namespace Vista
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(852, 43);
+            this.panel1.Size = new System.Drawing.Size(787, 43);
             this.panel1.TabIndex = 2;
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 11);
+            this.label4.Location = new System.Drawing.Point(17, 14);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(251, 19);
             this.label4.TabIndex = 1;
@@ -667,10 +669,12 @@ namespace Vista
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(684, 11);
+            this.label3.Location = new System.Drawing.Point(619, 9);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(156, 26);
@@ -691,7 +695,7 @@ namespace Vista
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(852, 551);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(787, 551);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel2
@@ -706,7 +710,7 @@ namespace Vista
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(846, 442);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(781, 442);
             this.tableLayoutPanel2.TabIndex = 10;
             // 
             // panel2
@@ -782,10 +786,12 @@ namespace Vista
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(852, 551);
+            this.ClientSize = new System.Drawing.Size(787, 551);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.MinimumSize = new System.Drawing.Size(803, 0);
             this.Name = "Muestra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.P_Buscar.ResumeLayout(false);
             this.P_Buscar.PerformLayout();
