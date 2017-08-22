@@ -570,12 +570,38 @@ namespace Vista
                     
                     // Se busca lote para el Codigo solicitado en caso de que no sea un ML.
                     // Falta definir el
-                    if (!DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().StartsWith("ML"))
+
+                    string cant = DGV_Muestra.SelectedRows[i].Cells[5].Value.ToString().Trim();
+
+                    cant = cant.Replace(",", ".");
+
+                    cant = cant.StartsWith(".") ? "0" + cant : cant;
+
+                    if (DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().StartsWith("YQ"))
                     {
-                        int Lote1 = int.Parse(CS.BuscarLote1(cod, pedido));
-                        if (Lote1 == 0) throw new Exception("La Muestra para " + DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().Trim() + " no posee lote");
-                        Lotes[i] = Lote1;
+                        if ( Double.Parse(cant) >= 20){
+                            int Lote1 = int.Parse(CS.BuscarLote1(cod, pedido));
+
+                            if (Lote1 == 0) throw new Exception("La Muestra para " + DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().Trim() + " no posee lote");
+
+                            Lotes[i] = Lote1;
+                        }
+                        
                     }
+                    else {
+
+                        if (!DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().StartsWith("ML"))
+                        {
+
+                            int Lote1 = int.Parse(CS.BuscarLote1(cod, pedido));
+
+                            if (Lote1 == 0) throw new Exception("La Muestra para " + DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().Trim() + " no posee lote");
+
+                            Lotes[i] = Lote1;
+                        }
+                    }
+                    
+                    
 
                     DataRow datarow = CS.ListarPeligroso(Id);
 
