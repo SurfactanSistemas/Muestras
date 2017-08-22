@@ -41,6 +41,19 @@ namespace Vista
             dt.Clear();
             dt = M.TraerLista(TB_Desde.Text, TB_Hasta.Text);
 
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+
+                string _codigo = dt.Rows[i][3].ToString();
+
+                if (_codigo.StartsWith("ML"))
+                {
+                    dt.Rows[i][4] = dt.Rows[i][6].ToString();
+                }
+
+            }
+
             //Se utiliza esta columna para ordenar las fechas.
             dt.Columns.Add("OrdenFecha", typeof(string));
 
@@ -435,6 +448,11 @@ namespace Vista
             }
         }
 
+        private string _BuscarNombreML(string codigo, string pedido)
+        {
+            return CS.BuscarNombreML(codigo.Trim(), pedido.Trim());
+        }
+
         private void BtRemito_Click(object sender, EventArgs e)
         {
             
@@ -494,6 +512,27 @@ namespace Vista
                 {
                     dt = CS.BuscarListaRemito(numero_remito);
 
+                    for (int i = 0; i < dt.Rows.Count; i++) {
+
+                        string _codigo = dt.Rows[i][4].ToString();
+
+                        if (_codigo.StartsWith("ML")) {
+
+                            // Completamos el codigo con ceros.
+                            //string[] _cod = _codigo.Split('-');
+
+                            //for (int j = 0; j <= 5 - _cod[1].Length; j++) {
+                            //    _cod[1] = "0" + _cod[1];
+                            //}
+
+                            //_codigo = string.Join("-", _cod);
+
+                            dt.Rows[i][0] = _BuscarNombreML(_codigo, dt.Rows[i][5].ToString());
+                        }
+                        
+                    
+                    }
+
                     DataRow datacliente1 = CS.BuscarCliente(cliente);
 
                     string CodClient1 = datacliente1[0].ToString();
@@ -530,6 +569,7 @@ namespace Vista
                     string pedido = DGV_Muestra.SelectedRows[i].Cells[1].Value.ToString();
                     
                     // Se busca lote para el Codigo solicitado en caso de que no sea un ML.
+                    // Falta definir el
                     if (!DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().StartsWith("ML"))
                     {
                         int Lote1 = int.Parse(CS.BuscarLote1(cod, pedido));

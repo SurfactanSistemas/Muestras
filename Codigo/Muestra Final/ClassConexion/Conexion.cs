@@ -105,6 +105,11 @@ namespace ClassConexion
             return DT;
         }
 
+        private string _BuscarNombreML(string codigo, string pedido)
+        {
+            return this.BuscarNombreML(codigo.Trim(), pedido.Trim());
+        }
+
         public DataRow TraerPeligroso(string codigo)
         {
             List<DataRow> filas = new List<DataRow>();
@@ -182,6 +187,27 @@ namespace ClassConexion
             CerrarConexion();
 
             if (value == "") value = "0";
+
+            return value;
+        }
+
+
+        public string BuscarNombreML(string cod, string pedido)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+
+            string str = "select DescriCliente from Muestra where Articulo = '" + cod + "' and Pedido = '" + pedido + "'";
+
+            cmd.CommandText = str;
+
+            AbrirConexion();
+
+            cmd.Connection = conexion;
+
+            string value = System.Convert.ToString(cmd.ExecuteScalar());
+
+            CerrarConexion();
 
             return value;
         }
@@ -531,7 +557,7 @@ namespace ClassConexion
 
             AbrirConexion();
 
-            string str = "select Nombre, Cantidad, Peligroso, PeligrosoII from Muestra where Remito = '" + numero_remito + "'";
+            string str = "select Nombre, Cantidad, Peligroso, PeligrosoII, Articulo, Pedido from Muestra where Remito = '" + numero_remito + "'";
 
             adapter.SelectCommand = new SqlCommand(str, conexion);
 
