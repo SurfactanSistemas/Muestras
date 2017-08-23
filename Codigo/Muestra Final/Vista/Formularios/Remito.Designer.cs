@@ -30,11 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.toolTip_Aceptar = new System.Windows.Forms.ToolTip(this.components);
-            this.toolTipCancelar = new System.Windows.Forms.ToolTip(this.components);
             this.DGV_Remito = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Codigo_Original = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,8 +40,6 @@
             this.Pedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Peligroso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PeligrosoII = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BTCancelar = new System.Windows.Forms.Button();
-            this.BTAceptar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.TBCliente = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,10 +48,17 @@
             this.TBNumRemito = new System.Windows.Forms.TextBox();
             this.LBNumRemito = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.toolTip_Aceptar = new System.Windows.Forms.ToolTip(this.components);
+            this.BTAceptar = new System.Windows.Forms.Button();
+            this.toolTipCancelar = new System.Windows.Forms.ToolTip(this.components);
+            this.BTCancelar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Remito)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -77,38 +77,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(695, 272);
             this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(22, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "REMITOS";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(74)))), ((int)(((byte)(95)))));
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(1, -1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(694, 55);
-            this.panel2.TabIndex = 1;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(553, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 19);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "SURFACTAN S.A.";
             // 
             // DGV_Remito
             // 
@@ -209,33 +177,6 @@
             this.PeligrosoII.ReadOnly = true;
             this.PeligrosoII.Visible = false;
             // 
-            // BTCancelar
-            // 
-            this.BTCancelar.BackgroundImage = global::Vista.Properties.Resources.Cancelar_N1;
-            this.BTCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTCancelar.FlatAppearance.BorderSize = 0;
-            this.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTCancelar.Location = new System.Drawing.Point(355, 332);
-            this.BTCancelar.Name = "BTCancelar";
-            this.BTCancelar.Size = new System.Drawing.Size(55, 50);
-            this.BTCancelar.TabIndex = 20;
-            this.toolTipCancelar.SetToolTip(this.BTCancelar, "Cancelar");
-            this.BTCancelar.UseVisualStyleBackColor = true;
-            // 
-            // BTAceptar
-            // 
-            this.BTAceptar.BackgroundImage = global::Vista.Properties.Resources.Aceptar_N1;
-            this.BTAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTAceptar.FlatAppearance.BorderSize = 0;
-            this.BTAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTAceptar.Location = new System.Drawing.Point(284, 332);
-            this.BTAceptar.Margin = new System.Windows.Forms.Padding(0);
-            this.BTAceptar.Name = "BTAceptar";
-            this.BTAceptar.Size = new System.Drawing.Size(55, 50);
-            this.BTAceptar.TabIndex = 19;
-            this.toolTip_Aceptar.SetToolTip(this.BTAceptar, "Aceptar");
-            this.BTAceptar.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -311,6 +252,67 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Nº de Remito:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(22, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "REMITOS";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(74)))), ((int)(((byte)(95)))));
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(1, -1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(694, 55);
+            this.panel2.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(553, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(118, 19);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "SURFACTAN S.A.";
+            // 
+            // BTAceptar
+            // 
+            this.BTAceptar.BackgroundImage = global::Vista.Properties.Resources.Aceptar_N1;
+            this.BTAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTAceptar.FlatAppearance.BorderSize = 0;
+            this.BTAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTAceptar.Location = new System.Drawing.Point(284, 332);
+            this.BTAceptar.Margin = new System.Windows.Forms.Padding(0);
+            this.BTAceptar.Name = "BTAceptar";
+            this.BTAceptar.Size = new System.Drawing.Size(55, 50);
+            this.BTAceptar.TabIndex = 19;
+            this.toolTip_Aceptar.SetToolTip(this.BTAceptar, "Aceptar");
+            this.BTAceptar.UseVisualStyleBackColor = true;
+            this.BTAceptar.Click += new System.EventHandler(this.BTAceptar_Click);
+            // 
+            // BTCancelar
+            // 
+            this.BTCancelar.BackgroundImage = global::Vista.Properties.Resources.Cancelar_N1;
+            this.BTCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTCancelar.FlatAppearance.BorderSize = 0;
+            this.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTCancelar.Location = new System.Drawing.Point(355, 332);
+            this.BTCancelar.Name = "BTCancelar";
+            this.BTCancelar.Size = new System.Drawing.Size(55, 50);
+            this.BTCancelar.TabIndex = 20;
+            this.toolTipCancelar.SetToolTip(this.BTCancelar, "Cancelar");
+            this.BTCancelar.UseVisualStyleBackColor = true;
+            this.BTCancelar.Click += new System.EventHandler(this.BTCancelar_Click);
+            // 
             // Remito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -325,10 +327,10 @@
             this.Name = "Remito";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Remito)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

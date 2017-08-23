@@ -96,6 +96,14 @@ namespace Vista
         {
             string _Clave, _Codigo, _Renglon, _Fecha, _CLiente, _Articulo, _Terminado, _Cantidad, _Fechaord, _Movi, _Tipo, _Tipomov, _Observaciones, _WDate, _Marca, _Lote;
 
+            // Verificamos que el numero de remito no haya sido cargado con anterioridad.
+            
+            if (Cs.RemitoExistente(TBNumRemito.Text.Trim())) {
+                MessageBox.Show("El Número de remito ya fue utilizado con anterioridad y no puede volver a utilizarse.", "",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                TBNumRemito.Focus();
+                return;
+            }
+
             try
             {
                 if (TBNumRemito.Text == "") throw new Exception("Se debe ingresar el numero de remito");
@@ -213,5 +221,7 @@ namespace Vista
                 MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
     }
 }

@@ -420,6 +420,27 @@ namespace ClassConexion
             CerrarConexion();
         }
 
+        public bool RemitoExistente(string numero_remito)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+
+            bool resultado = false;
+
+            AbrirConexion(CS);
+            cmd.Connection = conexion;
+
+            cmd.CommandText = "select count(Remito) from Muestra WHERE Remito = '" + numero_remito.Trim() + "'";
+
+            if (int.Parse(cmd.ExecuteScalar().ToString()) != 0)
+            {
+                resultado = true;
+            }
+
+            CerrarConexion();
+            return resultado;
+        }
+
         public bool BuscarEnGuia_Ter(System.Windows.Forms.DataGridViewRow DGVRow)
         {
             SqlCommand cmd = new SqlCommand();
@@ -551,13 +572,13 @@ namespace ClassConexion
 
 
 
-        public DataTable BuscarListaRemito(string numero_remito)
+        public DataTable BuscarListaRemito(string numero_remito, string cliente)
         {
             DataTable tabla = new DataTable();
 
             AbrirConexion();
 
-            string str = "select DescriCliente, Cantidad, Peligroso, PeligrosoII, Articulo, Pedido from Muestra where Remito = '" + numero_remito + "'";
+            string str = "select DescriCliente, Cantidad, Peligroso, PeligrosoII, Articulo, Pedido from Muestra where Remito = '" + numero_remito.Trim() + "' and Cliente = '" + cliente.Trim() + "'";
 
             adapter.SelectCommand = new SqlCommand(str, conexion);
 

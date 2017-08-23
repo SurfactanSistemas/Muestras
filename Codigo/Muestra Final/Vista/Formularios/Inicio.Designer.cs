@@ -33,8 +33,8 @@ namespace Vista
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.P_Buscar = new System.Windows.Forms.Panel();
             this.P_Filtrado = new System.Windows.Forms.Panel();
             this.LBFiltro = new System.Windows.Forms.Label();
@@ -48,29 +48,16 @@ namespace Vista
             this.label1 = new System.Windows.Forms.Label();
             this.TB_Desde = new System.Windows.Forms.TextBox();
             this.P_Botones = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.BtActLaborat = new System.Windows.Forms.Button();
+            this.BtExportar = new System.Windows.Forms.Button();
+            this.BtEtiquetas = new System.Windows.Forms.Button();
             this.BtEliminar = new System.Windows.Forms.Button();
-            this.DGV_Muestra = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DescriCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Razon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreVend = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Observaciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HojaRuta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CodigoConf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lote2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Observaciones2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OrdenFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lote1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtRemito = new System.Windows.Forms.Button();
             this.BtFin = new System.Windows.Forms.Button();
             this.BtImpresion = new System.Windows.Forms.Button();
-            this.BtRemito = new System.Windows.Forms.Button();
-            this.BtEtiquetas = new System.Windows.Forms.Button();
-            this.BtExportar = new System.Windows.Forms.Button();
-            this.BtActLaborat = new System.Windows.Forms.Button();
+            this.DGV_Muestra = new System.Windows.Forms.DataGridView();
             this.CMS_Filtros = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.pedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -98,24 +85,37 @@ namespace Vista
             this.label3 = new System.Windows.Forms.Label();
             this.toolTip_Eliminar = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.muestraBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescriCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Razon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreVend = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Observaciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.remitoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HojaRuta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodigoConf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lote2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Observaciones2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.muestraBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.OrdenFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lote1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.P_Buscar.SuspendLayout();
             this.P_Filtrado.SuspendLayout();
             this.P_Botones.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Muestra)).BeginInit();
             this.CMS_Filtros.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.muestraBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -256,6 +256,81 @@ namespace Vista
             this.P_Botones.Size = new System.Drawing.Size(781, 442);
             this.P_Botones.TabIndex = 1;
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.DGV_Muestra, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(781, 442);
+            this.tableLayoutPanel2.TabIndex = 10;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.BtActLaborat);
+            this.panel2.Controls.Add(this.BtExportar);
+            this.panel2.Controls.Add(this.BtEtiquetas);
+            this.panel2.Controls.Add(this.BtEliminar);
+            this.panel2.Controls.Add(this.BtRemito);
+            this.panel2.Controls.Add(this.BtFin);
+            this.panel2.Controls.Add(this.BtImpresion);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(94, 436);
+            this.panel2.TabIndex = 11;
+            // 
+            // BtActLaborat
+            // 
+            this.BtActLaborat.BackgroundImage = global::Vista.Properties.Resources.Act_Lab_N1;
+            this.BtActLaborat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtActLaborat.FlatAppearance.BorderSize = 0;
+            this.BtActLaborat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtActLaborat.Location = new System.Drawing.Point(19, 1);
+            this.BtActLaborat.Margin = new System.Windows.Forms.Padding(0);
+            this.BtActLaborat.Name = "BtActLaborat";
+            this.BtActLaborat.Size = new System.Drawing.Size(52, 55);
+            this.BtActLaborat.TabIndex = 2;
+            this.toolTip_ActLab.SetToolTip(this.BtActLaborat, " Actualizar \r\nLaboratorio\r\n     (F4)");
+            this.BtActLaborat.UseVisualStyleBackColor = true;
+            this.BtActLaborat.Click += new System.EventHandler(this.BtActLaborat_Click);
+            // 
+            // BtExportar
+            // 
+            this.BtExportar.BackgroundImage = global::Vista.Properties.Resources.Export_N;
+            this.BtExportar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtExportar.FlatAppearance.BorderSize = 0;
+            this.BtExportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtExportar.Location = new System.Drawing.Point(19, 57);
+            this.BtExportar.Margin = new System.Windows.Forms.Padding(0);
+            this.BtExportar.Name = "BtExportar";
+            this.BtExportar.Size = new System.Drawing.Size(60, 60);
+            this.BtExportar.TabIndex = 3;
+            this.toolTip_Export.SetToolTip(this.BtExportar, "Exportacion\r\n      (F5)");
+            this.BtExportar.UseVisualStyleBackColor = true;
+            this.BtExportar.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // BtEtiquetas
+            // 
+            this.BtEtiquetas.BackgroundImage = global::Vista.Properties.Resources.Etiquetas_N1;
+            this.BtEtiquetas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtEtiquetas.FlatAppearance.BorderSize = 0;
+            this.BtEtiquetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtEtiquetas.Location = new System.Drawing.Point(15, 117);
+            this.BtEtiquetas.Margin = new System.Windows.Forms.Padding(0);
+            this.BtEtiquetas.Name = "BtEtiquetas";
+            this.BtEtiquetas.Size = new System.Drawing.Size(55, 57);
+            this.BtEtiquetas.TabIndex = 4;
+            this.toolTip_Etiquetas.SetToolTip(this.BtEtiquetas, "Etiquetas\r\n    (F6)");
+            this.BtEtiquetas.UseVisualStyleBackColor = true;
+            this.BtEtiquetas.Click += new System.EventHandler(this.BtEtiquetas_Click);
+            // 
             // BtEliminar
             // 
             this.BtEliminar.BackgroundImage = global::Vista.Properties.Resources.Eliminar2;
@@ -270,6 +345,51 @@ namespace Vista
             this.toolTip_Eliminar.SetToolTip(this.BtEliminar, "Eliminar\r\n");
             this.BtEliminar.UseVisualStyleBackColor = true;
             this.BtEliminar.Click += new System.EventHandler(this.BtEliminar_Click);
+            // 
+            // BtRemito
+            // 
+            this.BtRemito.BackgroundImage = global::Vista.Properties.Resources.Remito1;
+            this.BtRemito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtRemito.FlatAppearance.BorderSize = 0;
+            this.BtRemito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtRemito.Location = new System.Drawing.Point(18, 184);
+            this.BtRemito.Margin = new System.Windows.Forms.Padding(0);
+            this.BtRemito.Name = "BtRemito";
+            this.BtRemito.Size = new System.Drawing.Size(54, 53);
+            this.BtRemito.TabIndex = 5;
+            this.toolTip_Remito.SetToolTip(this.BtRemito, "Remito\r\n   (F8)");
+            this.BtRemito.UseVisualStyleBackColor = true;
+            this.BtRemito.Click += new System.EventHandler(this.BtRemito_Click);
+            // 
+            // BtFin
+            // 
+            this.BtFin.BackgroundImage = global::Vista.Properties.Resources.Salir1;
+            this.BtFin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtFin.FlatAppearance.BorderSize = 0;
+            this.BtFin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtFin.Location = new System.Drawing.Point(15, 376);
+            this.BtFin.Margin = new System.Windows.Forms.Padding(0);
+            this.BtFin.Name = "BtFin";
+            this.BtFin.Size = new System.Drawing.Size(46, 50);
+            this.BtFin.TabIndex = 7;
+            this.toolTip_Fin.SetToolTip(this.BtFin, "  Fin\r\n(F10)");
+            this.BtFin.UseVisualStyleBackColor = true;
+            this.BtFin.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // BtImpresion
+            // 
+            this.BtImpresion.BackgroundImage = global::Vista.Properties.Resources.Impresion_N1;
+            this.BtImpresion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtImpresion.FlatAppearance.BorderSize = 0;
+            this.BtImpresion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtImpresion.Location = new System.Drawing.Point(18, 250);
+            this.BtImpresion.Margin = new System.Windows.Forms.Padding(0);
+            this.BtImpresion.Name = "BtImpresion";
+            this.BtImpresion.Size = new System.Drawing.Size(48, 52);
+            this.BtImpresion.TabIndex = 6;
+            this.toolTip_Impresion.SetToolTip(this.BtImpresion, "Impresion\r\n    (F9)");
+            this.BtImpresion.UseVisualStyleBackColor = true;
+            this.BtImpresion.Click += new System.EventHandler(this.BtImpresion_Click);
             // 
             // DGV_Muestra
             // 
@@ -304,225 +424,21 @@ namespace Vista
             this.DGV_Muestra.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Muestra.Location = new System.Drawing.Point(103, 3);
             this.DGV_Muestra.Name = "DGV_Muestra";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_Muestra.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.DGV_Muestra.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Muestra.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DGV_Muestra.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DGV_Muestra.Size = new System.Drawing.Size(781, 436);
             this.DGV_Muestra.TabIndex = 8;
             this.DGV_Muestra.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DGV_Muestra_ColumnHeaderMouseClick);
             this.DGV_Muestra.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DGV_Muestra_KeyDown);
-            // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.Visible = false;
-            // 
-            // Nombre
-            // 
-            this.Nombre.DataPropertyName = "Nombre";
-            this.Nombre.HeaderText = "Descripcion";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            this.Nombre.Width = 90;
-            // 
-            // DescriCliente
-            // 
-            this.DescriCliente.DataPropertyName = "DescriCliente";
-            this.DescriCliente.HeaderText = "Nombre para Cliente";
-            this.DescriCliente.Name = "DescriCliente";
-            this.DescriCliente.ReadOnly = true;
-            this.DescriCliente.Width = 90;
-            // 
-            // Razon
-            // 
-            this.Razon.DataPropertyName = "Razon";
-            this.Razon.HeaderText = "Razon";
-            this.Razon.Name = "Razon";
-            this.Razon.ReadOnly = true;
-            this.Razon.Width = 85;
-            // 
-            // Cliente
-            // 
-            this.Cliente.DataPropertyName = "Cliente";
-            this.Cliente.HeaderText = "Cod.Cliente";
-            this.Cliente.Name = "Cliente";
-            // 
-            // NombreVend
-            // 
-            this.NombreVend.DataPropertyName = "NombreVend";
-            this.NombreVend.HeaderText = "NombreVend";
-            this.NombreVend.Name = "NombreVend";
-            // 
-            // Observaciones
-            // 
-            this.Observaciones.DataPropertyName = "Observaciones";
-            this.Observaciones.HeaderText = "Observaciones";
-            this.Observaciones.Name = "Observaciones";
-            this.Observaciones.ReadOnly = true;
-            this.Observaciones.Width = 85;
-            // 
-            // Fecha2
-            // 
-            this.Fecha2.DataPropertyName = "Fecha2";
-            this.Fecha2.HeaderText = "Fecha OK";
-            this.Fecha2.Name = "Fecha2";
-            this.Fecha2.ReadOnly = true;
-            this.Fecha2.Width = 30;
-            // 
-            // HojaRuta
-            // 
-            this.HojaRuta.DataPropertyName = "HojaRuta";
-            this.HojaRuta.HeaderText = "H. Ruta";
-            this.HojaRuta.Name = "HojaRuta";
-            this.HojaRuta.ReadOnly = true;
-            this.HojaRuta.Width = 42;
-            // 
-            // CodigoConf
-            // 
-            this.CodigoConf.DataPropertyName = "CodigoConf";
-            this.CodigoConf.HeaderText = "Cod. Conf";
-            this.CodigoConf.Name = "CodigoConf";
-            this.CodigoConf.ReadOnly = true;
-            this.CodigoConf.Width = 60;
-            // 
-            // Nombre2
-            // 
-            this.Nombre2.DataPropertyName = "Nombre2";
-            this.Nombre2.HeaderText = "Descripcion2";
-            this.Nombre2.Name = "Nombre2";
-            this.Nombre2.ReadOnly = true;
-            this.Nombre2.Width = 80;
-            // 
-            // Lote2
-            // 
-            this.Lote2.DataPropertyName = "Lote2";
-            this.Lote2.HeaderText = "Lote";
-            this.Lote2.Name = "Lote2";
-            this.Lote2.ReadOnly = true;
-            this.Lote2.Width = 41;
-            // 
-            // Observaciones2
-            // 
-            this.Observaciones2.DataPropertyName = "Observaciones2";
-            this.Observaciones2.HeaderText = "Observaciones2";
-            this.Observaciones2.Name = "Observaciones2";
-            this.Observaciones2.ReadOnly = true;
-            this.Observaciones2.Width = 80;
-            // 
-            // OrdenFecha
-            // 
-            this.OrdenFecha.DataPropertyName = "OrdenFecha";
-            this.OrdenFecha.HeaderText = "OrdenFecha";
-            this.OrdenFecha.Name = "OrdenFecha";
-            this.OrdenFecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.OrdenFecha.Visible = false;
-            // 
-            // Lote1
-            // 
-            this.Lote1.DataPropertyName = "Lote1";
-            this.Lote1.HeaderText = "Lote1";
-            this.Lote1.Name = "Lote1";
-            this.Lote1.Visible = false;
-            // 
-            // BtFin
-            // 
-            this.BtFin.BackgroundImage = global::Vista.Properties.Resources.Salir1;
-            this.BtFin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtFin.FlatAppearance.BorderSize = 0;
-            this.BtFin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtFin.Location = new System.Drawing.Point(15, 376);
-            this.BtFin.Margin = new System.Windows.Forms.Padding(0);
-            this.BtFin.Name = "BtFin";
-            this.BtFin.Size = new System.Drawing.Size(46, 50);
-            this.BtFin.TabIndex = 7;
-            this.toolTip_Fin.SetToolTip(this.BtFin, "  Fin\r\n(F10)");
-            this.BtFin.UseVisualStyleBackColor = true;
-            this.BtFin.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // BtImpresion
-            // 
-            this.BtImpresion.BackgroundImage = global::Vista.Properties.Resources.Impresion_N1;
-            this.BtImpresion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtImpresion.FlatAppearance.BorderSize = 0;
-            this.BtImpresion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtImpresion.Location = new System.Drawing.Point(18, 250);
-            this.BtImpresion.Margin = new System.Windows.Forms.Padding(0);
-            this.BtImpresion.Name = "BtImpresion";
-            this.BtImpresion.Size = new System.Drawing.Size(48, 52);
-            this.BtImpresion.TabIndex = 6;
-            this.toolTip_Impresion.SetToolTip(this.BtImpresion, "Impresion\r\n    (F9)");
-            this.BtImpresion.UseVisualStyleBackColor = true;
-            this.BtImpresion.Click += new System.EventHandler(this.BtImpresion_Click);
-            // 
-            // BtRemito
-            // 
-            this.BtRemito.BackgroundImage = global::Vista.Properties.Resources.Remito1;
-            this.BtRemito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtRemito.FlatAppearance.BorderSize = 0;
-            this.BtRemito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtRemito.Location = new System.Drawing.Point(18, 184);
-            this.BtRemito.Margin = new System.Windows.Forms.Padding(0);
-            this.BtRemito.Name = "BtRemito";
-            this.BtRemito.Size = new System.Drawing.Size(54, 53);
-            this.BtRemito.TabIndex = 5;
-            this.toolTip_Remito.SetToolTip(this.BtRemito, "Remito\r\n   (F8)");
-            this.BtRemito.UseVisualStyleBackColor = true;
-            this.BtRemito.Click += new System.EventHandler(this.BtRemito_Click);
-            // 
-            // BtEtiquetas
-            // 
-            this.BtEtiquetas.BackgroundImage = global::Vista.Properties.Resources.Etiquetas_N1;
-            this.BtEtiquetas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtEtiquetas.FlatAppearance.BorderSize = 0;
-            this.BtEtiquetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtEtiquetas.Location = new System.Drawing.Point(15, 117);
-            this.BtEtiquetas.Margin = new System.Windows.Forms.Padding(0);
-            this.BtEtiquetas.Name = "BtEtiquetas";
-            this.BtEtiquetas.Size = new System.Drawing.Size(55, 57);
-            this.BtEtiquetas.TabIndex = 4;
-            this.toolTip_Etiquetas.SetToolTip(this.BtEtiquetas, "Etiquetas\r\n    (F6)");
-            this.BtEtiquetas.UseVisualStyleBackColor = true;
-            this.BtEtiquetas.Click += new System.EventHandler(this.BtEtiquetas_Click);
-            // 
-            // BtExportar
-            // 
-            this.BtExportar.BackgroundImage = global::Vista.Properties.Resources.Export_N;
-            this.BtExportar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtExportar.FlatAppearance.BorderSize = 0;
-            this.BtExportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtExportar.Location = new System.Drawing.Point(19, 57);
-            this.BtExportar.Margin = new System.Windows.Forms.Padding(0);
-            this.BtExportar.Name = "BtExportar";
-            this.BtExportar.Size = new System.Drawing.Size(60, 60);
-            this.BtExportar.TabIndex = 3;
-            this.toolTip_Export.SetToolTip(this.BtExportar, "Exportacion\r\n      (F5)");
-            this.BtExportar.UseVisualStyleBackColor = true;
-            this.BtExportar.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // BtActLaborat
-            // 
-            this.BtActLaborat.BackgroundImage = global::Vista.Properties.Resources.Act_Lab_N1;
-            this.BtActLaborat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtActLaborat.FlatAppearance.BorderSize = 0;
-            this.BtActLaborat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtActLaborat.Location = new System.Drawing.Point(19, 1);
-            this.BtActLaborat.Margin = new System.Windows.Forms.Padding(0);
-            this.BtActLaborat.Name = "BtActLaborat";
-            this.BtActLaborat.Size = new System.Drawing.Size(52, 55);
-            this.BtActLaborat.TabIndex = 2;
-            this.toolTip_ActLab.SetToolTip(this.BtActLaborat, " Actualizar \r\nLaboratorio\r\n     (F4)");
-            this.BtActLaborat.UseVisualStyleBackColor = true;
-            this.BtActLaborat.Click += new System.EventHandler(this.BtActLaborat_Click);
             // 
             // CMS_Filtros
             // 
@@ -698,35 +614,16 @@ namespace Vista
             this.tableLayoutPanel1.Size = new System.Drawing.Size(787, 551);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
-            // tableLayoutPanel2
+            // muestraBindingSource
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.DGV_Muestra, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(781, 442);
-            this.tableLayoutPanel2.TabIndex = 10;
+            this.muestraBindingSource.DataSource = typeof(Negocio.Muestra);
             // 
-            // panel2
+            // Id
             // 
-            this.panel2.Controls.Add(this.BtActLaborat);
-            this.panel2.Controls.Add(this.BtExportar);
-            this.panel2.Controls.Add(this.BtEtiquetas);
-            this.panel2.Controls.Add(this.BtEliminar);
-            this.panel2.Controls.Add(this.BtRemito);
-            this.panel2.Controls.Add(this.BtFin);
-            this.panel2.Controls.Add(this.BtImpresion);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(94, 436);
-            this.panel2.TabIndex = 11;
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.Visible = false;
             // 
             // Pedido
             // 
@@ -753,6 +650,14 @@ namespace Vista
             this.Codigo.ReadOnly = true;
             this.Codigo.Width = 85;
             // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "Nombre";
+            this.Nombre.HeaderText = "Descripcion";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            this.Nombre.Width = 90;
+            // 
             // Cantidad
             // 
             this.Cantidad.DataPropertyName = "Cantidad";
@@ -760,6 +665,50 @@ namespace Vista
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.ReadOnly = true;
             this.Cantidad.Width = 70;
+            // 
+            // DescriCliente
+            // 
+            this.DescriCliente.DataPropertyName = "DescriCliente";
+            this.DescriCliente.HeaderText = "Nombre para Cliente";
+            this.DescriCliente.Name = "DescriCliente";
+            this.DescriCliente.ReadOnly = true;
+            this.DescriCliente.Width = 90;
+            // 
+            // Razon
+            // 
+            this.Razon.DataPropertyName = "Razon";
+            this.Razon.HeaderText = "Razon";
+            this.Razon.Name = "Razon";
+            this.Razon.ReadOnly = true;
+            this.Razon.Width = 85;
+            // 
+            // Cliente
+            // 
+            this.Cliente.DataPropertyName = "Cliente";
+            this.Cliente.HeaderText = "Cod.Cliente";
+            this.Cliente.Name = "Cliente";
+            // 
+            // NombreVend
+            // 
+            this.NombreVend.DataPropertyName = "NombreVend";
+            this.NombreVend.HeaderText = "NombreVend";
+            this.NombreVend.Name = "NombreVend";
+            // 
+            // Observaciones
+            // 
+            this.Observaciones.DataPropertyName = "Observaciones";
+            this.Observaciones.HeaderText = "Observaciones";
+            this.Observaciones.Name = "Observaciones";
+            this.Observaciones.ReadOnly = true;
+            this.Observaciones.Width = 85;
+            // 
+            // Fecha2
+            // 
+            this.Fecha2.DataPropertyName = "Fecha2";
+            this.Fecha2.HeaderText = "Fecha OK";
+            this.Fecha2.Name = "Fecha2";
+            this.Fecha2.ReadOnly = true;
+            this.Fecha2.Width = 30;
             // 
             // remitoDataGridViewTextBoxColumn
             // 
@@ -769,6 +718,46 @@ namespace Vista
             this.remitoDataGridViewTextBoxColumn.ReadOnly = true;
             this.remitoDataGridViewTextBoxColumn.Width = 50;
             // 
+            // HojaRuta
+            // 
+            this.HojaRuta.DataPropertyName = "HojaRuta";
+            this.HojaRuta.HeaderText = "H. Ruta";
+            this.HojaRuta.Name = "HojaRuta";
+            this.HojaRuta.ReadOnly = true;
+            this.HojaRuta.Width = 42;
+            // 
+            // CodigoConf
+            // 
+            this.CodigoConf.DataPropertyName = "CodigoConf";
+            this.CodigoConf.HeaderText = "Cod. Conf";
+            this.CodigoConf.Name = "CodigoConf";
+            this.CodigoConf.ReadOnly = true;
+            this.CodigoConf.Width = 60;
+            // 
+            // Nombre2
+            // 
+            this.Nombre2.DataPropertyName = "Nombre2";
+            this.Nombre2.HeaderText = "Descripcion2";
+            this.Nombre2.Name = "Nombre2";
+            this.Nombre2.ReadOnly = true;
+            this.Nombre2.Width = 80;
+            // 
+            // Lote2
+            // 
+            this.Lote2.DataPropertyName = "Lote2";
+            this.Lote2.HeaderText = "Lote";
+            this.Lote2.Name = "Lote2";
+            this.Lote2.ReadOnly = true;
+            this.Lote2.Width = 41;
+            // 
+            // Observaciones2
+            // 
+            this.Observaciones2.DataPropertyName = "Observaciones2";
+            this.Observaciones2.HeaderText = "Observaciones2";
+            this.Observaciones2.Name = "Observaciones2";
+            this.Observaciones2.ReadOnly = true;
+            this.Observaciones2.Width = 80;
+            // 
             // Cantidad2
             // 
             this.Cantidad2.DataPropertyName = "Cantidad2";
@@ -777,9 +766,20 @@ namespace Vista
             this.Cantidad2.ReadOnly = true;
             this.Cantidad2.Width = 50;
             // 
-            // muestraBindingSource
+            // OrdenFecha
             // 
-            this.muestraBindingSource.DataSource = typeof(Negocio.Muestra);
+            this.OrdenFecha.DataPropertyName = "OrdenFecha";
+            this.OrdenFecha.HeaderText = "OrdenFecha";
+            this.OrdenFecha.Name = "OrdenFecha";
+            this.OrdenFecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.OrdenFecha.Visible = false;
+            // 
+            // Lote1
+            // 
+            this.Lote1.DataPropertyName = "Lote1";
+            this.Lote1.HeaderText = "Lote1";
+            this.Lote1.Name = "Lote1";
+            this.Lote1.Visible = false;
             // 
             // Muestra
             // 
@@ -788,7 +788,7 @@ namespace Vista
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(787, 551);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.MinimumSize = new System.Drawing.Size(803, 0);
+            this.MinimumSize = new System.Drawing.Size(803, 39);
             this.Name = "Muestra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -798,14 +798,14 @@ namespace Vista
             this.P_Filtrado.ResumeLayout(false);
             this.P_Filtrado.PerformLayout();
             this.P_Botones.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Muestra)).EndInit();
             this.CMS_Filtros.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.muestraBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -861,6 +861,9 @@ namespace Vista
         private System.Windows.Forms.ToolTip toolTip_Eliminar;
         private System.Windows.Forms.ToolStripMenuItem codClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vendedorToolStripMenuItem;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pedido;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
@@ -882,9 +885,6 @@ namespace Vista
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad2;
         private System.Windows.Forms.DataGridViewTextBoxColumn OrdenFecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn Lote1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
 

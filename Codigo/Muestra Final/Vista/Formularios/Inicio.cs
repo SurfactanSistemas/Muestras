@@ -463,6 +463,7 @@ namespace Vista
 
                 int cantidad = (DGV_Muestra.SelectedRows.Count - 1);
                 string cliente = DGV_Muestra.SelectedRows[cantidad].Cells[7].Value.ToString(); //Cliente
+                string _CodCliente = DGV_Muestra.SelectedRows[cantidad].Cells[8].Value.ToString();
 
                 //Filtro para clientes identicos
                 for (int i = 0; i < DGV_Muestra.SelectedRows.Count; i++)
@@ -497,7 +498,7 @@ namespace Vista
 
                 if (numero_remito != "")
                 {
-                    dt = CS.BuscarListaRemito(numero_remito);
+                    dt = CS.BuscarListaRemito(numero_remito, _CodCliente);
 
                     DataRow datacliente1 = CS.BuscarCliente(cliente);
 

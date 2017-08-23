@@ -198,14 +198,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassConexion.dll" size="17408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassConexion.dll" size="17920">
       <assemblyIdentity name="ClassConexion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>rFzY4ZQXNevg1AWJQQdGIt+rGdw=</dsig:DigestValue>
+        <dsig:DigestValue>Sf/01ofywWAMB1xLKcHU0px5ZtE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -217,19 +217,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>dZxv7b7hW1UKyO5MQ+qxl7NcfGM=</dsig:DigestValue>
+        <dsig:DigestValue>uwp03iVNYaBS6ixckt7CedParuk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vista.exe" size="2436096">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vista.exe" size="2436608">
       <assemblyIdentity name="Vista" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>XFpDE6gVIqjoAmRichX9GNpF5/Y=</dsig:DigestValue>
+        <dsig:DigestValue>eAfr31YgSpVAt6+g4dF6fxc70Mw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
