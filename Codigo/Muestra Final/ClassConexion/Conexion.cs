@@ -557,7 +557,7 @@ namespace ClassConexion
 
             AbrirConexion();
 
-            string str = "select Nombre, Cantidad, Peligroso, PeligrosoII, Articulo, Pedido from Muestra where Remito = '" + numero_remito + "'";
+            string str = "select DescriCliente, Cantidad, Peligroso, PeligrosoII, Articulo, Pedido from Muestra where Remito = '" + numero_remito + "'";
 
             adapter.SelectCommand = new SqlCommand(str, conexion);
 

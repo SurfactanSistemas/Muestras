@@ -41,19 +41,6 @@ namespace Vista
             dt.Clear();
             dt = M.TraerLista(TB_Desde.Text, TB_Hasta.Text);
 
-
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-
-                string _codigo = dt.Rows[i][3].ToString();
-
-                if (_codigo.StartsWith("ML"))
-                {
-                    dt.Rows[i][4] = dt.Rows[i][6].ToString();
-                }
-
-            }
-
             //Se utiliza esta columna para ordenar las fechas.
             dt.Columns.Add("OrdenFecha", typeof(string));
 
@@ -512,27 +499,6 @@ namespace Vista
                 {
                     dt = CS.BuscarListaRemito(numero_remito);
 
-                    for (int i = 0; i < dt.Rows.Count; i++) {
-
-                        string _codigo = dt.Rows[i][4].ToString();
-
-                        if (_codigo.StartsWith("ML")) {
-
-                            // Completamos el codigo con ceros.
-                            //string[] _cod = _codigo.Split('-');
-
-                            //for (int j = 0; j <= 5 - _cod[1].Length; j++) {
-                            //    _cod[1] = "0" + _cod[1];
-                            //}
-
-                            //_codigo = string.Join("-", _cod);
-
-                            dt.Rows[i][0] = _BuscarNombreML(_codigo, dt.Rows[i][5].ToString());
-                        }
-                        
-                    
-                    }
-
                     DataRow datacliente1 = CS.BuscarCliente(cliente);
 
                     string CodClient1 = datacliente1[0].ToString();
@@ -628,7 +594,7 @@ namespace Vista
                 for (int i = 0; i < DGV_Muestra.SelectedRows.Count; i++)
                 {
                     DataRow newRow = dt.NewRow();
-                    newRow["Descripcion"] = DGV_Muestra.SelectedRows[i].Cells["Nombre"].Value.ToString();
+                    newRow["Descripcion"] = DGV_Muestra.SelectedRows[i].Cells["DescriCliente"].Value.ToString();
                     newRow["Cantidad"] = DGV_Muestra.SelectedRows[i].Cells["Cantidad"].Value.ToString();
                     newRow["Muestra"] = DGV_Muestra.SelectedRows[i].Cells["Id"].Value.ToString();
                     newRow["Partida"] = Lotes[i];
