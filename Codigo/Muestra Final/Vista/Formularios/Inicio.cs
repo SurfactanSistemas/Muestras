@@ -538,6 +538,16 @@ namespace Vista
                     // Se busca lote para el Codigo solicitado en caso de que no sea un ML.
                     // Falta definir el
 
+                    string[] auxi = cod.Split('-');
+
+                    for (int x = 0; x <= 5 - auxi[1].ToString().Length; x++) {
+
+                        auxi[1] = "0" + auxi[1];
+
+                    }
+
+                    cod = string.Join("-", auxi).Trim();
+
                     string cant = DGV_Muestra.SelectedRows[i].Cells[5].Value.ToString().Trim();
 
                     cant = cant.Replace(",", ".");
