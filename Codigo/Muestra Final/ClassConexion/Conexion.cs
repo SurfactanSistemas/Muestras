@@ -173,6 +173,23 @@ namespace ClassConexion
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.Text;
+            
+            if (cod.StartsWith("DY"))
+            {
+
+                string[] auxi = cod.Split('-');
+                int max = auxi[1].ToString().Length;
+
+                for (int x = 0; x < 5 - max; x++)
+                {
+
+                    auxi[1] = "0" + auxi[1];
+
+                }
+
+                cod = string.Join("-", auxi).Trim();
+
+            }
 
             string str = "select Lote1 from Pedido where Terminado = '" + cod + "' and Pedido = '" + pedido + "'";
 
@@ -237,13 +254,32 @@ namespace ClassConexion
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.Text;
 
+            string cod = DGV.Cells[5].Value.ToString().Trim();
+
+            if (cod.StartsWith("DY"))
+            {
+
+                string[] auxi = cod.Split('-');
+                int max = auxi[1].ToString().Length;
+
+                for (int x = 0; x < 5 - max; x++)
+                {
+
+                    auxi[1] = "0" + auxi[1];
+
+                }
+
+                cod = string.Join("-", auxi).Trim();
+
+            }
+
             AbrirConexion();
             cmd.Connection = conexion;
 
             //Actualizo pedido
             cmd.CommandText = "update Pedido set Facturado = (Facturado + " + DGV.Cells[1].Value.ToString().Trim() + "),"
                     + " MarcaFactura = 0 where Pedido = '" + DGV.Cells[4].Value.ToString().Trim()
-                    + "' and Terminado = '" + DGV.Cells[5].Value.ToString().Trim() + "'";
+                    + "' and Terminado = '" + cod + "'";
 
             cmd.ExecuteNonQuery();
 
@@ -411,7 +447,7 @@ namespace ClassConexion
 
             AbrirConexion(CS);
             cmd.Connection = conexion;
-
+            
             cmd.CommandText = "update Terminado set Salidas = (Salidas + " + DGVRow.Cells[1].Value.ToString().Trim() + "),"
             + "Pedido = (Pedido - " + DGVRow.Cells[1].Value.ToString().Trim() + ") where Codigo = '" + DGVRow.Cells[6].Value.ToString().Trim() + "'";
 
@@ -501,9 +537,28 @@ namespace ClassConexion
 
             cmd.Connection = conexion;
 
+            string cod = DGVRow.Cells[5].Value.ToString().Trim();
+
+            if (cod.StartsWith("DY"))
+            {
+                string[] auxi = cod.Split('-');
+                int max = auxi[1].ToString().Length;
+
+                for (int x = 0; x < 5 - max; x++)
+                {
+
+                    auxi[1] = "0" + auxi[1];
+
+                }
+
+                cod = string.Join("-", auxi).Trim();
+
+            }
+
+
             //Busco el tipopedido (esto es lo primero que tengo que hacer, antes de actualizar en otro lado) modifico la connectionstring
             cmd.CommandText = "select TipoPedido from Pedido where  Pedido = '" + DGVRow.Cells[4].Value.ToString().Trim()
-                + "' and Terminado = '" + DGVRow.Cells[5].Value.ToString().Trim() + "'";
+                + "' and Terminado = '" + cod + "'";
 
             string value = System.Convert.ToString(cmd.ExecuteScalar());
 
@@ -645,9 +700,27 @@ namespace ClassConexion
             AbrirConexion();
             cmd.Connection = conexion;
 
+            string cod = Producto;
+
+            if (cod.StartsWith("DY"))
+            {
+
+                string[] auxi = cod.Split('-');
+                int max = auxi[1].ToString().Length;
+
+                for (int x = 0; x < 5 - max; x++)
+                {
+
+                    auxi[1] = "0" + auxi[1];
+
+                }
+
+                cod = string.Join("-", auxi).Trim();
+
+            }
 
             //elimino  Muestras 
-            cmd.CommandText = "update Pedido set Cantidad = " + 0 + " where Pedido = " + Pedido + " and Terminado = '" + Producto + "'";
+            cmd.CommandText = "update Pedido set Cantidad = " + 0 + " where Pedido = " + Pedido + " and Terminado = '" + cod + "'";
 
             cmd.ExecuteNonQuery();
 

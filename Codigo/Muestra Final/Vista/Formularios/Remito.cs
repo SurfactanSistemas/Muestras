@@ -154,9 +154,10 @@ namespace Vista
 
                         //Sumo el string del movimiento mas el orden
                         string Clave = MovLabNumero + orden;
+                        int max = Clave.Length;
 
                         //realizo el for para saber cuantos ceros van a anteceder a la clave obtenida
-                        for (int u = 0; u <= (8 - Clave.Length); u++)
+                        for (int u = 0; u < (8 - max); u++)
                         {
                             Clave = "0" + Clave;
                         }

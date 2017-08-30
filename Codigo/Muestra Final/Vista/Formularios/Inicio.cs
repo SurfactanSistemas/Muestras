@@ -538,15 +538,22 @@ namespace Vista
                     // Se busca lote para el Codigo solicitado en caso de que no sea un ML.
                     // Falta definir el
 
-                    string[] auxi = cod.Split('-');
+                    if (cod.StartsWith("DY")) {
 
-                    for (int x = 0; x <= 5 - auxi[1].ToString().Length; x++) {
+                        string[] auxi = cod.Split('-');
+                        int max = auxi[1].ToString().Length;
 
-                        auxi[1] = "0" + auxi[1];
+                        for (int x = 0; x < 5 - max; x++)
+                        {
 
+                            auxi[1] = "0" + auxi[1];
+
+                        }
+
+                        cod = string.Join("-", auxi).Trim();
+                    
                     }
-
-                    cod = string.Join("-", auxi).Trim();
+                    
 
                     string cant = DGV_Muestra.SelectedRows[i].Cells[5].Value.ToString().Trim();
 
