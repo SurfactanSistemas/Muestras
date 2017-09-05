@@ -351,6 +351,7 @@ namespace Vista
 
                 case "Frasco": // Etiqueta P/Frascos
 
+                    // Por temas de diferencias en impresoras entre Toma
                     return new EtiquetaFrasco();
 
                 default:

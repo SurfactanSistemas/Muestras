@@ -170,44 +170,55 @@ namespace Vista
                         _Fechaord = String.Join("", TBFecha.Text.Split("/".ToCharArray()).Reverse());
                         _WDate = DateTime.Now.ToString("MM-dd-yyyy");
                         _Lote = DGV_Remito.Rows[i].Cells[3].Value.ToString();
-                        
 
-                        //SE MODIFICA A CONTINUACION PORQUE AL SER ML NO SE ACTUALIZA NADA
-                        if (codigo.StartsWith("DY")) //|| codigo.StartsWith("ML"))
-                        {
-                            Cs.ActualizarArticulo(DGV_Remito.Rows[i]);
+                        // Verificamos para ver si realizar o  no el movimiento.
+                        bool _GrabarMovLab = true;
 
-                            _Tipo = "M";
-                            _Terminado = "  -     -   ";
-                            _Articulo = codigo;
+                        if (codigo.StartsWith("YQ")){
+                            if (Cantidad < 20){
                             
-                            //No se en que parte se tiene la fecha
-                            //Fila["OrdenFecha"] = Fila[2].ToString().Substring(6,4) + Fila[2].ToString().Substring(2, 4) + Fila[2].ToString().Substring(0, 2);
-
-                            // Grabar registro
-                            Cs.AltaMovlab(_Clave, _Codigo, _Articulo, _Terminado, _Tipo ,orden, _Fecha, _Fechaord, _Lote, TBCliente.Text, Cantidad);
-
-                            if (Cs.BuscarEnLaudo(DGV_Remito.Rows[i])) Cs.RestarSaldoALaudo(DGV_Remito.Rows[i]);
-                            else if (Cs.BuscarEnGuia_Art(DGV_Remito.Rows[i])) Cs.RestarSaldoAGuia_Art(DGV_Remito.Rows[i]);
-                            else throw new Exception("No se encontro la Muestra en las tablas Laudo ni Guia");
+                                _GrabarMovLab = false;
+                            }
                         }
-                         //SE MODIFICO A ELSE IF PARA QUE ENTRE EN CASO QUE NO SEA DY NI ML ENTRE Y SI ES YF O YQ LA CANTIDAD DEBE SER MAYOR A 1
+
+                        if (_GrabarMovLab) {
+                            //SE MODIFICA A CONTINUACION PORQUE AL SER ML NO SE ACTUALIZA NADA
+                            if (codigo.StartsWith("DY")) //|| codigo.StartsWith("ML"))
+                            {
+                                Cs.ActualizarArticulo(DGV_Remito.Rows[i]);
+
+                                _Tipo = "M";
+                                _Terminado = "  -     -   ";
+                                _Articulo = codigo;
+
+                                //No se en que parte se tiene la fecha
+                                //Fila["OrdenFecha"] = Fila[2].ToString().Substring(6,4) + Fila[2].ToString().Substring(2, 4) + Fila[2].ToString().Substring(0, 2);
+
+                                // Grabar registro
+                                Cs.AltaMovlab(_Clave, _Codigo, _Articulo, _Terminado, _Tipo, orden, _Fecha, _Fechaord, _Lote, TBCliente.Text, Cantidad);
+
+                                if (Cs.BuscarEnLaudo(DGV_Remito.Rows[i])) Cs.RestarSaldoALaudo(DGV_Remito.Rows[i]);
+                                else if (Cs.BuscarEnGuia_Art(DGV_Remito.Rows[i])) Cs.RestarSaldoAGuia_Art(DGV_Remito.Rows[i]);
+                                else throw new Exception("No se encontro la Muestra en las tablas Laudo ni Guia");
+                            }
+                            //SE MODIFICO A ELSE IF PARA QUE ENTRE EN CASO QUE NO SEA DY NI ML ENTRE Y SI ES YF O YQ LA CANTIDAD DEBE SER MAYOR A 1
                             //SINO NO SE ACTUALIZA LOTE
-                        else if ((codigo.StartsWith("YQ") && Cantidad > 1) || (codigo.StartsWith("YF") && Cantidad > 1) || codigo.StartsWith("PT"))
-                        {
+                            else if ((codigo.StartsWith("YQ") && Cantidad > 1) || (codigo.StartsWith("YF") && Cantidad > 1) || codigo.StartsWith("PT"))
+                            {
 
-                            Cs.ActualizarTerminado(DGV_Remito.Rows[i]);
+                                Cs.ActualizarTerminado(DGV_Remito.Rows[i]);
 
-                            _Tipo = "T";
-                            _Terminado = codigo;
-                            _Articulo = "  -     -   ";
+                                _Tipo = "T";
+                                _Terminado = codigo;
+                                _Articulo = "  -     -   ";
 
-                            //// Grabar registro
-                            Cs.AltaMovlab(_Clave, _Codigo, _Articulo, _Terminado, _Tipo, orden , _Fecha, _Fechaord, _Lote, TBCliente.Text, Cantidad);
-                    
-                            if (Cs.BuscarEnHoja(DGV_Remito.Rows[i])) Cs.RestarSaldoAHoja(DGV_Remito.Rows[i]);
-                            else if (Cs.BuscarEnGuia_Ter(DGV_Remito.Rows[i])) Cs.RestarSaldoAGuia_Ter(DGV_Remito.Rows[i]);
-                            else throw new Exception("No se encontro la Muestra en las tablas Hoja ni Guia");
+                                //// Grabar registro
+                                Cs.AltaMovlab(_Clave, _Codigo, _Articulo, _Terminado, _Tipo, orden, _Fecha, _Fechaord, _Lote, TBCliente.Text, Cantidad);
+
+                                if (Cs.BuscarEnHoja(DGV_Remito.Rows[i])) Cs.RestarSaldoAHoja(DGV_Remito.Rows[i]);
+                                else if (Cs.BuscarEnGuia_Ter(DGV_Remito.Rows[i])) Cs.RestarSaldoAGuia_Ter(DGV_Remito.Rows[i]);
+                                else throw new Exception("No se encontro la Muestra en las tablas Hoja ni Guia");
+                            }
                         }
                     }
                 }
