@@ -105,7 +105,7 @@ namespace Vista
             {
                 case "Chica": // Etiqueta Chica (8.5 x 4)
 
-                    posiciones = 8;
+                    posiciones = 4;
                     break;
 
                 case "Grande": // Etiqueta Autoadhesiva (14 x 12.5)

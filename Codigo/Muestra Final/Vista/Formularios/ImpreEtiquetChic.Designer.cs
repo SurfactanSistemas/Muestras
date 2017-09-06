@@ -57,9 +57,9 @@
             this.ClientSize = new System.Drawing.Size(784, 562);
             this.Controls.Add(this.CRVEtiquetas);
             this.Name = "ImpreEtiquetChic";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ImpreEtiquetChic";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

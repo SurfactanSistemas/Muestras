@@ -43,7 +43,9 @@ namespace Vista
             if (this.tipo != "Grande")
             {
                 // Dejamos en blanco las primeras etiquetas en caso de seleccionar una posicion que no se la de por defecto.
-                for (int j = 0; j < this.posicion; j++)
+                int WPosicion = (this.tipo == "Chica") ? this.posicion * 2 : this.posicion;
+
+                for (int j = 0; j < WPosicion; j++)
                 {
                     DataRow dr = dt.Rows[0];
                     Dss[0].Tables[NumEtiquetaActual].Rows.Add("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "");
@@ -57,25 +59,71 @@ namespace Vista
                 for (int i = 0; i < CantidadesDeEtiquetas[row]; i++)
                 {
                     DataRow dr = dt.Rows[row];
+
+                    // Quitamos espacios en blanco.
+
+                    for (int x = 0; x < dr.ItemArray.Count(); x++) {
+
+                        dr[x] = dr[x].ToString().Trim();
+                    
+                    }
                     
                     string[] SGA = _ObtenerDatosSGA(dr[2].ToString());
 
-                    Dss[HojaActual].Tables[NumEtiquetaActual].Rows.Add(
-                        dr[4], dr[1], dr[9],
-                        dr[6], dr[7], dr[0],
-                        dr[10], dr[8], dr[5],
-                        SGA[0], SGA[1], SGA[2],
-                        SGA[3], SGA[4], SGA[5],
-                        SGA[6], SGA[7], SGA[8],
-                        SGA[9], SGA[10], SGA[11], SGA[14],
-                        SGA[15], SGA[16], SGA[17],
-                        SGA[18], SGA[19], SGA[20],
-                        SGA[21], SGA[22], SGA[23],
-                        SGA[24], SGA[25], SGA[26],
-                        SGA[27], SGA[28], SGA[12]
-                    );
+                    if (this.tipo == "Chica") {
+                        Dss[HojaActual].Tables[NumEtiquetaActual].Rows.Add(
+                            dr[4], dr[1], dr[9],
+                            dr[6], dr[7], dr[0],
+                            dr[10], dr[8], dr[5],
+                            SGA[0], SGA[1], SGA[2],
+                            SGA[3], SGA[4], SGA[5],
+                            SGA[6], SGA[7], SGA[8],
+                            SGA[9], SGA[10], SGA[11], SGA[14],
+                            SGA[15], SGA[16], SGA[17],
+                            SGA[18], SGA[19], SGA[20],
+                            SGA[21], SGA[22], SGA[23],
+                            SGA[24], SGA[25], SGA[26],
+                            SGA[27], SGA[28], SGA[12]
+                        );
 
-                    NumEtiquetaActual++;
+                        NumEtiquetaActual++;
+
+                        Dss[HojaActual].Tables[NumEtiquetaActual].Rows.Add(
+                            dr[4], dr[1], dr[9],
+                            dr[6], dr[7], dr[0],
+                            dr[10], dr[8], dr[5],
+                            SGA[0], SGA[1], SGA[2],
+                            SGA[3], SGA[4], SGA[5],
+                            SGA[6], SGA[7], SGA[8],
+                            SGA[9], SGA[10], SGA[11], SGA[14],
+                            SGA[15], SGA[16], SGA[17],
+                            SGA[18], SGA[19], SGA[20],
+                            SGA[21], SGA[22], SGA[23],
+                            SGA[24], SGA[25], SGA[26],
+                            SGA[27], SGA[28], SGA[12]
+                        );
+
+                        NumEtiquetaActual++;
+                    } 
+                    else{
+
+                        Dss[HojaActual].Tables[NumEtiquetaActual].Rows.Add(
+                            dr[4], dr[1], dr[9],
+                            dr[6], dr[7], dr[0],
+                            dr[10], dr[8], dr[5],
+                            SGA[0], SGA[1], SGA[2],
+                            SGA[3], SGA[4], SGA[5],
+                            SGA[6], SGA[7], SGA[8],
+                            SGA[9], SGA[10], SGA[11], SGA[14],
+                            SGA[15], SGA[16], SGA[17],
+                            SGA[18], SGA[19], SGA[20],
+                            SGA[21], SGA[22], SGA[23],
+                            SGA[24], SGA[25], SGA[26],
+                            SGA[27], SGA[28], SGA[12]
+                        );
+
+                        NumEtiquetaActual++;
+                    }
 
                     if (EsFinalDeHoja(NumEtiquetaActual))
                     {
@@ -91,7 +139,6 @@ namespace Vista
                 }
             }
             
-            CRVEtiquetas.Visible = true;
             
             foreach (DSEtiq1 ds in Dss)
             {
@@ -108,6 +155,7 @@ namespace Vista
                 }
                 else
                 {
+                    CRVEtiquetas.Visible = true;
                     CRVEtiquetas.ReportSource = ECImp;
                 }
 
@@ -120,7 +168,7 @@ namespace Vista
             {
                 case "PT": case "YQ": case "YF": case "YP":
                     // Porque los datos para la etiquetas de frasco se encuentran en otra tabla.
-                    return (this.tipo == "Frasco") ? "DatosEtiqueta" : "DatosEtiquetaImpre";
+                    return (this.tipo == "Frasco" || this.tipo == "Chica") ? "DatosEtiqueta" : "DatosEtiquetaImpre";
                     break;
                 default:
                     return "DatosEtiquetaMP";
@@ -164,7 +212,7 @@ namespace Vista
                         int renglon = 8;
                         int pictograma = 1;
 
-                        int _tipo = (this.tipo == "Frasco" || Tabla == "DatosEtiquetaMP") ? 0 : 1;
+                        int _tipo = (this.tipo == "Chica" || this.tipo == "Frasco" || Tabla == "DatosEtiquetaMP") ? 0 : 1;
 
                         switch (_tipo)
                         {
@@ -243,16 +291,6 @@ namespace Vista
         {
             switch (this.tipo)
             {
-                case "Frasco":
-
-                    if (numero == "0")
-                        {
-                            return _EnProduccion ? Path.GetFullPath(@".\SGA\SGA0.JPG") : Path.GetFullPath(@"..\..\Resources\SGA0.JPG");
-                        }
-                        // Envio la ruta dependiendo si se encuentra en produccion o no, debido a que mientras se desarrolla la raiz del ejecutable se resetea cada vez que se ejecuta.
-                        return _EnProduccion ? Path.GetFullPath(@".\SGA\SGA" + numero + ".png") : Path.GetFullPath(@"..\..\Resources\SGA" + numero + ".png");
-                    break;
-
                 case "Grande":
 
                     if (numero == "0")
@@ -265,7 +303,13 @@ namespace Vista
                     break;
 
                 default:
-                    return "";
+
+                    if (numero == "0")
+                    {
+                        return _EnProduccion ? Path.GetFullPath(@".\SGA\SGA0.JPG") : Path.GetFullPath(@"..\..\Resources\SGA0.JPG");
+                    }
+                    // Envio la ruta dependiendo si se encuentra en produccion o no, debido a que mientras se desarrolla la raiz del ejecutable se resetea cada vez que se ejecuta.
+                    return _EnProduccion ? Path.GetFullPath(@".\SGA\SGA" + numero + ".png") : Path.GetFullPath(@"..\..\Resources\SGA" + numero + ".png");
                     break;
             }
 
@@ -282,7 +326,7 @@ namespace Vista
 
             if (this.tipo != "Grande")
             {
-                corrimiento += this.posicion;
+                corrimiento += (this.tipo == "Chica") ? this.posicion*2 : this.posicion;
             }
 
             return Convert.ToInt32( // Paso a número entero
@@ -298,7 +342,7 @@ namespace Vista
 
             foreach (int cant in this.CantidadesDeEtiquetas)
             {
-                total += cant;
+                total += (this.tipo == "Chica") ? cant*2 : cant;
             }
 
             return total;
