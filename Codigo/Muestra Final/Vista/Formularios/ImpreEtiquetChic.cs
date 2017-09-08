@@ -83,7 +83,7 @@ namespace Vista
                             SGA[18], SGA[19], SGA[20],
                             SGA[21], SGA[22], SGA[23],
                             SGA[24], SGA[25], SGA[26],
-                            SGA[27], SGA[28], SGA[12]
+                            SGA[27], SGA[28], SGA[12],"","", dr[11]
                         );
 
                         NumEtiquetaActual++;
@@ -100,7 +100,7 @@ namespace Vista
                             SGA[18], SGA[19], SGA[20],
                             SGA[21], SGA[22], SGA[23],
                             SGA[24], SGA[25], SGA[26],
-                            SGA[27], SGA[28], SGA[12]
+                            SGA[27], SGA[28], SGA[12],"","", dr[11]
                         );
 
                         NumEtiquetaActual++;
@@ -119,7 +119,7 @@ namespace Vista
                             SGA[18], SGA[19], SGA[20],
                             SGA[21], SGA[22], SGA[23],
                             SGA[24], SGA[25], SGA[26],
-                            SGA[27], SGA[28], SGA[12]
+                            SGA[27], SGA[28], SGA[12], "", "", dr[11]
                         );
 
                         NumEtiquetaActual++;
@@ -149,9 +149,12 @@ namespace Vista
 
                 if (_EnProduccion)
                 {
-                    ECImp.PrintToPrinter(1, true, 0, 0);
 
-                    Close();
+                    CRVEtiquetas.Visible = true;
+                    CRVEtiquetas.ReportSource = ECImp;
+                    //ECImp.PrintToPrinter(1, true, 0, 0);
+
+                    //Close();
                 }
                 else
                 {

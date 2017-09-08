@@ -79,11 +79,11 @@ namespace Vista
 
                     return "Grande";
 
-                case 2: // Etiqueta Mediana
+                //case 2: // Etiqueta Mediana
 
-                    return "Mediana";
+                //    return "Mediana";
 
-                case 3: // Etiqueta P/Frascos
+                case 2: // Etiqueta P/Frascos
 
                     return "Frasco";
 

@@ -376,6 +376,19 @@ namespace Vista
                     newRow["Direccion_1"] = "MALVINAS ARGENTINAS 4589 (1644) VICTORIA";
                     newRow["Direccion_2"] = "BS.AS. 4714-4097/4085 surfac@surfactan.com";
 
+
+                    string lote = DGV_Muestra.SelectedRows[i].Cells["Lote2"].Value.ToString();
+
+                    if (lote.Trim() == "" || int.Parse(lote) == 0)
+                    {
+                        lote = "Pedido: " + DGV_Muestra.SelectedRows[i].Cells["Pedido"].Value.ToString().Trim();
+                    }
+                    else {
+                        lote = "Lote: " + lote.Trim();
+                    }
+
+                    newRow["Lote"] = lote.ToString();
+
                     string codigoOri = DGV_Muestra.SelectedRows[i].Cells["Codigo"].Value.ToString();
                     //string codigo = codigoOri.Substring(0, 12);
 
@@ -563,10 +576,14 @@ namespace Vista
 
                     if (DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().StartsWith("YQ"))
                     {
-                        if ( Double.Parse(cant) >= 20){
+                        if (Double.Parse(cant) >= 20)
+                        {
                             int Lote1 = int.Parse(CS.BuscarLote1(cod, pedido));
 
-                            if (Lote1 == 0) throw new Exception("La Muestra para " + DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().Trim() + " no posee lote");
+                            if (Lote1 == 0)
+                            {
+                                throw new Exception("La Muestra para " + DGV_Muestra.SelectedRows[i].Cells[3].Value.ToString().Trim() + " no posee lote");
+                            }
 
                             Lotes[i] = Lote1;
                         }
@@ -673,6 +690,7 @@ namespace Vista
             dt.Columns.Add("Clase", typeof(string));
             dt.Columns.Add("Intervencion", typeof(string));
             dt.Columns.Add("Naciones", typeof(string));
+            dt.Columns.Add("Lote", typeof(string));
         }
 
         private void BtImpresion_Click(object sender, EventArgs e)

@@ -672,6 +672,8 @@ namespace Vista {
             
             private global::System.Data.DataColumn columnPictograma5;
             
+            private global::System.Data.DataColumn columnLote;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public Etiquet1DataTable() {
@@ -1019,6 +1021,14 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LoteColumn {
+                get {
+                    return this.columnLote;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1093,7 +1103,8 @@ namespace Vista {
                         string Frase22, 
                         string Frase23, 
                         string Frase24, 
-                        string Pictograma5) {
+                        string Pictograma5, 
+                        string Lote) {
                 Etiquet1Row rowEtiquet1Row = ((Etiquet1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Cliente,
@@ -1134,7 +1145,8 @@ namespace Vista {
                         Frase22,
                         Frase23,
                         Frase24,
-                        Pictograma5};
+                        Pictograma5,
+                        Lote};
                 rowEtiquet1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEtiquet1Row);
                 return rowEtiquet1Row;
@@ -1196,6 +1208,7 @@ namespace Vista {
                 this.columnFrase23 = base.Columns["Frase23"];
                 this.columnFrase24 = base.Columns["Frase24"];
                 this.columnPictograma5 = base.Columns["Pictograma5"];
+                this.columnLote = base.Columns["Lote"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1279,6 +1292,8 @@ namespace Vista {
                 base.Columns.Add(this.columnFrase24);
                 this.columnPictograma5 = new global::System.Data.DataColumn("Pictograma5", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPictograma5);
+                this.columnLote = new global::System.Data.DataColumn("Lote", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLote);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1489,6 +1504,8 @@ namespace Vista {
             private global::System.Data.DataColumn columnFrase24;
             
             private global::System.Data.DataColumn columnPictograma5;
+            
+            private global::System.Data.DataColumn columnLote;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -1837,6 +1854,14 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LoteColumn {
+                get {
+                    return this.columnLote;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1911,7 +1936,8 @@ namespace Vista {
                         string Frase22, 
                         string Frase23, 
                         string Frase24, 
-                        string Pictograma5) {
+                        string Pictograma5, 
+                        string Lote) {
                 Etiquet2Row rowEtiquet2Row = ((Etiquet2Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Cliente,
@@ -1952,7 +1978,8 @@ namespace Vista {
                         Frase22,
                         Frase23,
                         Frase24,
-                        Pictograma5};
+                        Pictograma5,
+                        Lote};
                 rowEtiquet2Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEtiquet2Row);
                 return rowEtiquet2Row;
@@ -2014,6 +2041,7 @@ namespace Vista {
                 this.columnFrase23 = base.Columns["Frase23"];
                 this.columnFrase24 = base.Columns["Frase24"];
                 this.columnPictograma5 = base.Columns["Pictograma5"];
+                this.columnLote = base.Columns["Lote"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2097,6 +2125,8 @@ namespace Vista {
                 base.Columns.Add(this.columnFrase24);
                 this.columnPictograma5 = new global::System.Data.DataColumn("Pictograma5", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPictograma5);
+                this.columnLote = new global::System.Data.DataColumn("Lote", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLote);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2307,6 +2337,8 @@ namespace Vista {
             private global::System.Data.DataColumn columnFrase24;
             
             private global::System.Data.DataColumn columnPictograma5;
+            
+            private global::System.Data.DataColumn columnLote;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -2655,6 +2687,14 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LoteColumn {
+                get {
+                    return this.columnLote;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2729,7 +2769,8 @@ namespace Vista {
                         string Frase22, 
                         string Frase23, 
                         string Frase24, 
-                        string Pictograma5) {
+                        string Pictograma5, 
+                        string Lote) {
                 Etiquet3Row rowEtiquet3Row = ((Etiquet3Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Cliente,
@@ -2770,7 +2811,8 @@ namespace Vista {
                         Frase22,
                         Frase23,
                         Frase24,
-                        Pictograma5};
+                        Pictograma5,
+                        Lote};
                 rowEtiquet3Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEtiquet3Row);
                 return rowEtiquet3Row;
@@ -2832,6 +2874,7 @@ namespace Vista {
                 this.columnFrase23 = base.Columns["Frase23"];
                 this.columnFrase24 = base.Columns["Frase24"];
                 this.columnPictograma5 = base.Columns["Pictograma5"];
+                this.columnLote = base.Columns["Lote"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2915,6 +2958,8 @@ namespace Vista {
                 base.Columns.Add(this.columnFrase24);
                 this.columnPictograma5 = new global::System.Data.DataColumn("Pictograma5", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPictograma5);
+                this.columnLote = new global::System.Data.DataColumn("Lote", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLote);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3125,6 +3170,8 @@ namespace Vista {
             private global::System.Data.DataColumn columnFrase24;
             
             private global::System.Data.DataColumn columnPictograma5;
+            
+            private global::System.Data.DataColumn columnLote;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -3473,6 +3520,14 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LoteColumn {
+                get {
+                    return this.columnLote;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -3547,7 +3602,8 @@ namespace Vista {
                         string Frase22, 
                         string Frase23, 
                         string Frase24, 
-                        string Pictograma5) {
+                        string Pictograma5, 
+                        string Lote) {
                 Etiquet4Row rowEtiquet4Row = ((Etiquet4Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Cliente,
@@ -3588,7 +3644,8 @@ namespace Vista {
                         Frase22,
                         Frase23,
                         Frase24,
-                        Pictograma5};
+                        Pictograma5,
+                        Lote};
                 rowEtiquet4Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEtiquet4Row);
                 return rowEtiquet4Row;
@@ -3650,6 +3707,7 @@ namespace Vista {
                 this.columnFrase23 = base.Columns["Frase23"];
                 this.columnFrase24 = base.Columns["Frase24"];
                 this.columnPictograma5 = base.Columns["Pictograma5"];
+                this.columnLote = base.Columns["Lote"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3733,6 +3791,8 @@ namespace Vista {
                 base.Columns.Add(this.columnFrase24);
                 this.columnPictograma5 = new global::System.Data.DataColumn("Pictograma5", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPictograma5);
+                this.columnLote = new global::System.Data.DataColumn("Lote", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLote);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3943,6 +4003,8 @@ namespace Vista {
             private global::System.Data.DataColumn columnFrase24;
             
             private global::System.Data.DataColumn columnPictograma5;
+            
+            private global::System.Data.DataColumn columnLote;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -4291,6 +4353,14 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LoteColumn {
+                get {
+                    return this.columnLote;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -4365,7 +4435,8 @@ namespace Vista {
                         string Frase22, 
                         string Frase23, 
                         string Frase24, 
-                        string Pictograma5) {
+                        string Pictograma5, 
+                        string Lote) {
                 Etiquet5Row rowEtiquet5Row = ((Etiquet5Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Cliente,
@@ -4406,7 +4477,8 @@ namespace Vista {
                         Frase22,
                         Frase23,
                         Frase24,
-                        Pictograma5};
+                        Pictograma5,
+                        Lote};
                 rowEtiquet5Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEtiquet5Row);
                 return rowEtiquet5Row;
@@ -4468,6 +4540,7 @@ namespace Vista {
                 this.columnFrase23 = base.Columns["Frase23"];
                 this.columnFrase24 = base.Columns["Frase24"];
                 this.columnPictograma5 = base.Columns["Pictograma5"];
+                this.columnLote = base.Columns["Lote"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4551,6 +4624,8 @@ namespace Vista {
                 base.Columns.Add(this.columnFrase24);
                 this.columnPictograma5 = new global::System.Data.DataColumn("Pictograma5", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPictograma5);
+                this.columnLote = new global::System.Data.DataColumn("Lote", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLote);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4761,6 +4836,8 @@ namespace Vista {
             private global::System.Data.DataColumn columnFrase24;
             
             private global::System.Data.DataColumn columnPictograma5;
+            
+            private global::System.Data.DataColumn columnLote;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -5109,6 +5186,14 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LoteColumn {
+                get {
+                    return this.columnLote;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -5183,7 +5268,8 @@ namespace Vista {
                         string Frase22, 
                         string Frase23, 
                         string Frase24, 
-                        string Pictograma5) {
+                        string Pictograma5, 
+                        string Lote) {
                 Etiquet6Row rowEtiquet6Row = ((Etiquet6Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Cliente,
@@ -5224,7 +5310,8 @@ namespace Vista {
                         Frase22,
                         Frase23,
                         Frase24,
-                        Pictograma5};
+                        Pictograma5,
+                        Lote};
                 rowEtiquet6Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEtiquet6Row);
                 return rowEtiquet6Row;
@@ -5286,6 +5373,7 @@ namespace Vista {
                 this.columnFrase23 = base.Columns["Frase23"];
                 this.columnFrase24 = base.Columns["Frase24"];
                 this.columnPictograma5 = base.Columns["Pictograma5"];
+                this.columnLote = base.Columns["Lote"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5369,6 +5457,8 @@ namespace Vista {
                 base.Columns.Add(this.columnFrase24);
                 this.columnPictograma5 = new global::System.Data.DataColumn("Pictograma5", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPictograma5);
+                this.columnLote = new global::System.Data.DataColumn("Lote", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLote);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5579,6 +5669,8 @@ namespace Vista {
             private global::System.Data.DataColumn columnFrase24;
             
             private global::System.Data.DataColumn columnPictograma5;
+            
+            private global::System.Data.DataColumn columnLote;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -5927,6 +6019,14 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LoteColumn {
+                get {
+                    return this.columnLote;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -6001,7 +6101,8 @@ namespace Vista {
                         string Frase22, 
                         string Frase23, 
                         string Frase24, 
-                        string Pictograma5) {
+                        string Pictograma5, 
+                        string Lote) {
                 Etiquet7Row rowEtiquet7Row = ((Etiquet7Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Cliente,
@@ -6042,7 +6143,8 @@ namespace Vista {
                         Frase22,
                         Frase23,
                         Frase24,
-                        Pictograma5};
+                        Pictograma5,
+                        Lote};
                 rowEtiquet7Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEtiquet7Row);
                 return rowEtiquet7Row;
@@ -6104,6 +6206,7 @@ namespace Vista {
                 this.columnFrase23 = base.Columns["Frase23"];
                 this.columnFrase24 = base.Columns["Frase24"];
                 this.columnPictograma5 = base.Columns["Pictograma5"];
+                this.columnLote = base.Columns["Lote"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6187,6 +6290,8 @@ namespace Vista {
                 base.Columns.Add(this.columnFrase24);
                 this.columnPictograma5 = new global::System.Data.DataColumn("Pictograma5", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPictograma5);
+                this.columnLote = new global::System.Data.DataColumn("Lote", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLote);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6397,6 +6502,8 @@ namespace Vista {
             private global::System.Data.DataColumn columnFrase24;
             
             private global::System.Data.DataColumn columnPictograma5;
+            
+            private global::System.Data.DataColumn columnLote;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -6745,6 +6852,14 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LoteColumn {
+                get {
+                    return this.columnLote;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -6819,7 +6934,8 @@ namespace Vista {
                         string Frase22, 
                         string Frase23, 
                         string Frase24, 
-                        string Pictograma5) {
+                        string Pictograma5, 
+                        string Lote) {
                 Etiquet8Row rowEtiquet8Row = ((Etiquet8Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Cliente,
@@ -6860,7 +6976,8 @@ namespace Vista {
                         Frase22,
                         Frase23,
                         Frase24,
-                        Pictograma5};
+                        Pictograma5,
+                        Lote};
                 rowEtiquet8Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEtiquet8Row);
                 return rowEtiquet8Row;
@@ -6922,6 +7039,7 @@ namespace Vista {
                 this.columnFrase23 = base.Columns["Frase23"];
                 this.columnFrase24 = base.Columns["Frase24"];
                 this.columnPictograma5 = base.Columns["Pictograma5"];
+                this.columnLote = base.Columns["Lote"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7005,6 +7123,8 @@ namespace Vista {
                 base.Columns.Add(this.columnFrase24);
                 this.columnPictograma5 = new global::System.Data.DataColumn("Pictograma5", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPictograma5);
+                this.columnLote = new global::System.Data.DataColumn("Lote", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLote);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7215,6 +7335,8 @@ namespace Vista {
             private global::System.Data.DataColumn columnFrase24;
             
             private global::System.Data.DataColumn columnPictograma5;
+            
+            private global::System.Data.DataColumn columnLote;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -7563,6 +7685,14 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LoteColumn {
+                get {
+                    return this.columnLote;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -7637,7 +7767,8 @@ namespace Vista {
                         string Frase22, 
                         string Frase23, 
                         string Frase24, 
-                        string Pictograma5) {
+                        string Pictograma5, 
+                        string Lote) {
                 Etiquet9Row rowEtiquet9Row = ((Etiquet9Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Cliente,
@@ -7678,7 +7809,8 @@ namespace Vista {
                         Frase22,
                         Frase23,
                         Frase24,
-                        Pictograma5};
+                        Pictograma5,
+                        Lote};
                 rowEtiquet9Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEtiquet9Row);
                 return rowEtiquet9Row;
@@ -7740,6 +7872,7 @@ namespace Vista {
                 this.columnFrase23 = base.Columns["Frase23"];
                 this.columnFrase24 = base.Columns["Frase24"];
                 this.columnPictograma5 = base.Columns["Pictograma5"];
+                this.columnLote = base.Columns["Lote"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7823,6 +7956,8 @@ namespace Vista {
                 base.Columns.Add(this.columnFrase24);
                 this.columnPictograma5 = new global::System.Data.DataColumn("Pictograma5", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPictograma5);
+                this.columnLote = new global::System.Data.DataColumn("Lote", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLote);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8033,6 +8168,8 @@ namespace Vista {
             private global::System.Data.DataColumn columnFrase24;
             
             private global::System.Data.DataColumn columnPictograma5;
+            
+            private global::System.Data.DataColumn columnLote;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -8381,6 +8518,14 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LoteColumn {
+                get {
+                    return this.columnLote;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -8455,7 +8600,8 @@ namespace Vista {
                         string Frase22, 
                         string Frase23, 
                         string Frase24, 
-                        string Pictograma5) {
+                        string Pictograma5, 
+                        string Lote) {
                 Etiquet10Row rowEtiquet10Row = ((Etiquet10Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Cliente,
@@ -8496,7 +8642,8 @@ namespace Vista {
                         Frase22,
                         Frase23,
                         Frase24,
-                        Pictograma5};
+                        Pictograma5,
+                        Lote};
                 rowEtiquet10Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEtiquet10Row);
                 return rowEtiquet10Row;
@@ -8558,6 +8705,7 @@ namespace Vista {
                 this.columnFrase23 = base.Columns["Frase23"];
                 this.columnFrase24 = base.Columns["Frase24"];
                 this.columnPictograma5 = base.Columns["Pictograma5"];
+                this.columnLote = base.Columns["Lote"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8641,6 +8789,8 @@ namespace Vista {
                 base.Columns.Add(this.columnFrase24);
                 this.columnPictograma5 = new global::System.Data.DataColumn("Pictograma5", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPictograma5);
+                this.columnLote = new global::System.Data.DataColumn("Lote", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLote);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9407,6 +9557,22 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Lote {
+                get {
+                    try {
+                        return ((string)(this[this.tableEtiquet1.LoteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Lote\' in table \'Etiquet1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEtiquet1.LoteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsClienteNull() {
                 return this.IsNull(this.tableEtiquet1.ClienteColumn);
             }
@@ -9871,6 +10037,18 @@ namespace Vista {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPictograma5Null() {
                 this[this.tableEtiquet1.Pictograma5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLoteNull() {
+                return this.IsNull(this.tableEtiquet1.LoteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLoteNull() {
+                this[this.tableEtiquet1.LoteColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -10514,6 +10692,22 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Lote {
+                get {
+                    try {
+                        return ((string)(this[this.tableEtiquet2.LoteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Lote\' in table \'Etiquet2\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEtiquet2.LoteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsClienteNull() {
                 return this.IsNull(this.tableEtiquet2.ClienteColumn);
             }
@@ -10978,6 +11172,18 @@ namespace Vista {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPictograma5Null() {
                 this[this.tableEtiquet2.Pictograma5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLoteNull() {
+                return this.IsNull(this.tableEtiquet2.LoteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLoteNull() {
+                this[this.tableEtiquet2.LoteColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -11621,6 +11827,22 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Lote {
+                get {
+                    try {
+                        return ((string)(this[this.tableEtiquet3.LoteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Lote\' in table \'Etiquet3\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEtiquet3.LoteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsClienteNull() {
                 return this.IsNull(this.tableEtiquet3.ClienteColumn);
             }
@@ -12085,6 +12307,18 @@ namespace Vista {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPictograma5Null() {
                 this[this.tableEtiquet3.Pictograma5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLoteNull() {
+                return this.IsNull(this.tableEtiquet3.LoteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLoteNull() {
+                this[this.tableEtiquet3.LoteColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -12728,6 +12962,22 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Lote {
+                get {
+                    try {
+                        return ((string)(this[this.tableEtiquet4.LoteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Lote\' in table \'Etiquet4\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEtiquet4.LoteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsClienteNull() {
                 return this.IsNull(this.tableEtiquet4.ClienteColumn);
             }
@@ -13192,6 +13442,18 @@ namespace Vista {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPictograma5Null() {
                 this[this.tableEtiquet4.Pictograma5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLoteNull() {
+                return this.IsNull(this.tableEtiquet4.LoteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLoteNull() {
+                this[this.tableEtiquet4.LoteColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -13835,6 +14097,22 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Lote {
+                get {
+                    try {
+                        return ((string)(this[this.tableEtiquet5.LoteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Lote\' in table \'Etiquet5\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEtiquet5.LoteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsClienteNull() {
                 return this.IsNull(this.tableEtiquet5.ClienteColumn);
             }
@@ -14299,6 +14577,18 @@ namespace Vista {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPictograma5Null() {
                 this[this.tableEtiquet5.Pictograma5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLoteNull() {
+                return this.IsNull(this.tableEtiquet5.LoteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLoteNull() {
+                this[this.tableEtiquet5.LoteColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -14942,6 +15232,22 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Lote {
+                get {
+                    try {
+                        return ((string)(this[this.tableEtiquet6.LoteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Lote\' in table \'Etiquet6\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEtiquet6.LoteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsClienteNull() {
                 return this.IsNull(this.tableEtiquet6.ClienteColumn);
             }
@@ -15406,6 +15712,18 @@ namespace Vista {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPictograma5Null() {
                 this[this.tableEtiquet6.Pictograma5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLoteNull() {
+                return this.IsNull(this.tableEtiquet6.LoteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLoteNull() {
+                this[this.tableEtiquet6.LoteColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -16049,6 +16367,22 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Lote {
+                get {
+                    try {
+                        return ((string)(this[this.tableEtiquet7.LoteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Lote\' in table \'Etiquet7\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEtiquet7.LoteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsClienteNull() {
                 return this.IsNull(this.tableEtiquet7.ClienteColumn);
             }
@@ -16513,6 +16847,18 @@ namespace Vista {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPictograma5Null() {
                 this[this.tableEtiquet7.Pictograma5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLoteNull() {
+                return this.IsNull(this.tableEtiquet7.LoteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLoteNull() {
+                this[this.tableEtiquet7.LoteColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -17156,6 +17502,22 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Lote {
+                get {
+                    try {
+                        return ((string)(this[this.tableEtiquet8.LoteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Lote\' in table \'Etiquet8\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEtiquet8.LoteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsClienteNull() {
                 return this.IsNull(this.tableEtiquet8.ClienteColumn);
             }
@@ -17620,6 +17982,18 @@ namespace Vista {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPictograma5Null() {
                 this[this.tableEtiquet8.Pictograma5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLoteNull() {
+                return this.IsNull(this.tableEtiquet8.LoteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLoteNull() {
+                this[this.tableEtiquet8.LoteColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -18263,6 +18637,22 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Lote {
+                get {
+                    try {
+                        return ((string)(this[this.tableEtiquet9.LoteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Lote\' in table \'Etiquet9\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEtiquet9.LoteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsClienteNull() {
                 return this.IsNull(this.tableEtiquet9.ClienteColumn);
             }
@@ -18727,6 +19117,18 @@ namespace Vista {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPictograma5Null() {
                 this[this.tableEtiquet9.Pictograma5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLoteNull() {
+                return this.IsNull(this.tableEtiquet9.LoteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLoteNull() {
+                this[this.tableEtiquet9.LoteColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -19370,6 +19772,22 @@ namespace Vista {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Lote {
+                get {
+                    try {
+                        return ((string)(this[this.tableEtiquet10.LoteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Lote\' in table \'Etiquet10\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEtiquet10.LoteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsClienteNull() {
                 return this.IsNull(this.tableEtiquet10.ClienteColumn);
             }
@@ -19834,6 +20252,18 @@ namespace Vista {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPictograma5Null() {
                 this[this.tableEtiquet10.Pictograma5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLoteNull() {
+                return this.IsNull(this.tableEtiquet10.LoteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLoteNull() {
+                this[this.tableEtiquet10.LoteColumn] = global::System.Convert.DBNull;
             }
         }
         
