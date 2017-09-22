@@ -112,3 +112,7 @@ C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Debu
 C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.pdb
 C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.dll
 C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.pdb
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.dll
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Debug\ClassConexion.pdb
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.dll
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Debug\ClassConexion.pdb

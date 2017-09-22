@@ -83,7 +83,7 @@ namespace Vista
                             SGA[18], SGA[19], SGA[20],
                             SGA[21], SGA[22], SGA[23],
                             SGA[24], SGA[25], SGA[26],
-                            SGA[27], SGA[28], SGA[12],"","", dr[11]
+                            SGA[27], SGA[28], "", "", SGA[12], dr[11]
                         );
 
                         NumEtiquetaActual++;
@@ -100,7 +100,7 @@ namespace Vista
                             SGA[18], SGA[19], SGA[20],
                             SGA[21], SGA[22], SGA[23],
                             SGA[24], SGA[25], SGA[26],
-                            SGA[27], SGA[28], SGA[12],"","", dr[11]
+                            SGA[27], SGA[28], "", "", SGA[12], dr[11]
                         );
 
                         NumEtiquetaActual++;
@@ -119,7 +119,7 @@ namespace Vista
                             SGA[18], SGA[19], SGA[20],
                             SGA[21], SGA[22], SGA[23],
                             SGA[24], SGA[25], SGA[26],
-                            SGA[27], SGA[28], SGA[12], "", "", dr[11]
+                            SGA[27], SGA[28], "", "", SGA[12], dr[11]
                         );
 
                         NumEtiquetaActual++;
@@ -150,11 +150,11 @@ namespace Vista
                 if (_EnProduccion)
                 {
 
-                    CRVEtiquetas.Visible = true;
-                    CRVEtiquetas.ReportSource = ECImp;
-                    //ECImp.PrintToPrinter(1, true, 0, 0);
+                    //CRVEtiquetas.Visible = true;
+                    //CRVEtiquetas.ReportSource = ECImp;
+                    ECImp.PrintToPrinter(1, true, 0, 0);
 
-                    //Close();
+                    Close();
                 }
                 else
                 {
@@ -195,6 +195,11 @@ namespace Vista
         private string[] _ObtenerDatosSGA(string _Codigo)
         {
             string[] datos = new string[31];
+
+            for (int i = 0; i < 31; i++) {
+
+                datos[i] = "";
+            }
 
             try
             {
@@ -250,7 +255,41 @@ namespace Vista
 
                         datos[7] = (_tipo == 0) ? dr["Frase8"].ToString() : datos[28]; // Guardamos la "palabra"
 
-                        while (pictograma <= 9 && renglon <= 13)
+
+                        if (_Codigo.StartsWith("DY")) { // Porque se lo trata como una MP.
+
+                            for (int i = 0; i < 7; i++) {
+
+                                datos[i + 14] = datos[i];
+                            }
+                        
+                        }
+
+                        if (datos[7] == "") {
+
+                            string pal = dr["Palabra"].ToString().Trim();
+
+                            switch (pal)
+                            {
+                                case "1":
+                                    pal = "Peligro";
+                                    break;
+
+                                case "2":
+                                    pal = "Atención";
+                                    break;
+
+                                default:
+                                    pal = "";
+                                    break;
+                            }
+
+                            datos[7] = pal;
+                         
+                        }
+
+
+                        while (pictograma <= 9 && renglon < 13)
                         {
                             if (Int32.Parse(dr["Pictograma" + pictograma].ToString()) != 0)
                             {
@@ -270,19 +309,101 @@ namespace Vista
                     }
                     else
                     {
-                        int i = 0;
-
-                        while (i < 12)
+                        if (Tabla != "DatosEtiquetaImpre")
                         {
-                            datos[i] = i >= 8 ? _ObtenerRutaImagenSGA("0") : ""; // Llenamos con rombos tachados los pictogramas.
+                            int i = 0;
 
-                            i++;
+                            while (i <= 13)
+                            {
+                                datos[i] = i >= 8 ? _ObtenerRutaImagenSGA("0") : ""; // Llenamos con rombos tachados los pictogramas.
+
+                                i++;
+                            }
                         }
-                    }
+                        else {
+                            // Hay casos en los que se encuentran cargados datos en esta otra tabla. Se hacen compatibles los datos.
+                            dr.Close();
+
+                            cmd = new SqlCommand("Select * From DatosEtiqueta WHERE " + Columna + " = '" + _Codigo.Trim() + "'", cn);
+                            dr = cmd.ExecuteReader();
+
+                            if (dr.HasRows)
+                            {
+                                dr.Read();
+
+                                datos[14] = dr["Frase1"].ToString();
+                                datos[15] = dr["Frase2"].ToString();
+                                datos[16] = dr["Frase3"].ToString();
+                                datos[17] = dr["Frase4"].ToString();
+                                datos[18] = dr["Frase5"].ToString();
+                                datos[19] = dr["Frase6"].ToString();
+                                datos[20] = dr["Frase7"].ToString();
+                                datos[7] = dr["Frase8"].ToString();
+
+
+                                int renglon = 8;
+                                int pictograma = 1;
+
+                                while (pictograma <= 9 && renglon < 13)
+                                {
+                                    if (Int32.Parse(dr["Pictograma" + pictograma].ToString()) != 0)
+                                    {
+                                        datos[renglon] = _ObtenerRutaImagenSGA(pictograma.ToString());
+                                        renglon++;
+                                    }
+
+                                    pictograma++;
+                                }
+
+                                while (renglon < 13)
+                                {
+                                    datos[renglon] = _ObtenerRutaImagenSGA("0"); // Llenamos los campos de pictogramas faltantes con el rombo tachado.
+                                    renglon++;
+                                }
+
+                                if (datos[7] == "")
+                                {
+
+                                    string pal = dr["Palabra"].ToString().Trim();
+
+                                    switch (pal)
+                                    {
+                                        case "1":
+                                            pal = "Peligro";
+                                            break;
+
+                                        case "2":
+                                            pal = "Atención";
+                                            break;
+
+                                        default:
+                                            pal = "";
+                                            break;
+                                    }
+
+                                    datos[7] = pal;
+
+                                }
+
+                            }
+                            else {
+
+                                int i = 0;
+
+                                while (i < 13)
+                                {
+                                    datos[i] = i >= 8 ? _ObtenerRutaImagenSGA("0") : ""; // Llenamos con rombos tachados los pictogramas.
+
+                                    i++;
+                                }
+                            }
+                        }
                         
+                    }
+
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 throw new Exception("Ocurrio un error al querer consultar las especificaciones SGA del siguiente producto: " + _Codigo);
             }

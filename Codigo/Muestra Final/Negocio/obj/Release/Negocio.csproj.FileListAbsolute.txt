@@ -59,3 +59,10 @@ C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Negocio\bin\Release\Cl
 C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Negocio\obj\Release\Negocio.csprojResolveAssemblyReference.cache
 C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Negocio\obj\Release\Negocio.dll
 C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\Negocio\obj\Release\Negocio.pdb
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\Negocio\bin\Release\Negocio.dll
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\Negocio\bin\Release\Negocio.pdb
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\Negocio\bin\Release\ClassConexion.dll
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\Negocio\bin\Release\ClassConexion.pdb
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\Negocio\obj\Release\Negocio.csprojResolveAssemblyReference.cache
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\Negocio\obj\Release\Negocio.dll
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\Negocio\obj\Release\Negocio.pdb

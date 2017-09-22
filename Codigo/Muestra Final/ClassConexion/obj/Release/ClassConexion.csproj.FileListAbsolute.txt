@@ -38,3 +38,7 @@ C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Rele
 C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Release\ClassConexion.pdb
 C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Release\ClassConexion.dll
 C:\Surfactan\Sistema\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Release\ClassConexion.pdb
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Release\ClassConexion.dll
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\ClassConexion\bin\Release\ClassConexion.pdb
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Release\ClassConexion.dll
+C:\Surfactan\Sistemas\Modulo Muestras\Codigo\Muestra Final\ClassConexion\obj\Release\ClassConexion.pdb
