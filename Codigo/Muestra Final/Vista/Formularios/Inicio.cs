@@ -10,6 +10,7 @@ using ClassConexion;
 using Negocio;
 using System.Configuration;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
 
 namespace Vista
 {
@@ -26,6 +27,7 @@ namespace Vista
         private string PeligroI;
         private string PeligroII;
         private string PeligroIII;
+        
 
         public Muestra()
         {
@@ -535,7 +537,9 @@ namespace Vista
 
                 string[,] Peligroso = new string[DGV_Muestra.SelectedRows.Count, 2];
 
-                string[] Codigos = new string[DGV_Muestra.SelectedRows.Count]; 
+                string[] Codigos = new string[DGV_Muestra.SelectedRows.Count];
+
+                string[,] HojasDeSeguridad = new string[DGV_Muestra.SelectedRows.Count, 2];
 
                 for (int i = 0; i < DGV_Muestra.SelectedRows.Count; i++)
                 {
@@ -641,13 +645,17 @@ namespace Vista
                     newRow["Peligroso"] = Peligroso[i, 0];
                     newRow["PeligrosoII"] = Peligroso[i, 1];
 
+                    HojasDeSeguridad[i, 0] = DGV_Muestra.SelectedRows[i].Cells["DescriCliente"].Value.ToString();
+
+                    HojasDeSeguridad[i, 1] = DGV_Muestra.SelectedRows[i].Cells["Codigo"].Value.ToString(); ;
+
                     dt.Rows.Add(newRow);
                 }
 
                 
-                Remito remito = new Remito(datos, dt, errorLote, sinEnsayo, DirEntrega, CodClient, DirClient, LocalidadClient, Cuit, cliente);
+                Remito remito = new Remito(datos, dt, errorLote, sinEnsayo, DirEntrega, CodClient, DirClient, LocalidadClient, Cuit, cliente, HojasDeSeguridad);
                 remito.ShowDialog();
-                
+
             }
                             
             catch (Exception err)
@@ -880,18 +888,7 @@ namespace Vista
                 MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
-            
-            
         }
 
-
-        
-
-        
-
-        
-
-       
     }
 }

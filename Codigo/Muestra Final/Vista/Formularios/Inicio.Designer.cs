@@ -58,6 +58,28 @@ namespace Vista
             this.BtFin = new System.Windows.Forms.Button();
             this.BtImpresion = new System.Windows.Forms.Button();
             this.DGV_Muestra = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescriCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Razon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreVend = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Observaciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.remitoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HojaRuta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodigoConf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lote2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Observaciones2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OrdenFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lote1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.muestraBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.CMS_Filtros = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.pedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,38 +107,16 @@ namespace Vista
             this.label3 = new System.Windows.Forms.Label();
             this.toolTip_Eliminar = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.muestraBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DescriCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Razon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreVend = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Observaciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.remitoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HojaRuta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CodigoConf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lote2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Observaciones2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OrdenFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lote1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.P_Buscar.SuspendLayout();
             this.P_Filtrado.SuspendLayout();
             this.P_Botones.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Muestra)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.muestraBindingSource)).BeginInit();
             this.CMS_Filtros.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.muestraBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // P_Buscar
@@ -440,6 +440,173 @@ namespace Vista
             this.DGV_Muestra.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DGV_Muestra_ColumnHeaderMouseClick);
             this.DGV_Muestra.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DGV_Muestra_KeyDown);
             // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.Visible = false;
+            // 
+            // Pedido
+            // 
+            this.Pedido.DataPropertyName = "Pedido";
+            this.Pedido.HeaderText = "Pedido";
+            this.Pedido.Name = "Pedido";
+            this.Pedido.ReadOnly = true;
+            this.Pedido.Width = 50;
+            // 
+            // Fecha
+            // 
+            this.Fecha.DataPropertyName = "Fecha";
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
+            this.Fecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.Fecha.Width = 70;
+            // 
+            // Codigo
+            // 
+            this.Codigo.DataPropertyName = "Codigo";
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
+            this.Codigo.ReadOnly = true;
+            this.Codigo.Width = 85;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "Nombre";
+            this.Nombre.HeaderText = "Descripcion";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            this.Nombre.Width = 90;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.DataPropertyName = "Cantidad";
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            this.Cantidad.Width = 70;
+            // 
+            // DescriCliente
+            // 
+            this.DescriCliente.DataPropertyName = "DescriCliente";
+            this.DescriCliente.HeaderText = "Nombre para Cliente";
+            this.DescriCliente.Name = "DescriCliente";
+            this.DescriCliente.ReadOnly = true;
+            this.DescriCliente.Width = 90;
+            // 
+            // Razon
+            // 
+            this.Razon.DataPropertyName = "Razon";
+            this.Razon.HeaderText = "Razon";
+            this.Razon.Name = "Razon";
+            this.Razon.ReadOnly = true;
+            this.Razon.Width = 85;
+            // 
+            // Cliente
+            // 
+            this.Cliente.DataPropertyName = "Cliente";
+            this.Cliente.HeaderText = "Cod.Cliente";
+            this.Cliente.Name = "Cliente";
+            // 
+            // NombreVend
+            // 
+            this.NombreVend.DataPropertyName = "NombreVend";
+            this.NombreVend.HeaderText = "NombreVend";
+            this.NombreVend.Name = "NombreVend";
+            // 
+            // Observaciones
+            // 
+            this.Observaciones.DataPropertyName = "Observaciones";
+            this.Observaciones.HeaderText = "Observaciones";
+            this.Observaciones.Name = "Observaciones";
+            this.Observaciones.ReadOnly = true;
+            this.Observaciones.Width = 85;
+            // 
+            // Fecha2
+            // 
+            this.Fecha2.DataPropertyName = "Fecha2";
+            this.Fecha2.HeaderText = "Fecha OK";
+            this.Fecha2.Name = "Fecha2";
+            this.Fecha2.ReadOnly = true;
+            this.Fecha2.Width = 30;
+            // 
+            // remitoDataGridViewTextBoxColumn
+            // 
+            this.remitoDataGridViewTextBoxColumn.DataPropertyName = "Remito";
+            this.remitoDataGridViewTextBoxColumn.HeaderText = "Remito";
+            this.remitoDataGridViewTextBoxColumn.Name = "remitoDataGridViewTextBoxColumn";
+            this.remitoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.remitoDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // HojaRuta
+            // 
+            this.HojaRuta.DataPropertyName = "HojaRuta";
+            this.HojaRuta.HeaderText = "H. Ruta";
+            this.HojaRuta.Name = "HojaRuta";
+            this.HojaRuta.ReadOnly = true;
+            this.HojaRuta.Width = 42;
+            // 
+            // CodigoConf
+            // 
+            this.CodigoConf.DataPropertyName = "CodigoConf";
+            this.CodigoConf.HeaderText = "Cod. Conf";
+            this.CodigoConf.Name = "CodigoConf";
+            this.CodigoConf.ReadOnly = true;
+            this.CodigoConf.Width = 60;
+            // 
+            // Nombre2
+            // 
+            this.Nombre2.DataPropertyName = "Nombre2";
+            this.Nombre2.HeaderText = "Descripcion2";
+            this.Nombre2.Name = "Nombre2";
+            this.Nombre2.ReadOnly = true;
+            this.Nombre2.Width = 80;
+            // 
+            // Lote2
+            // 
+            this.Lote2.DataPropertyName = "Lote2";
+            this.Lote2.HeaderText = "Lote";
+            this.Lote2.Name = "Lote2";
+            this.Lote2.ReadOnly = true;
+            this.Lote2.Width = 41;
+            // 
+            // Observaciones2
+            // 
+            this.Observaciones2.DataPropertyName = "Observaciones2";
+            this.Observaciones2.HeaderText = "Observaciones2";
+            this.Observaciones2.Name = "Observaciones2";
+            this.Observaciones2.ReadOnly = true;
+            this.Observaciones2.Width = 80;
+            // 
+            // Cantidad2
+            // 
+            this.Cantidad2.DataPropertyName = "Cantidad2";
+            this.Cantidad2.HeaderText = "Cantidad";
+            this.Cantidad2.Name = "Cantidad2";
+            this.Cantidad2.ReadOnly = true;
+            this.Cantidad2.Width = 50;
+            // 
+            // OrdenFecha
+            // 
+            this.OrdenFecha.DataPropertyName = "OrdenFecha";
+            this.OrdenFecha.HeaderText = "OrdenFecha";
+            this.OrdenFecha.Name = "OrdenFecha";
+            this.OrdenFecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.OrdenFecha.Visible = false;
+            // 
+            // Lote1
+            // 
+            this.Lote1.DataPropertyName = "Lote1";
+            this.Lote1.HeaderText = "Lote1";
+            this.Lote1.Name = "Lote1";
+            this.Lote1.Visible = false;
+            // 
+            // muestraBindingSource
+            // 
+            this.muestraBindingSource.DataSource = typeof(Negocio.Muestra);
+            // 
             // CMS_Filtros
             // 
             this.CMS_Filtros.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -614,173 +781,6 @@ namespace Vista
             this.tableLayoutPanel1.Size = new System.Drawing.Size(787, 551);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
-            // muestraBindingSource
-            // 
-            this.muestraBindingSource.DataSource = typeof(Negocio.Muestra);
-            // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.Visible = false;
-            // 
-            // Pedido
-            // 
-            this.Pedido.DataPropertyName = "Pedido";
-            this.Pedido.HeaderText = "Pedido";
-            this.Pedido.Name = "Pedido";
-            this.Pedido.ReadOnly = true;
-            this.Pedido.Width = 50;
-            // 
-            // Fecha
-            // 
-            this.Fecha.DataPropertyName = "Fecha";
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.ReadOnly = true;
-            this.Fecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.Fecha.Width = 70;
-            // 
-            // Codigo
-            // 
-            this.Codigo.DataPropertyName = "Codigo";
-            this.Codigo.HeaderText = "Codigo";
-            this.Codigo.Name = "Codigo";
-            this.Codigo.ReadOnly = true;
-            this.Codigo.Width = 85;
-            // 
-            // Nombre
-            // 
-            this.Nombre.DataPropertyName = "Nombre";
-            this.Nombre.HeaderText = "Descripcion";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            this.Nombre.Width = 90;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.DataPropertyName = "Cantidad";
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            this.Cantidad.Width = 70;
-            // 
-            // DescriCliente
-            // 
-            this.DescriCliente.DataPropertyName = "DescriCliente";
-            this.DescriCliente.HeaderText = "Nombre para Cliente";
-            this.DescriCliente.Name = "DescriCliente";
-            this.DescriCliente.ReadOnly = true;
-            this.DescriCliente.Width = 90;
-            // 
-            // Razon
-            // 
-            this.Razon.DataPropertyName = "Razon";
-            this.Razon.HeaderText = "Razon";
-            this.Razon.Name = "Razon";
-            this.Razon.ReadOnly = true;
-            this.Razon.Width = 85;
-            // 
-            // Cliente
-            // 
-            this.Cliente.DataPropertyName = "Cliente";
-            this.Cliente.HeaderText = "Cod.Cliente";
-            this.Cliente.Name = "Cliente";
-            // 
-            // NombreVend
-            // 
-            this.NombreVend.DataPropertyName = "NombreVend";
-            this.NombreVend.HeaderText = "NombreVend";
-            this.NombreVend.Name = "NombreVend";
-            // 
-            // Observaciones
-            // 
-            this.Observaciones.DataPropertyName = "Observaciones";
-            this.Observaciones.HeaderText = "Observaciones";
-            this.Observaciones.Name = "Observaciones";
-            this.Observaciones.ReadOnly = true;
-            this.Observaciones.Width = 85;
-            // 
-            // Fecha2
-            // 
-            this.Fecha2.DataPropertyName = "Fecha2";
-            this.Fecha2.HeaderText = "Fecha OK";
-            this.Fecha2.Name = "Fecha2";
-            this.Fecha2.ReadOnly = true;
-            this.Fecha2.Width = 30;
-            // 
-            // remitoDataGridViewTextBoxColumn
-            // 
-            this.remitoDataGridViewTextBoxColumn.DataPropertyName = "Remito";
-            this.remitoDataGridViewTextBoxColumn.HeaderText = "Remito";
-            this.remitoDataGridViewTextBoxColumn.Name = "remitoDataGridViewTextBoxColumn";
-            this.remitoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.remitoDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // HojaRuta
-            // 
-            this.HojaRuta.DataPropertyName = "HojaRuta";
-            this.HojaRuta.HeaderText = "H. Ruta";
-            this.HojaRuta.Name = "HojaRuta";
-            this.HojaRuta.ReadOnly = true;
-            this.HojaRuta.Width = 42;
-            // 
-            // CodigoConf
-            // 
-            this.CodigoConf.DataPropertyName = "CodigoConf";
-            this.CodigoConf.HeaderText = "Cod. Conf";
-            this.CodigoConf.Name = "CodigoConf";
-            this.CodigoConf.ReadOnly = true;
-            this.CodigoConf.Width = 60;
-            // 
-            // Nombre2
-            // 
-            this.Nombre2.DataPropertyName = "Nombre2";
-            this.Nombre2.HeaderText = "Descripcion2";
-            this.Nombre2.Name = "Nombre2";
-            this.Nombre2.ReadOnly = true;
-            this.Nombre2.Width = 80;
-            // 
-            // Lote2
-            // 
-            this.Lote2.DataPropertyName = "Lote2";
-            this.Lote2.HeaderText = "Lote";
-            this.Lote2.Name = "Lote2";
-            this.Lote2.ReadOnly = true;
-            this.Lote2.Width = 41;
-            // 
-            // Observaciones2
-            // 
-            this.Observaciones2.DataPropertyName = "Observaciones2";
-            this.Observaciones2.HeaderText = "Observaciones2";
-            this.Observaciones2.Name = "Observaciones2";
-            this.Observaciones2.ReadOnly = true;
-            this.Observaciones2.Width = 80;
-            // 
-            // Cantidad2
-            // 
-            this.Cantidad2.DataPropertyName = "Cantidad2";
-            this.Cantidad2.HeaderText = "Cantidad";
-            this.Cantidad2.Name = "Cantidad2";
-            this.Cantidad2.ReadOnly = true;
-            this.Cantidad2.Width = 50;
-            // 
-            // OrdenFecha
-            // 
-            this.OrdenFecha.DataPropertyName = "OrdenFecha";
-            this.OrdenFecha.HeaderText = "OrdenFecha";
-            this.OrdenFecha.Name = "OrdenFecha";
-            this.OrdenFecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.OrdenFecha.Visible = false;
-            // 
-            // Lote1
-            // 
-            this.Lote1.DataPropertyName = "Lote1";
-            this.Lote1.HeaderText = "Lote1";
-            this.Lote1.Name = "Lote1";
-            this.Lote1.Visible = false;
-            // 
             // Muestra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -801,12 +801,12 @@ namespace Vista
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Muestra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.muestraBindingSource)).EndInit();
             this.CMS_Filtros.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.muestraBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

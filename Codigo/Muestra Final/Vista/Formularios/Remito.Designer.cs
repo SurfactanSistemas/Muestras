@@ -55,6 +55,7 @@
             this.BTAceptar = new System.Windows.Forms.Button();
             this.toolTipCancelar = new System.Windows.Forms.ToolTip(this.components);
             this.BTCancelar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Remito)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -290,7 +291,7 @@
             this.BTAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BTAceptar.FlatAppearance.BorderSize = 0;
             this.BTAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTAceptar.Location = new System.Drawing.Point(284, 332);
+            this.BTAceptar.Location = new System.Drawing.Point(270, 331);
             this.BTAceptar.Margin = new System.Windows.Forms.Padding(0);
             this.BTAceptar.Name = "BTAceptar";
             this.BTAceptar.Size = new System.Drawing.Size(55, 50);
@@ -305,7 +306,7 @@
             this.BTCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BTCancelar.FlatAppearance.BorderSize = 0;
             this.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTCancelar.Location = new System.Drawing.Point(355, 332);
+            this.BTCancelar.Location = new System.Drawing.Point(374, 331);
             this.BTCancelar.Name = "BTCancelar";
             this.BTCancelar.Size = new System.Drawing.Size(55, 50);
             this.BTCancelar.TabIndex = 20;
@@ -313,11 +314,23 @@
             this.BTCancelar.UseVisualStyleBackColor = true;
             this.BTCancelar.Click += new System.EventHandler(this.BTCancelar_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(455, 342);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(228, 28);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "PROBAR Impresion FDS";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Remito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 387);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BTAceptar);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.BTCancelar);
@@ -363,5 +376,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BTCancelar;
         private System.Windows.Forms.Button BTAceptar;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ClassConexion;
+using System.Diagnostics;
 
 namespace Vista
 {
@@ -31,11 +32,14 @@ namespace Vista
         private string MovLabNumero;
         private string MovlabRenglon;
         private string txtTrabajo;
+        private string[,] HojasDeSeguridad;
+        private const string ORIGEN_HOJA_SEGURIDAD = "W:\\impresion pdf\\fds\\fds#NOMBREPDF#.pdf";
+        private const string DESTINO_HOJA_SEGURIDAD = "C:\\pdfprint\\fds#NOMBREPDF#.pdf";
 
 
 
              
-        public Remito(string datos, DataTable dt, List<string> erroresLote, List<string> sinEnsayo, string DirEntrega, string CodClient, string DirClient, string LocalidadClient, string Cuit, string cliente)
+        public Remito(string datos, DataTable dt, List<string> erroresLote, List<string> sinEnsayo, string DirEntrega, string CodClient, string DirClient, string LocalidadClient, string Cuit, string cliente, string[,] FDSs)
         {
             InitializeComponent();
             AsignarDatos(datos);
@@ -49,6 +53,7 @@ namespace Vista
             this.LocalidadClient = LocalidadClient;
             this.Cuit = Cuit;
             this.cliente = cliente;
+            this.HojasDeSeguridad = FDSs;
 
 
             DGV_Remito.DataSource = dt;
@@ -226,12 +231,99 @@ namespace Vista
                 ImpreRemito impre_1 = new ImpreRemito(dt, DirEntrega, CodClient, DirClient, LocalidadClient, Cuit, cliente);
                 impre_1.ShowDialog();
 
+                // Verifico que se haya cargado algun articulo para comenzar a imprimir.
+                if (this.HojasDeSeguridad[0, 0].ToString().Trim() != "")
+                {
+
+                    this.ImprimirHojasDSeguridad(this.HojasDeSeguridad);
+
+                }
+
                 Close();
             }
             catch (Exception err)
             {
                 MessageBox.Show(err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void ImprimirHojasDSeguridad(string[,] HojasDeSeguridad)
+        {
+
+            // Avisamos para que puedan sacar las hojas de remitos.
+            MessageBox.Show("Se van a imprimir las hojas de seguridad. Por favor, coloque hojas A4 para las misma.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            string desc = "";
+            string cod = "";
+
+            // Borramos el directorio en caso de que exista.
+            if (System.IO.Directory.Exists(@"C:\pdfprint"))
+            {
+
+                System.IO.Directory.Delete(@"C:\pdfprint", true);
+
+            }
+
+            // Creamos el directorio donde alojaremos los pdf a imprimir.
+            System.IO.Directory.CreateDirectory(@"C:\pdfprint");
+
+            for (int i = 0; i < HojasDeSeguridad.GetLength(0); i++)
+            {
+                // Formateamos la descripcion y el codigo segun sea el tipo.
+                desc = HojasDeSeguridad[i, 0];
+                cod = HojasDeSeguridad[i, 1];
+
+                // Eliminamos los espacios y "/" del nombre del Producto.
+                desc = desc.Replace(" ", "").Replace("/", "");
+
+                if (cod.StartsWith("PT"))
+                {
+                    // Eliminamos los "-" y el prefijo "PT" del Código del Producto.
+                    cod = cod.Replace("-", "").Replace("PT", "");
+                }
+                else
+                {
+                    string[] ZCod = cod.Split('-');
+
+                    // Eliminamos los ceros de mas que pudiesen estar presentes en el codigo intermedio. EJ: DY-00302-100 -> DY-302-100.
+                    ZCod[1] = int.Parse(ZCod[1]).ToString();
+
+                    cod = string.Join("-", ZCod);
+                }
+
+                if (System.IO.File.Exists(ORIGEN_HOJA_SEGURIDAD.Replace("#NOMBREPDF#", desc + cod)))
+                {
+
+                    System.IO.File.Copy(ORIGEN_HOJA_SEGURIDAD.Replace("#NOMBREPDF#", desc + cod), DESTINO_HOJA_SEGURIDAD.Replace("#NOMBREPDF#", desc + cod));
+
+                }
+                else
+                {
+                    // Notificamos al usuario la NO existencia de alguna Hoja de Seguridad.
+                    MessageBox.Show("¡No existe FDS del " + HojasDeSeguridad[i, 0].Trim() + " (" + HojasDeSeguridad[i, 1].Trim() + ")!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+
+            // Imprimimos las hojas guardadas.
+
+            // Recorremos e imprimimos los archivos copiados a la carpeta "pdfprint"
+            foreach (string file in System.IO.Directory.GetFiles(@"C:\pdfprint"))
+            {
+                Process p = new Process();
+                p.StartInfo = new ProcessStartInfo()
+                {
+                    CreateNoWindow = true,
+                    Verb = "print",
+                    FileName = file //put the correct path here
+                };
+                p.Start();
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.ImprimirHojasDSeguridad(this.HojasDeSeguridad);
         }
 
 
