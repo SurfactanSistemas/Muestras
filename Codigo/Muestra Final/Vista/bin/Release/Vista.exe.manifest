@@ -217,19 +217,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>hy1rxCpD1I9hBW9RWC5zA/RsRdc=</dsig:DigestValue>
+        <dsig:DigestValue>Sk7SFqs98ioOYrtvOJwuVsfXygw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vista.exe" size="3369472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vista.exe" size="3372032">
       <assemblyIdentity name="Vista" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ddkCFWmNnhGSqOUQDTTY3QrFkTM=</dsig:DigestValue>
+        <dsig:DigestValue>DKp37Jn6oGVHhVy5pi3NnFJzuMM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

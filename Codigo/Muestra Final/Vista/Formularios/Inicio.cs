@@ -48,7 +48,7 @@ namespace Vista
 
             foreach (DataRow Fila in dt.Rows)
             {
-                Fila["OrdenFecha"] = Fila[2].ToString().Substring(6,4) + Fila[2].ToString().Substring(2, 4) + Fila[2].ToString().Substring(0, 2);
+               Fila["OrdenFecha"] = Fila[2].ToString().Substring(6,4) + Fila[2].ToString().Substring(2, 4) + Fila[2].ToString().Substring(0, 2);
             }
 
             DGV_Muestra.DataSource = dt;
@@ -380,6 +380,11 @@ namespace Vista
 
 
                     string lote = DGV_Muestra.SelectedRows[i].Cells["Lote2"].Value.ToString();
+
+                    if (lote.Trim() == "" || int.Parse(lote) == 0)
+                    {
+                        lote = DGV_Muestra.SelectedRows[i].Cells["Lote1"].Value.ToString();
+                    }
 
                     if (lote.Trim() == "" || int.Parse(lote) == 0)
                     {
