@@ -510,12 +510,16 @@ namespace Vista
 
                 //Verifico que no tengan número de remito
                 string numero_remito = DGV_Muestra.SelectedRows[0].Cells[12].Value.ToString();
+                string[,] HojasDeSeguridad = new string[DGV_Muestra.SelectedRows.Count, 2];
 
                 for (int i = 0; i < DGV_Muestra.SelectedRows.Count; i++)
                 {
                     if (DGV_Muestra.SelectedRows[i].Cells[12].Value.ToString() != numero_remito) {
                             throw new Exception("El numero de remito es diferente");
                         }
+                    HojasDeSeguridad[i, 0] = DGV_Muestra.SelectedRows[i].Cells["DescriCliente"].Value.ToString().Trim();
+
+                    HojasDeSeguridad[i, 1] = DGV_Muestra.SelectedRows[i].Cells["Codigo"].Value.ToString().Trim();
                 }
 
                 if (numero_remito != "")
@@ -529,7 +533,7 @@ namespace Vista
                     string LocalidadClient1 = datacliente1[2].ToString();
                     string Cuit1 = datacliente1[3].ToString();
                     string DirEntrega1 = datacliente1[4].ToString();
-                    ImpreRemito impre_1 = new ImpreRemito(dt, DirEntrega1, CodClient1, DirClient1, LocalidadClient1, Cuit1, cliente);
+                    ImpreRemito impre_1 = new ImpreRemito(dt, DirEntrega1, CodClient1, DirClient1, LocalidadClient1, Cuit1, cliente, HojasDeSeguridad);
                     impre_1.ShowDialog();
                     goto finalizado;
                     //goto Error;
@@ -543,8 +547,6 @@ namespace Vista
                 string[,] Peligroso = new string[DGV_Muestra.SelectedRows.Count, 2];
 
                 string[] Codigos = new string[DGV_Muestra.SelectedRows.Count];
-
-                string[,] HojasDeSeguridad = new string[DGV_Muestra.SelectedRows.Count, 2];
 
                 for (int i = 0; i < DGV_Muestra.SelectedRows.Count; i++)
                 {
@@ -650,9 +652,9 @@ namespace Vista
                     newRow["Peligroso"] = Peligroso[i, 0];
                     newRow["PeligrosoII"] = Peligroso[i, 1];
 
-                    HojasDeSeguridad[i, 0] = DGV_Muestra.SelectedRows[i].Cells["DescriCliente"].Value.ToString();
+                    HojasDeSeguridad[i, 0] = DGV_Muestra.SelectedRows[i].Cells["DescriCliente"].Value.ToString().Trim();
 
-                    HojasDeSeguridad[i, 1] = DGV_Muestra.SelectedRows[i].Cells["Codigo"].Value.ToString(); ;
+                    HojasDeSeguridad[i, 1] = DGV_Muestra.SelectedRows[i].Cells["Codigo"].Value.ToString().Trim();
 
                     dt.Rows.Add(newRow);
                 }

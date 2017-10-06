@@ -114,7 +114,7 @@ namespace Vista
                 if (TBNumRemito.Text == "") throw new Exception("Se debe ingresar el numero de remito");
                 if (reimprimir)
                 {
-                    ImpreRemito impre = new ImpreRemito(dt, DirEntrega, CodClient, DirClient, LocalidadClient, Cuit, cliente);
+                    ImpreRemito impre = new ImpreRemito(dt, DirEntrega, CodClient, DirClient, LocalidadClient, Cuit, cliente, HojasDeSeguridad);
                     impre.ShowDialog();
                 }
                 else
@@ -270,8 +270,8 @@ namespace Vista
             for (int i = 0; i < HojasDeSeguridad.GetLength(0); i++)
             {
                 // Formateamos la descripcion y el codigo segun sea el tipo.
-                desc = HojasDeSeguridad[i, 0];
-                cod = HojasDeSeguridad[i, 1];
+                desc = HojasDeSeguridad[i, 0].Trim();
+                cod = HojasDeSeguridad[i, 1].Trim();
 
                 // Eliminamos los espacios y "/" del nombre del Producto.
                 desc = desc.Replace(" ", "").Replace("/", "");
