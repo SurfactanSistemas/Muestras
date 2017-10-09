@@ -72,7 +72,7 @@ namespace Vista
 
                     if (this.tipo == "Chica") {
                         Dss[HojaActual].Tables[NumEtiquetaActual].Rows.Add(
-                            dr[4], dr[1], dr[9],
+                            dr[4], dr[3], dr[9],
                             dr[6], dr[7], dr[0],
                             dr[10], dr[8], dr[5],
                             SGA[0], SGA[1], SGA[2],
@@ -89,7 +89,7 @@ namespace Vista
                         NumEtiquetaActual++;
 
                         Dss[HojaActual].Tables[NumEtiquetaActual].Rows.Add(
-                            dr[4], dr[1], dr[9],
+                            dr[4], dr[3], dr[9],
                             dr[6], dr[7], dr[0],
                             dr[10], dr[8], dr[5],
                             SGA[0], SGA[1], SGA[2],
@@ -108,7 +108,7 @@ namespace Vista
                     else{
 
                         Dss[HojaActual].Tables[NumEtiquetaActual].Rows.Add(
-                            dr[4], dr[1], dr[9],
+                            dr[4], dr[3], dr[9],
                             dr[6], dr[7], dr[0],
                             dr[10], dr[8], dr[5],
                             SGA[0], SGA[1], SGA[2],
