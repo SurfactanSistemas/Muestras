@@ -50,12 +50,12 @@ namespace ClassConexion
             str += "M.Nombre, M.Cantidad, M.DescriCliente, M.Razon , M.Cliente, M.Observaciones, M.Fecha2 , M.Remito, M.HojaRuta,";
             str += "Case When M.Ensayo2 <> '' Then M.Ensayo2 When M.Producto2 <> '' Then M.Producto2 When M.Articulo2 <> '' Then M.Articulo2 End as 'CodigoConf',";
             str += "M.Nombre2, M.Lote2, M.Observaciones2, M.Cantidad2, ";
-            str += "Case When M.Stock2 = '1' Then 'S' Else null End as 'ActualizarStock', M.OrdenTrabajo, M.Vendedor, (select distinct Lote1 from pedido p where p.pedido = m.pedido and (P.Terminado = M.Producto or P.Articulo = M.Articulo)) Lote1, V.Nombre as 'NombreVend'";
+            str += "Case When M.Stock2 = '1' Then 'S' Else null End as 'ActualizarStock', M.OrdenTrabajo, M.DesVendedor as 'NombreVend', (select distinct Lote1 from pedido p where p.pedido = m.pedido and (P.Terminado = M.Producto or P.Articulo = M.Articulo)) Lote1 ";
             //str += "Case When M.Stock2 = '1' Then 'S' Else null End as 'ActualizarStock', M.OrdenTrabajo, M.Vendedor, P.Lote1, V.Nombre as 'NombreVend'";
             str += "from Muestra M ";
             //str += "inner join Pedido P on P.Pedido = M.Pedido and (P.Terminado = M.Producto or P.Articulo = M.Articulo) ";
             //str += "inner join Pedido P on P.Pedido = M.Pedido ";
-            str += "inner join Vendedor V on V.Vendedor = M.Vendedor ";
+            //str += "inner join Vendedor V on V.Vendedor = M.Vendedor ";
             //str += "where M.Fecha like '%/" + des_año.ToString() + "' ";
             str += "where M.OrdFecha between '" + des_año.ToString() + "' and '" + hasta_año.ToString() + "' ";
             str += "order by M.Pedido desc "; ;
@@ -173,8 +173,8 @@ namespace ClassConexion
         {
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.Text;
-            
-            if (cod.StartsWith("DY"))
+
+            if (cod.StartsWith("DY") || cod.StartsWith("ML"))
             {
 
                 string[] auxi = cod.Split('-');
@@ -208,6 +208,28 @@ namespace ClassConexion
             return value;
         }
 
+
+        public string BuscarDescripcionIngles(string cod)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+
+            cod = cod.Trim();
+
+            string str = "select DescripcionIngles from Terminado where Codigo = '" + cod + "'";
+
+            cmd.CommandText = str;
+
+            AbrirConexion();
+
+            cmd.Connection = conexion;
+
+            string value = System.Convert.ToString(cmd.ExecuteScalar());
+
+            CerrarConexion();
+
+            return value;
+        }
 
         public string BuscarNombreML(string cod, string pedido)
         {
@@ -256,7 +278,7 @@ namespace ClassConexion
 
             string cod = DGV.Cells[5].Value.ToString().Trim();
 
-            if (cod.StartsWith("DY"))
+            if (cod.StartsWith("DY") || cod.StartsWith("ML"))
             {
 
                 string[] auxi = cod.Split('-');
@@ -539,7 +561,7 @@ namespace ClassConexion
 
             string cod = DGVRow.Cells[5].Value.ToString().Trim();
 
-            if (cod.StartsWith("DY"))
+            if (cod.StartsWith("DY") || cod.StartsWith("ML"))
             {
                 string[] auxi = cod.Split('-');
                 int max = auxi[1].ToString().Length;
@@ -702,7 +724,7 @@ namespace ClassConexion
 
             string cod = Producto;
 
-            if (cod.StartsWith("DY"))
+            if (cod.StartsWith("DY") || cod.StartsWith("ML"))
             {
 
                 string[] auxi = cod.Split('-');

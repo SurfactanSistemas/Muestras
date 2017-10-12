@@ -131,10 +131,12 @@ namespace Vista
 
                         double Cantidad = Convert.ToDouble(aux.Replace(".", ","));
 
-                        if (codigo.StartsWith("PT") || codigo.StartsWith("DY") || codigo.StartsWith("YQ") || codigo.StartsWith("YF"))
-                        {
-                            Cs.ActualizarPedidoI(DGV_Remito.Rows[i]);
-                        }
+                        //if (codigo.StartsWith("PT") || codigo.StartsWith("DY") || codigo.StartsWith("YQ") || codigo.StartsWith("YF"))
+                        //{
+                        //    Cs.ActualizarPedidoI(DGV_Remito.Rows[i]);
+                        //}
+
+                        Cs.ActualizarPedidoI(DGV_Remito.Rows[i]);
 
                         Cs.ActualizarMuestraRemito(DGV_Remito.Rows[i], TBNumRemito.Text);
 

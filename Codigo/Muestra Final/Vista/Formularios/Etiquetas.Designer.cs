@@ -33,6 +33,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.GrupoIdiomaEtiquetas = new System.Windows.Forms.GroupBox();
+            this.cmbIdiomaEtiquetas = new System.Windows.Forms.ComboBox();
             this.CBPosicion = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.DGV_Etiquetas = new System.Windows.Forms.DataGridView();
@@ -48,6 +50,7 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.GrupoIdiomaEtiquetas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Etiquetas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,6 +86,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
+            this.panel3.Controls.Add(this.GrupoIdiomaEtiquetas);
             this.panel3.Controls.Add(this.CBPosicion);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.DGV_Etiquetas);
@@ -94,6 +98,31 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(544, 320);
             this.panel3.TabIndex = 0;
+            // 
+            // GrupoIdiomaEtiquetas
+            // 
+            this.GrupoIdiomaEtiquetas.Controls.Add(this.cmbIdiomaEtiquetas);
+            this.GrupoIdiomaEtiquetas.Location = new System.Drawing.Point(84, 259);
+            this.GrupoIdiomaEtiquetas.Name = "GrupoIdiomaEtiquetas";
+            this.GrupoIdiomaEtiquetas.Size = new System.Drawing.Size(200, 55);
+            this.GrupoIdiomaEtiquetas.TabIndex = 12;
+            this.GrupoIdiomaEtiquetas.TabStop = false;
+            this.GrupoIdiomaEtiquetas.Text = "Idioma de Estiquetas";
+            // 
+            // cmbIdiomaEtiquetas
+            // 
+            this.cmbIdiomaEtiquetas.DisplayMember = "Etiqueta Chica (8.5 x 4)";
+            this.cmbIdiomaEtiquetas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbIdiomaEtiquetas.FormattingEnabled = true;
+            this.cmbIdiomaEtiquetas.Items.AddRange(new object[] {
+            "Español",
+            "Inglés"});
+            this.cmbIdiomaEtiquetas.Location = new System.Drawing.Point(23, 21);
+            this.cmbIdiomaEtiquetas.Name = "cmbIdiomaEtiquetas";
+            this.cmbIdiomaEtiquetas.Size = new System.Drawing.Size(154, 21);
+            this.cmbIdiomaEtiquetas.TabIndex = 7;
+            this.cmbIdiomaEtiquetas.ValueMember = "Etiqueta Chica (8.5 x 4)";
+            this.cmbIdiomaEtiquetas.SelectedIndexChanged += new System.EventHandler(this.cmbIdiomaEtiquetas_SelectedIndexChanged);
             // 
             // CBPosicion
             // 
@@ -107,7 +136,7 @@
             "5",
             "6",
             "7"});
-            this.CBPosicion.Location = new System.Drawing.Point(435, 27);
+            this.CBPosicion.Location = new System.Drawing.Point(443, 27);
             this.CBPosicion.Name = "CBPosicion";
             this.CBPosicion.Size = new System.Drawing.Size(79, 21);
             this.CBPosicion.TabIndex = 11;
@@ -116,7 +145,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(282, 27);
+            this.label4.Location = new System.Drawing.Point(290, 28);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(147, 19);
             this.label4.TabIndex = 10;
@@ -133,9 +162,9 @@
             this.Descripcion,
             this.Cantidad});
             this.DGV_Etiquetas.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.DGV_Etiquetas.Location = new System.Drawing.Point(14, 61);
+            this.DGV_Etiquetas.Location = new System.Drawing.Point(15, 61);
             this.DGV_Etiquetas.Name = "DGV_Etiquetas";
-            this.DGV_Etiquetas.Size = new System.Drawing.Size(515, 205);
+            this.DGV_Etiquetas.Size = new System.Drawing.Size(515, 192);
             this.DGV_Etiquetas.TabIndex = 9;
             // 
             // Codigo
@@ -168,7 +197,7 @@
             "Etiqueta Chica (8.5 x 4)",
             "Etiqueta Autoadhesiva ( ZT-001-100)",
             "Etiqueta P/Frascos "});
-            this.CBTamañoEtiquetas.Location = new System.Drawing.Point(89, 28);
+            this.CBTamañoEtiquetas.Location = new System.Drawing.Point(97, 27);
             this.CBTamañoEtiquetas.Name = "CBTamañoEtiquetas";
             this.CBTamañoEtiquetas.Size = new System.Drawing.Size(177, 21);
             this.CBTamañoEtiquetas.TabIndex = 7;
@@ -181,9 +210,9 @@
             this.BTCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BTCancelar.FlatAppearance.BorderSize = 0;
             this.BTCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTCancelar.Location = new System.Drawing.Point(412, 277);
+            this.BTCancelar.Location = new System.Drawing.Point(331, 264);
             this.BTCancelar.Name = "BTCancelar";
-            this.BTCancelar.Size = new System.Drawing.Size(34, 37);
+            this.BTCancelar.Size = new System.Drawing.Size(53, 45);
             this.BTCancelar.TabIndex = 6;
             this.toolTipCancelar.SetToolTip(this.BTCancelar, "Cancelar");
             this.BTCancelar.UseVisualStyleBackColor = true;
@@ -195,10 +224,10 @@
             this.BTAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BTAceptar.FlatAppearance.BorderSize = 0;
             this.BTAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTAceptar.Location = new System.Drawing.Point(474, 277);
+            this.BTAceptar.Location = new System.Drawing.Point(416, 264);
             this.BTAceptar.Margin = new System.Windows.Forms.Padding(0);
             this.BTAceptar.Name = "BTAceptar";
-            this.BTAceptar.Size = new System.Drawing.Size(36, 37);
+            this.BTAceptar.Size = new System.Drawing.Size(53, 45);
             this.BTAceptar.TabIndex = 5;
             this.toolTipAceptar.SetToolTip(this.BTAceptar, "Aceptar");
             this.BTAceptar.UseVisualStyleBackColor = true;
@@ -208,7 +237,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 27);
+            this.label1.Location = new System.Drawing.Point(24, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 19);
             this.label1.TabIndex = 0;
@@ -230,6 +259,7 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.GrupoIdiomaEtiquetas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Etiquetas)).EndInit();
             this.ResumeLayout(false);
 
@@ -253,5 +283,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+        private System.Windows.Forms.GroupBox GrupoIdiomaEtiquetas;
+        private System.Windows.Forms.ComboBox cmbIdiomaEtiquetas;
     }
 }

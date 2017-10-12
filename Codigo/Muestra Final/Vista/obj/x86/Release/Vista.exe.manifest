@@ -198,14 +198,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassConexion.dll" size="17920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClassConexion.dll" size="18432">
       <assemblyIdentity name="ClassConexion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>CeDYi8GazK31OP3X2Zwj60aCP7c=</dsig:DigestValue>
+        <dsig:DigestValue>vw67WwgAnlXPQAaSvVACAW4a6VY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -217,19 +217,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>NECBxvY+qb2JVAkvjrrWWiW5LdE=</dsig:DigestValue>
+        <dsig:DigestValue>uxfaxxMQfoYwdLZtwY39gwWgFZs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vista.exe" size="3373056">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vista.exe" size="3375616">
       <assemblyIdentity name="Vista" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>KhLxw+qmr3jkVTEzpz0qcmZtjG0=</dsig:DigestValue>
+        <dsig:DigestValue>NNxil1lvrV3+76dOqf5VJxpC2RE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -269,13 +269,13 @@
       <dsig:DigestValue>QboyKWRXcgV2MA9jrUAu/fAFfe4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Vista.exe.config" size="2071">
+  <file name="Vista.exe.config" size="2074">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>oGAdrvC95xMMfeZz5IX4U00Ufo4=</dsig:DigestValue>
+      <dsig:DigestValue>CJR1TjhZTPUiGP+VNK8Olm1MEhY=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

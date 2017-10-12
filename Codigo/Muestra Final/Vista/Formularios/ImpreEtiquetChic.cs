@@ -19,16 +19,18 @@ namespace Vista
         int[] CantidadesDeEtiquetas;
         string tipo;
         int posicion;
+        Boolean _Traducir = false;
         const Boolean _EnProduccion = true; // Dejar en TRUE cuando se está en producción
                                             // Cambiar a FALSE cuando se trabaje en desarrollo.
 
-        public ImpreEtiquetChic(DataTable ds, int[] CantidadesDeEtiquetas, string Tipo, int Posicion = 0)
+        public ImpreEtiquetChic(DataTable ds, int[] CantidadesDeEtiquetas, string Tipo, int Posicion = 0, Boolean traducir = false)
         {
             InitializeComponent();
             this.dt = ds;
             this.CantidadesDeEtiquetas = CantidadesDeEtiquetas;
             this.tipo = Tipo;
             this.posicion = Posicion;
+            this._Traducir = traducir;
         }
 
         private void CRVEtiquetas_Load(object sender, EventArgs e)
@@ -272,11 +274,11 @@ namespace Vista
                             switch (pal)
                             {
                                 case "1":
-                                    pal = "Peligro";
+                                    pal = (this._Traducir) ? "Danger" : "Peligro";
                                     break;
 
                                 case "2":
-                                    pal = "Atención";
+                                    pal = (this._Traducir) ? "Warning" : "Atención";
                                     break;
 
                                 default:
@@ -285,7 +287,19 @@ namespace Vista
                             }
 
                             datos[7] = pal;
-                         
+
+                        }
+                        else
+                        {
+                            if (this._Traducir)
+                            {
+                                datos[7] = datos[7].ToString().Replace("Peligro", "DANGER");
+                                datos[7] = datos[7].ToString().Replace("PELIGRO", "DANGER");
+                                datos[7] = datos[7].ToString().Replace("Atención", "WARNING");
+                                datos[7] = datos[7].ToString().Replace("Atencion", "WARNING");
+                                datos[7] = datos[7].ToString().Replace("ATENCIÓN", "WARNING");
+                                datos[7] = datos[7].ToString().Replace("ATENCION", "WARNING");
+                            }
                         }
 
 
@@ -369,11 +383,11 @@ namespace Vista
                                     switch (pal)
                                     {
                                         case "1":
-                                            pal = "Peligro";
+                                            pal = (this._Traducir) ? "Danger" : "Peligro";
                                             break;
 
                                         case "2":
-                                            pal = "Atención";
+                                            pal = (this._Traducir) ? "Warning" : "Atención";
                                             break;
 
                                         default:
@@ -383,6 +397,18 @@ namespace Vista
 
                                     datos[7] = pal;
 
+                                }
+                                else
+                                {
+                                    if (this._Traducir)
+                                    {
+                                        datos[7] = datos[7].ToString().Replace("Peligro", "DANGER");
+                                        datos[7] = datos[7].ToString().Replace("PELIGRO", "DANGER");
+                                        datos[7] = datos[7].ToString().Replace("Atención", "WARNING");
+                                        datos[7] = datos[7].ToString().Replace("Atencion", "WARNING");
+                                        datos[7] = datos[7].ToString().Replace("ATENCIÓN", "WARNING");
+                                        datos[7] = datos[7].ToString().Replace("ATENCION", "WARNING");
+                                    }
                                 }
 
                             }
